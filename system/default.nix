@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    (lib.importTOML ./default.toml)
+    (lib.importTOML ./config.toml)
     {services.kanata.keyboards.main.config = builtins.readFile ./kanata.lisp;}
   ];
 
