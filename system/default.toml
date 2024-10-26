@@ -21,6 +21,9 @@ powerOnBoot = true
 # Service settings.
 [services]
 
+# Enable kanata.
+kanata.enable = true
+
 # Enable SSH.
 openssh.enable = true
 
