@@ -9,19 +9,19 @@
 )
 
 (deflayer base
-  caps 
-  (tap-hold 75 150 tab (layer-while-held nav))
-  (tap-hold 75 150 esc lctl)
+  caps ;; Escape to caps lock.
+  (tap-hold 75 150 tab (layer-while-held nav)) ;; Navigation layer while holding tab.
+  (tap-hold 75 150 esc lctl) ;; Ctrl while holding caps lock, otherwise esc.
   h j k l 
-  g n
-  d e
+  g n ;; Swap 'n' and 'g'.
+  d e ;; Swap 'e' and 'd'.
 )
 
 (deflayer nav
   _
   _
   _
-  left down up right
+  left down up right ;; Vim like keys everywhere.
   _ _
   _ _
 )
