@@ -1,5 +1,4 @@
 
-oil.enable = true
 lsp.enable = true
 cmp.enable = true
 noice.enable = true
@@ -17,6 +16,8 @@ component_separators = '|'
 section_separators = { left = '', right = '' }
 
 [lsp.servers]
+nixd.enable = true
+statix.enable = true
 
 [telescope.keymaps]
 "<leader>f" = "find_files"
