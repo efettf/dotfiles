@@ -1,8 +1,4 @@
 
-enable = true
-
-[keyboards.main]
-config = """
 (defsrc
   esc 
   tab 
@@ -29,4 +25,4 @@ config = """
   _ _
   _ _
 )
-"""
+
