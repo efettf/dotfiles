@@ -2,15 +2,14 @@
   pkgs,
   lib,
   ...
-}:
-{
+}: {
   imports = [
     (lib.importTOML ./default.toml)
-    { services.kanata = lib.importTOML ./kanata.toml; }
+    {services.kanata = lib.importTOML ./kanata.toml;}
   ];
 
   # Replace sudo with doas completly.
-  environment.systemPackages = [ (pkgs.writeScriptBin "sudo" ''exec doas "$@"'') ];
+  environment.systemPackages = [(pkgs.writeScriptBin "sudo" ''exec doas "$@"'')];
 
   # Set default user shell to zsh.
   users.defaultUserShell = pkgs.zsh;
