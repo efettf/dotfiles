@@ -54,7 +54,7 @@ It will use sudo only if it needs to, so it won't run everything as root.
 
 - **Minimal configuration**: everything is easy to understand and manage, doesn't use any special shorthand and frameworks to keep it simple.
 - **Excellent documentation**: most of options are explained right there in the configuration in comments, so you don't have to look everything up.
-- **Fully open source**: all programs by default are open source and free of charge. Please see list below to view full list of them with links.
+- **Fully open source**: all programs by default are open source and free of charge, please see [list below](https://github.com/efettf/dotfiles/tree/main#-programs-included) to view full list of them with links.
 
 ### 🎸 Programs included
 <!-- Programs in the dependency list, don't list technical stuff,
@@ -63,8 +63,8 @@ you can pull links from "search.nixos.org". -->
 <details open><summary>🔧 Developer Tools</summary>
 
 - [git](https://git-scm.com/)
-- [eza](https://github.com/eza-community/eza)
 - [fzf](https://github.com/junegunn/fzf)
+- [eza](https://github.com/eza-community/eza)
 - [tmux](https://tmux.github.io/)
 - [direnv](https://direnv.net)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
@@ -81,8 +81,8 @@ you can pull links from "search.nixos.org". -->
 - [kanata](https://github.com/jtroo/kanata)
 - [tealdeer](https://github.com/dbrgn/tealdeer)
 - [undollar](https://github.com/xtyrrell/undollar)
-- [hyprland](https://github.com/hyprwm/Hyprland)
 - [alacritty](https://github.com/alacritty/alacritty)
+- [hyprland](https://github.com/hyprwm/Hyprland)
 - [qutebrowser](https://github.com/qutebrowser/qutebrowser)
 
 </details>
