@@ -1,3 +1,5 @@
+
+# One off binds.
 bind = [
   "SUPER, Q, exit",
   "SUPER, C, killactive",
@@ -32,6 +34,8 @@ bind = [
   "SUPER, K, movefocus, u",
   "SUPER, L, movefocus, r",
 ]
+
+# Binds that repeat on hold.
 binde = [
   "SUPER SHIFT, H, resizeactive, -3%  0%",
   "SUPER SHIFT, J, resizeactive,  0%  3%",
@@ -39,15 +43,19 @@ binde = [
   "SUPER SHIFT, L, resizeactive,  3%  0%",
 ]
 
+# Disable animations.
 animations.enabled = false
 
+# Decoration settings.
 [decoration]
 blur.enabled = false
 drop_shadow = false
 
+# Cursor settings.
 [cursor]
 hide_on_key_press = true
 
+# General settings.
 [general]
 "col.active_border" = "rgb(45475a)"
 "col.inactive_border" = "rgb(1e1e2e)"
@@ -56,20 +64,24 @@ gaps_in = 8
 gaps_out = 12
 border_size = 0
 
+# Master layout settings.
 [master]
 allow_small_split = true
 mfact = 0.6
 new_status = "slave"
 orientation = "right"
 
+# Dwindle layout settings.
 [dwindle]
 pseudotile = true
 smart_split = true
 
+# Input settings.
 [input]
 repeat_delay = 175
 repeat_rate = 50
 
+# Misc settings.
 [misc]
 allow_session_lock_restore = true
 animate_manual_resizes = true
@@ -79,3 +91,4 @@ disable_splash_rendering = true
 enable_swallow = true
 force_default_wallpaper = true
 vfr = true
+
