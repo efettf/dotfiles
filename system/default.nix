@@ -23,6 +23,7 @@
     direnv
     zoxide
     ripgrep
+    undollar
     tealdeer
     tmuxifier
     oh-my-posh
