@@ -1,0 +1,88 @@
+
+# Enable wi-fi support via network manager.
+networking.networkmanager.enable = true
+
+# Set host name, required to rebuiled the system.
+networking.hostName = "nixos"
+
+# Set your time zone.
+time.timeZone = "Europe/Warsaw"
+
+# Enable flakes and nix command.
+nix.settings.experimental-features = [ "nix-command", "flakes" ]
+
+# Bluetooth settings.
+[hardware.bluetooth]
+
+# Enable bluetooth and make it power on boot.
+enable = true
+powerOnBoot = true
+
+# Service settings.
+[services]
+
+# Enable SSH.
+openssh.enable = true
+
+# Enable bluetooth support via bluetooth manager.
+blueman.enable = true
+
+# Enable touchpad support.
+libinput.enable = true
+
+# Nixos system settings for display managers.
+[services.displayManager]
+
+# Minimal display manager.
+ly.enable = true
+
+# Nixos system settings for systemd services targets.
+[systemd.targets]
+
+# Disable sleep.
+sleep.enable = false
+suspend.enable = false
+hibernate.enable = false
+hybrid-sleep.enable = false
+
+# Nixos system settings for programs.
+[programs]
+
+# Enable hyprland.
+hyprland.enable = true
+
+# Enable gnupg.
+gnupg.agent.enable = true
+
+# Enable zsh shell.
+zsh.enable = true
+
+# Disable nano, you can get it back using 'nix-shell -p nano'.
+nano.enable = false
+
+# Security settings.
+[security]
+
+# Simple sudo replacement.
+doas.enable = true
+
+# Disable sudo, you can get it back using 'nix-shell -p sudo'.
+sudo.enable = false
+
+# Removes password prompts for your wheel group,
+# you can manage user groups below at '[users.users.*]'.
+doas.wheelNeedsPassword = false
+
+# Boot loader settings, required to rebuiled the system.
+[boot.loader]
+systemd-boot.enable = true
+efi.canTouchEfiVariables = true
+
+# User configuration.
+[users.users.lynx]
+
+# Makes user not have super user access.
+isNormalUser = true
+
+# Set extra groups for user.
+extraGroups = ["wheel"]
