@@ -37,7 +37,7 @@
         inputs.index.nixosModules.nix-index
 
         # Enable comma - run software without installing it.
-        { programs.nix-index-database.comma.enable = true; }
+        {programs.nix-index-database.comma.enable = true;}
 
         {
           home-manager.users.lynx.imports = [
@@ -47,7 +47,6 @@
             # Home manager module imports go here.
             inputs.stylix.homeManagerModules.stylix
             inputs.nixvim.homeManagerModules.nixvim
-
           ];
         }
       ];

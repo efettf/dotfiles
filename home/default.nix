@@ -1,5 +1,4 @@
-{ lib, ... }:
-{
+{lib, ...}: {
   # Make home manager manage itself.
   programs.home-manager.enable = true;
 
@@ -7,9 +6,9 @@
     ./nixvim
     ./hyprland
     ./stylix.nix
-    { programs.qutebrowser = lib.importTOML ./programs/qutebrowser.toml; }
-    { programs.tmux.extraConfig = builtins.readFile ./programs/tmux.conf; }
-    { programs.alacritty.settings = lib.importTOML ./programs/alacritty.toml; }
+    {programs.qutebrowser = lib.importTOML ./programs/qutebrowser.toml;}
+    {programs.tmux.extraConfig = builtins.readFile ./programs/tmux.conf;}
+    {programs.alacritty.settings = lib.importTOML ./programs/alacritty.toml;}
   ];
 
   programs = {
