@@ -14,7 +14,7 @@
   # Set default user shell to zsh.
   users.defaultUserShell = pkgs.zsh;
 
-  # User configuration.
+  # Packages for specific user.
   users.users.lynx.packages = with pkgs; [
     git
     eza
