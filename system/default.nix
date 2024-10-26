@@ -5,7 +5,7 @@
 }: {
   imports = [
     (lib.importTOML ./default.toml)
-    {services.kanata.keyboards.main = buitins.readFile ./kanata.lisp;}
+    {services.kanata.keyboards.main.config = builtins.readFile ./kanata.lisp;}
   ];
 
   # Replace sudo with doas completly.
