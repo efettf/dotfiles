@@ -6,6 +6,9 @@
     # Manage style of your desktop to be uniform.
     stylix.url = "github:danth/stylix/release-24.05";
 
+    # Database for comma.
+    index.url = "github:nix-community/nix-index-database";
+
     # Manage your neovim config like nixos.
     nixvim.url = "github:nix-community/nixvim";
 
@@ -31,6 +34,11 @@
 
         # Nixos module imports go here.
         inputs.home-manager.nixosModules.home-manager
+        inputs.index.nixosModules.nix-index
+
+        # Enable comma - run software without installing it.
+        { programs.nix-index-database.comma.enable = true; }
+
         {
           home-manager.users.lynx.imports = [
             # Home manager specific configurations go here.
@@ -39,6 +47,7 @@
             # Home manager module imports go here.
             inputs.stylix.homeManagerModules.stylix
             inputs.nixvim.homeManagerModules.nixvim
+
           ];
         }
       ];
