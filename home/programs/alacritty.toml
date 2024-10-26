@@ -1,9 +1,14 @@
 
+# Window padding on borders.
 [window.padding]
-x = 4
-y = 6
+x = 4 # left - right
+y = 6 # down - up
 
+# Cursor settings.
 [cursor]
 thickness = 0.35
-unfocused_hollow = false
+
+# Don't change shape when window out of focus.
+unfocused_hollow = false 
+
 style.shape = "Underline"
