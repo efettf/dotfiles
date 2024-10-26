@@ -1,6 +1,7 @@
-{lib, ...}: {
+{ lib, ... }:
+{
   imports = [
-    {wayland.windowManager.hyprland.settings = lib.importTOML ./settings.toml;}
+    { wayland.windowManager.hyprland.settings = lib.importTOML ./settings.toml; }
   ];
 
   # Enable hyprland.
