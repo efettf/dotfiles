@@ -1,0 +1,19 @@
+
+loadAutoconfig = true
+
+[searchEngines]
+DEFAULT = "https://search.inetol.net/search?q={}"
+gh = "https://github.com/search?q={}"
+in = "https://cal1.iv.ggtyler.dev/search?q={}"
+np = "https://search.nixos.org/packages?channel=24.05&query={}"
+od = "https://odysee.com/$/search?q={}"
+pi = "https://cal1.pi.ggtyler.dev/results?search_query={}"
+
+[keyBindings.normal]
+aa = "hint all yank"
+aj = "hint all hover"
+as = "hint all delete"
+xd = "config-cycle colors.webpage.darkmode.enabled true false"
+xt = "config-cycle tabs.position top right"
+xx = "config-cycle tabs.show multiple never"
+e = "tab-close"

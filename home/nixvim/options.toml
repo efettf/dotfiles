@@ -1,0 +1,25 @@
+
+[opts]
+autoread = true
+backup = false
+clipboard = "unnamedplus"
+expandtab = true
+foldlevel = 6
+formatoptions = "cr"
+guicursor = "a:hor20"
+ignorecase = true
+incsearch = true
+laststatus = 0
+linespace = 2
+magic = true
+number = true
+scrolloff = 8
+shiftwidth = 2
+smartcase = true
+smarttab = true
+swapfile = false
+tabstop = 2
+writebackup = false
+
+[globals]
+mapleader = " "

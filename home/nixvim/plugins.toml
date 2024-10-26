@@ -1,0 +1,37 @@
+
+oil.enable = true
+lsp.enable = true
+cmp.enable = true
+noice.enable = true
+comment.enable = true
+auto-save.enable = true
+telescope.enable = true
+conform-nvim.enable = true
+web-devicons.enable = true
+nvim-colorizer.enable = true
+nvim-autopairs.enable = true
+
+[lsp.servers]
+
+[telescope.keymaps]
+"<leader>f" = "find_files"
+"<leader>n" = "live_grep"
+
+[cmp.settings.experimental]
+ghost_text = true
+
+[cmp.settings.mapping]
+"<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' })"
+"<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' })"
+"<Tab>" = "cmp.mapping.confirm({ select = true })"
+
+[[cmp.settings.sources]]
+name = "lsp"
+
+[[cmp.settings.sources]]
+name = "path"
+keyword_lenght = 2
+
+[[cmp.settings.sources]]
+name = "buffer"
+keyword_lenght = 2

@@ -1,0 +1,9 @@
+
+[window.padding]
+x = 4
+y = 6
+
+[cursor]
+thickness = 0.35
+unfocused_hollow = false
+style.shape = "Underline"
