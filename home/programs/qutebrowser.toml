@@ -1,6 +1,8 @@
 
+# Loae config changed in the ui.
 loadAutoconfig = true
 
+# List of search engines prefixes. 'DEFAULT' is the default search engine.
 [searchEngines]
 DEFAULT = "https://search.inetol.net/search?q={}"
 gh = "https://github.com/search?q={}"
@@ -9,6 +11,7 @@ np = "https://search.nixos.org/packages?channel=24.05&query={}"
 od = "https://odysee.com/$/search?q={}"
 pi = "https://cal1.pi.ggtyler.dev/results?search_query={}"
 
+# Keybinds in normal mode.
 [keyBindings.normal]
 aa = "hint all yank"
 aj = "hint all hover"
