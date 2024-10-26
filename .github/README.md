@@ -23,6 +23,9 @@ $ cd dotfiles
 $ nixos-rebuild switch --use-remote-sudo --flake .
 ```
 
+<!-- I'm not sure if I should still include it here,
+as I only use this repo anyway and I could just
+make an resources table instead? -->
 <details><summary>💡 Tips</summary>
 
 ###
