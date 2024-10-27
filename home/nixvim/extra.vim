@@ -11,8 +11,12 @@ nno <m-h> <c-w>h
 nno <m-j> <c-w>j
 nno <m-k> <c-w>k
 nno <m-l> <c-w>l
+nno <m-d>h <c-w><
+nno <m-d>j <c-w>+
+nno <m-d>k <c-w>-
+nno <m-d>l <c-w>>
 nno <m-d>z <c-w>q
-nno <m-d>Z <c-w>q
+nno <m-d>Z <c-w>q  
 
 " Move up a file with ctrl + l.
 nno <c-l> gf
