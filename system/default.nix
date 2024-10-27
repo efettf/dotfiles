@@ -20,6 +20,7 @@
     eza
     fzf
     pass
+    swww
     direnv
     zoxide
     ripgrep
