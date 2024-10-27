@@ -23,7 +23,13 @@ nno E D
 nno D E
 nno <c-e> <c-d>
 
+" Change neovide text size with keys.
 nno <c--> <cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<cr>
 nno <c-=> <cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<cr>
+
+" Tmux like borders.
+hi! link StatusLine Normal
+hi! link StatusLineNC Normal
+set statusline=%{repeat('─',winwidth('.'))}
 
 
