@@ -29,7 +29,7 @@ $ nixos-rebuild switch --use-remote-sudo --flake .#nixos
 <!-- List of high level features you might want to see at quick glance. -->
 ### 🎉 Features
 
-- **Minimal configuration**: everything is easy to understand and manage, doesn't use any special shorthand and frameworks to keep it simple.
+- **Modular configuration**: everything is easy to understand and manage, uses toml for basic configuration files so its easy to see what is happening at a quick glance.
 - **Excellent documentation**: most of options are explained right there in the configuration in comments, so you don't have to look everything up.
 - **Fully open source**: all programs by default are open source and free of charge, please see [list below](https://github.com/efettf/dotfiles#-programs-included) to view full list of them with links.
 
