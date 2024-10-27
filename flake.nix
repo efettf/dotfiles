@@ -2,7 +2,7 @@
   inputs = {
 
     # 'pkgs' source, you can change system version here.
-    pkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs";
 
     # Manage style of your desktop to be uniform.
     stylix.url = "github:danth/stylix/release-24.05";
@@ -18,13 +18,13 @@
 
     # Make sure to specify all follows here,
     # to make sure flake won't have to download 2 nixpkgs.
-    nixvim.inputs.nixpkgs.follows = "pkgs";
-    home-manager.inputs.nixpkgs.follows = "pkgs";
+    nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
   };
 
   outputs = inputs: {
-    nixosConfigurations.nixos = inputs.pkgs.lib.nixosSystem {
+    nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
       modules = [
 
         # Nixos specific configurations go here.
