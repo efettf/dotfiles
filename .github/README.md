@@ -15,6 +15,9 @@ it's not the best way to do it I'm sure. -->
 Public repository with my nixos dotfiles, they are not designed to be riced in any way. This repo also houses useful links and utilities that I want to have in one place.
 </p>
 
+<!-- Create a line seperating stuff on github. -->
+##
+
 ### 💨 Installation
 
 ```bash
