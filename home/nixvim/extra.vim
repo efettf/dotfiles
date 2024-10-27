@@ -5,8 +5,14 @@ nno Q @
 nno q: :q
 nno Z ZZ
 
-" Tmux like binds.
+" Tmux like pane binds.
 nno <m-d> <c-w>
+nno <m-h> <c-w>h
+nno <m-j> <c-w>j
+nno <m-k> <c-w>k
+nno <m-l> <c-w>l
+nno <m-d>z <c-w>q
+nno <m-d>Z <c-w>q
 
 " Move up a file with ctrl + l.
 nno <c-l> gf
