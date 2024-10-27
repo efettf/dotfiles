@@ -20,6 +20,10 @@ Public repository with my nixos dotfiles, they are not designed to be riced in a
 
 ### 💨 Installation
 
+> [!NOTE]
+> Make sure you check out the config before installing it,
+> as it may add changes that you don't want.
+
 ```bash
 $ git clone https://github.com/efettf/dotfiles.git
 $ cd dotfiles
