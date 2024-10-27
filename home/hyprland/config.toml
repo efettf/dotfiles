@@ -12,6 +12,7 @@ bind = [
   "SUPER CTRL, J, movewindow, d",
   "SUPER CTRL, K, movewindow, u",
   "SUPER CTRL, L, movewindow, r",
+  "SUPER, O, togglesplit",
   "SUPER SHIFT, 1, movetoworkspacesilent, 1",
   "SUPER SHIFT, 2, movetoworkspacesilent, 2",
   "SUPER SHIFT, 3, movetoworkspacesilent, 3",
@@ -44,13 +45,20 @@ binde = [
   "SUPER SHIFT, L, resizeactive,  3%  0%",
 ]
 
-# Disable animations.
-animations.enabled = false
+animation = [
+  "workspaces, 1, 8, default, slidefadevert 80%",
+  "windows, 1, 8, default, slide 80%",
+]
+
+# Animations settings.
+[animations]
+enabled = true
 
 # Decoration settings.
 [decoration]
 blur.enabled = false
 drop_shadow = false
+rounding = 8
 
 # Cursor settings.
 [cursor]
@@ -58,12 +66,10 @@ hide_on_key_press = true
 
 # General settings.
 [general]
-"col.active_border" = "rgb(45475a)"
-"col.inactive_border" = "rgb(1e1e2e)"
-layout = "master"
+layout = "dwindle"
 gaps_in = 8
 gaps_out = 12
-border_size = 0
+border_size = 4
 
 # Master layout settings.
 [master]

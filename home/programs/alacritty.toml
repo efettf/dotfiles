@@ -1,8 +1,8 @@
 
 # Window padding on borders.
 [window.padding]
-x = 4 # left - right
-y = 6 # down - up
+x = 8 # left - right
+y = 10 # down - up
 
 # Cursor settings.
 [cursor]
