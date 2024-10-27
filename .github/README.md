@@ -23,34 +23,7 @@ $ cd dotfiles
 $ nixos-rebuild switch --use-remote-sudo --flake .
 ```
 
-<!-- I'm not sure if I should still include it here,
-as I only use this repo anyway and I could just
-make an resources table instead? -->
-<details><summary>💡 Tips</summary>
-
 ###
-
-<details open><summary>🧪 Flake host expansion</summary>
-
-###
-
-You can use this command if _nixos_ **isn't** your host name:
-```bash
-$ nixos-rebuild switch --flake .#hostname
-```
-As _._ expands to _.#nixos_.
-
-</details><details open><summary>🫧 Run rebuild as user</summary>
-
-###
-
-If you want to rebuild system without sudo you can run:
-```bash
-$ nixos-rebuild switch --use-remote-sudo
-```
-It will use sudo only if it needs to, so it won't run everything as root.
-
-</details></details>
 
 ### 🎉 Features
 <!-- List of high level features you might want to see at quick glance. -->
@@ -87,6 +60,32 @@ you can pull links from "search.nixos.org". -->
 - [alacritty](https://github.com/alacritty/alacritty)
 - [hyprland](https://github.com/hyprwm/Hyprland)
 - [qutebrowser](https://github.com/qutebrowser/qutebrowser)
+
+</details>
+
+### 💡 Tips
+
+<details><summary>🧪 Flake host expansion</summary>
+
+###
+
+You can use this command if _nixos_ **isn't** your host name:
+```bash
+$ nixos-rebuild switch --flake .#hostname
+```
+As _._ expands to _.#nixos_.
+
+</details>
+
+<details><summary>🫧 Run rebuild as user</summary>
+
+###
+
+If you want to rebuild system without sudo you can run:
+```bash
+$ nixos-rebuild switch --use-remote-sudo
+```
+It will use sudo only if it needs to, so it won't run everything as root.
 
 </details>
 
