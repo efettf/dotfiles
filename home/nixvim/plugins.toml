@@ -2,7 +2,6 @@
 lsp.enable = true
 cmp.enable = true
 noice.enable = true
-lualine.enable = true
 comment.enable = true
 auto-save.enable = true
 telescope.enable = true
@@ -10,10 +9,6 @@ conform-nvim.enable = true
 web-devicons.enable = true
 nvim-colorizer.enable = true
 nvim-autopairs.enable = true
-
-[lualine.settings.options]
-component_separators = '|'
-section_separators = { left = '', right = '' }
 
 [lsp.servers]
 nixd.enable = true

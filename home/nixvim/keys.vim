@@ -6,12 +6,12 @@ nno q: :q
 nno Z ZZ
 
 " Tmux like binds.
-nno <m-w> <c-w>
+nno <m-d> <c-w>
 
 " Move up a file with ctrl + l.
-nno <C-l> gf
-nno <C-j> <C-o>
-nno <C-k> <C-i>
+nno <c-l> gf
+nno <c-j> <c-o>
+nno <c-k> <c-i>
 
 " 'd & 'e' key swaps.
 nno e d
