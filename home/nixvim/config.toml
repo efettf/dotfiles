@@ -23,6 +23,7 @@ writebackup = false
 
 [globals]
 mapleader = " "
+neovide_transparency = 0.95
 neovide_padding_bottom = 10
 neovide_padding_right = 7
 neovide_padding_left = 1
