@@ -3,6 +3,7 @@
 bind = [
   "SUPER, Q, exit",
   "SUPER, C, killactive",
+  "SUPER, R, exec, neovide",
   "SUPER, F, exec, alacritty",
   "SUPER, T, exec, qutebrowser",
   ", F2, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 3%-",
