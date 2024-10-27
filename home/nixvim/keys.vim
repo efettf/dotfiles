@@ -10,6 +10,8 @@ nno <m-w> <c-w>
 
 " Move up a file with ctrl + l.
 nno <C-l> gf
+nno <C-j> <C-o>
+nno <C-h> <C-i>
 
 " 'd & 'e' key swaps.
 nno e d
