@@ -51,7 +51,6 @@ you can pull links from "search.nixos.org". -->
 - [undollar](https://github.com/xtyrrell/undollar)
 - [tealdeer](https://github.com/dbrgn/tealdeer)
 - [tmuxifier](https://github.com/jimeh/tmuxifier)
-- [pre-commit](https://pre-commit.com/)
 
 </details>
 

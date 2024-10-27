@@ -28,7 +28,6 @@
     tmuxifier
     alejandra
     oh-my-posh
-    pre-commit
     gitmoji-cli
     wl-clipboard
     pinentry-curses
