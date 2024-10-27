@@ -35,31 +35,31 @@ $ nixos-rebuild switch --use-remote-sudo --flake .#nixos
 
 <!-- Programs in the dependency list, don't list technical stuff,
 you can pull links from "search.nixos.org". -->
-### 🎸 Programs included
+### 🎸 Programs Included
 
-<details open><summary>🔧 Developer Tools</summary>
+<details open><summary>🔧 Developer tools</summary>
 
 - [git](https://git-scm.com/)
 - [fzf](https://github.com/junegunn/fzf)
-- [eza](https://github.com/eza-community/eza)
 - [tmux](https://tmux.github.io/)
 - [direnv](https://direnv.net)
-- [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [undollar](https://github.com/xtyrrell/undollar)
+- [tealdeer](https://github.com/dbrgn/tealdeer)
 - [tmuxifier](https://github.com/jimeh/tmuxifier)
-- [oh-my-posh](https://ohmyposh.dev)
 
 </details>
 
 <details open><summary>🌴 General</summary>
 
+- [eza](https://github.com/eza-community/eza)
 - [pass](https://www.passwordstore.org/)
 - [nixvim](https://github.com/nix-community/nixvim)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [kanata](https://github.com/jtroo/kanata)
-- [tealdeer](https://github.com/dbrgn/tealdeer)
-- [undollar](https://github.com/xtyrrell/undollar)
 - [alacritty](https://github.com/alacritty/alacritty)
 - [hyprland](https://github.com/hyprwm/Hyprland)
+- [oh-my-posh](https://ohmyposh.dev)
 - [qutebrowser](https://github.com/qutebrowser/qutebrowser)
 
 </details>
