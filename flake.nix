@@ -1,6 +1,5 @@
 {
   inputs = {
-
     # 'pkgs' source, you can change system version here.
     nixpkgs.url = "github:nixos/nixpkgs";
 
@@ -20,13 +19,11 @@
     # to make sure flake won't have to download 2 nixpkgs.
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-
   };
 
   outputs = inputs: {
     nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
       modules = [
-
         # Nixos specific configurations go here.
         ./system
 
@@ -42,16 +39,16 @@
         # Enable comma - run software without installing it.
         {programs.nix-index-database.comma.enable = true;}
 
-        {home-manager.users.lynx.imports = [
+        {
+          home-manager.users.lynx.imports = [
+            # Home manager specific configurations go here.
+            ./home
 
-          # Home manager specific configurations go here.
-          ./home
-
-          # Home manager module imports go here.
-          inputs.stylix.homeManagerModules.stylix
-          inputs.nixvim.homeManagerModules.nixvim
-
-        ];}
+            # Home manager module imports go here.
+            inputs.stylix.homeManagerModules.stylix
+            inputs.nixvim.homeManagerModules.nixvim
+          ];
+        }
       ];
     };
   };
