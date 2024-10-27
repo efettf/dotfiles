@@ -21,5 +21,9 @@ nno ee dd
 nno ed de
 nno E D
 nno D E
-nno <C-e> <C-d>
+nno <c-e> <c-d>
+
+nno <c--> <cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<cr>
+nno <c-=> <cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<cr>
+
 
