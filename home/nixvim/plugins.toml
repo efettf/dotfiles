@@ -4,6 +4,7 @@ cmp.enable = true
 noice.enable = true
 comment.enable = true
 auto-save.enable = true
+which-key.enable = true
 telescope.enable = true
 conform-nvim.enable = true
 web-devicons.enable = true
