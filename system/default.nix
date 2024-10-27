@@ -26,6 +26,7 @@
     undollar
     tealdeer
     tmuxifier
+    alejandra
     oh-my-posh
     pre-commit
     gitmoji-cli
