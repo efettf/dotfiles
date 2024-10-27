@@ -18,12 +18,10 @@ Public repository with my nixos dotfiles, they are not designed to be riced in a
 ### 💨 Installation
 
 ```bash
-$ git clone git@github.com:efettf/dotfiles.git
+$ git clone https://github.com/efettf/dotfiles.git
 $ cd dotfiles
-$ nixos-rebuild switch --use-remote-sudo --flake .
+$ nixos-rebuild switch --use-remote-sudo --flake .#nixos
 ```
-
-###
 
 ### 🎉 Features
 <!-- List of high level features you might want to see at quick glance. -->
@@ -69,11 +67,11 @@ you can pull links from "search.nixos.org". -->
 
 ###
 
-You can use this command if _nixos_ **isn't** your host name:
+You can use this command if _nixos_ **is** your host name:
 ```bash
-$ nixos-rebuild switch --flake .#hostname
+$ nixos-rebuild switch --flake .
 ```
-As _._ expands to _.#nixos_.
+As _._ expands to _.#hostname.
 
 </details>
 
