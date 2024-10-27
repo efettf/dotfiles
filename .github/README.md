@@ -27,7 +27,7 @@ Public repository with my nixos dotfiles, they are not designed to be riced in a
 ```bash
 $ git clone https://github.com/efettf/dotfiles.git
 $ cd dotfiles
-$ nixos-rebuild switch --use-remote-sudo --flake .#nixos
+$ nixos-rebuild switch --use-remote-sudo --flake ".#nixos"
 ```
 
 <!-- List of high level features you might want to see at quick glance. -->
@@ -78,7 +78,7 @@ You can use this command if _nixos_ **is** your host name:
 ```bash
 $ nixos-rebuild switch --flake .
 ```
-As _._ expands to _.#hostname.
+As . expands to _.#hostname.
 
 </details>
 
