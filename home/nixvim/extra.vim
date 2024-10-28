@@ -1,11 +1,15 @@
 
 " Quality of life.
-nno go :norm<space>
 nno Q @
 nno q: :q
 nno Z ZZ
+nno U <c-r>
 
+" Telescope show hidden files command.
 nno <leader><s-f> <cmd>lua require"telescope.builtin".find_files({hidden = true})<cr>
+
+" Quickly run normal commands in visual mode.
+vno go :norm<space>
 
 " Tmux like pane binds.
 nno <m-d> <c-w>
