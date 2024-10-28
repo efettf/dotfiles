@@ -9,7 +9,7 @@
     };
 
     opacity = {
-      terminal = 0.95;
+      terminal = 0.85;
     };
 
     fonts = {

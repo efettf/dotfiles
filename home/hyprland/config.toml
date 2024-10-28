@@ -56,7 +56,6 @@ enabled = true
 
 # Decoration settings.
 [decoration]
-blur.enabled = false
 drop_shadow = false
 rounding = 8
 
