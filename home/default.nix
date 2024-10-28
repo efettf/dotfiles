@@ -1,4 +1,4 @@
-{lib, ...}: {
+{lib, pkgs, ...}: {
   # Make home manager manage itself.
   programs.home-manager.enable = true;
 
@@ -25,6 +25,26 @@
   home = {
     username = "lynx";
     homeDirectory = "/home/lynx";
+
+    # Packages for home manager user.
+    packages = with pkgs; [
+      git
+      eza
+      fzf
+      pass
+      swww
+      direnv
+      zoxide
+      ripgrep
+      undollar
+      tealdeer
+      tmuxifier
+      alejandra
+      oh-my-posh
+      gitmoji-cli
+      wl-clipboard
+      pinentry-curses
+    ];
 
     # Home manager backup version, to update system see 'flake.nix' instead.
     stateVersion = "24.05";
