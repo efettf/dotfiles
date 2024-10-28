@@ -27,6 +27,7 @@ Public repository with my nixos dotfiles, they are not designed to be riced in a
 ```bash
 $ git clone https://github.com/efettf/dotfiles.git
 $ cd dotfiles
+$ nixos-generate-config --show-hardware-config > hardware.nix
 $ nixos-rebuild switch --use-remote-sudo --flake ".#nixos"
 ```
 
