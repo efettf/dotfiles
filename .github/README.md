@@ -59,6 +59,7 @@ you can pull links from "search.nixos.org". -->
 
 - [eza](https://github.com/eza-community/eza)
 - [pass](https://www.passwordstore.org/)
+- [swww](https://github.com/LGFae/swww)
 - [nixvim](https://github.com/nix-community/nixvim)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [kanata](https://github.com/jtroo/kanata)
