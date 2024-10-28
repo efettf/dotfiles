@@ -43,7 +43,6 @@
       oh-my-posh
       gitmoji-cli
       wl-clipboard
-      pinentry-curses
     ];
 
     # Home manager backup version, to update system see 'flake.nix' instead.
