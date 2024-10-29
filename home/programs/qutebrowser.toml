@@ -4,7 +4,7 @@ loadAutoconfig = true
 
 # List of search engines prefixes. 'DEFAULT' is the default search engine.
 [searchEngines]
-DEFAULT = "https://search.inetol.net/search?q={}"
+DEFAULT = "https://search.hbubli.cc/search?q={}"
 gh = "https://github.com/search?q={}"
 in = "https://cal1.iv.ggtyler.dev/search?q={}"
 np = "https://search.nixos.org/packages?channel=24.05&query={}"
