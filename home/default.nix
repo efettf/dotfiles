@@ -39,7 +39,6 @@
       ripgrep
       undollar
       tealdeer
-      tmuxifier
       alejandra
       oh-my-posh
       gitmoji-cli
