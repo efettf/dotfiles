@@ -51,7 +51,6 @@ you can pull links from "search.nixos.org". -->
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [undollar](https://github.com/xtyrrell/undollar)
 - [tealdeer](https://github.com/dbrgn/tealdeer)
-- [tmuxifier](https://github.com/jimeh/tmuxifier)
 
 </details>
 
