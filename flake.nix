@@ -21,16 +21,14 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs: {
-    nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
+  outputs = inputs: let
+    mkSystem = host: inputs.nixpkgs.lib.nixosSystem {
       modules = [
         # Nixos specific configurations go here.
         ./system
 
-        # Import hardware scan result, you can generate it by running:
-        # 'nixos-generate-config --show-hardware-config > hardware.nix',
-        # while being in the configuration directory.
-        ./hardware.nix
+        # Import hardware scan result for host.
+        ./hosts/${host}/hardware.nix
 
         # Nixos module imports go here.
         inputs.home-manager.nixosModules.home-manager
@@ -51,5 +49,7 @@
         }
       ];
     };
+  in {
+    nixosConfigurations.nixos = mkSystem "nixos";
   };
 }
