@@ -1,4 +1,8 @@
-{lib, pkgs, ...}: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   # Make home manager manage itself.
   programs.home-manager.enable = true;
 

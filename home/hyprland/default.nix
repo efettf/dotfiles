@@ -1,4 +1,8 @@
-{lib, config, ...}: {
+{
+  lib,
+  config,
+  ...
+}: {
   imports = [
     {wayland.windowManager.hyprland.settings = lib.importTOML ./config.toml;}
   ];
