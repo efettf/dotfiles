@@ -10,10 +10,6 @@
       name = "Bibata-Modern-Classic";
     };
 
-    opacity = {
-      terminal = 0.85;
-    };
-
     fonts = {
       sizes = {
         applications = 10;

@@ -21,9 +21,6 @@ swapfile = false
 tabstop = 2
 writebackup = false
 
-[highlight]
-normal.guibg = "none"
-
 [globals]
 mapleader = " "
 neovide_transparency = 0.85
