@@ -35,7 +35,7 @@ $ nixos-rebuild switch --use-remote-sudo --flake ".#nixos"
 ### 🎉 Features
 
 - **Modular configuration**: everything is easy to understand and manage, uses toml for basic configuration files so its easy to see what is happening at a quick glance.
-- **Excellent documentation**: most of options are explained right there in the configuration in comments, so you don't have to look everything up.
+- **Excellent documentation**: most of advanced options are explained right there in the configuration in comments, so you don't have to look everything up.
 - **Fully open source**: all programs by default are open source and free of charge, please see [list below](#-programs-included) to view full list of them with links.
 
 <!-- Programs in the dependency list, don't list technical stuff,
