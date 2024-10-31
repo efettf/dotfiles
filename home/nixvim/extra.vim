@@ -1,5 +1,6 @@
 
 " Quality of life.
+nno ; :
 nno Q @
 nno q: :q
 nno Z ZZ
@@ -37,6 +38,8 @@ nno ee dd
 nno ed de
 nno E D
 nno D E
+vno E D
+vno D E
 nno <c-e> <c-d>
 
 " Change neovide text size with keys.
