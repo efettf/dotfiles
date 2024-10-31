@@ -6,8 +6,9 @@ nno q: :q
 nno Z ZZ
 nno U <c-r>
 
-" Telescope show hidden files command.
-nno <leader><s-f> <cmd>lua require"telescope.builtin".find_files({hidden = true})<cr>
+" Plugis specific binds.
+nno <leader>F <cmd>lua require"telescope.builtin".find_files({hidden = true})<cr>
+nno <leader>o <cmd>MarkdownPreviewToggle<cr>
 
 " Quickly run normal commands in visual mode.
 vno go :norm<space>

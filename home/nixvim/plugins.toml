@@ -10,6 +10,7 @@ conform-nvim.enable = true
 web-devicons.enable = true
 nvim-colorizer.enable = true
 nvim-autopairs.enable = true
+markdown-preview.enable = true
 
 [lsp.servers]
 nixd.enable = true
