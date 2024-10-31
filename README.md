@@ -95,6 +95,24 @@ It will use sudo only if it needs to, so it won't run everything as root.
 
 </details>
 
+### 🧼 Custom Modules
+
+To import custom modules such as stylix please go to _../flake.nix_.
+Here's a snippet of a custom module implementation:
+
+```patch
+--- a/flake.nix
++++ b/flake.nix
+@@ -44,6 +44,7 @@
+
+             # Home manager module imports go here.
+             inputs.stylix.homeManagerModules.stylix
++            inputs.custom.homeManagerModules.custom
+             inputs.nixvim.homeManagerModules.nixvim
+           ];
+         }
+```
+
 <!-- Catppuccin banner at the bottom for the looks, 
 make sure to remove it when changing theme as well as the colors in banners above. -->
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/c9d3d7de6ab8cb2609b37c4b79b026a2c7784b6f/assets/footers/gray0_ctp_on_line.svg?sanitize=true"/>
