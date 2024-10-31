@@ -62,7 +62,6 @@ you can pull links from "search.nixos.org". -->
 - [nixvim](https://github.com/nix-community/nixvim)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [kanata](https://github.com/jtroo/kanata)
-- [neovide](https://github.com/neovide/neovide)
 - [alacritty](https://github.com/alacritty/alacritty)
 - [hyprland](https://github.com/hyprwm/Hyprland)
 - [oh-my-posh](https://ohmyposh.dev)
