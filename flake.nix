@@ -28,7 +28,7 @@
         ./system
 
         # Import hardware scan result for host.
-        ./hosts/${host}/hardware.nix
+        ./hosts/${host}.nix
 
         # Nixos module imports go here.
         inputs.home-manager.nixosModules.home-manager
