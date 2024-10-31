@@ -25,6 +25,8 @@
     qutebrowser.enable = true;
   };
 
+  xdg.configFile."ohmyposh/config.toml".source = ./programs/oh-my-posh.toml;
+
   home = {
     username = "lynx";
     homeDirectory = "/home/lynx";

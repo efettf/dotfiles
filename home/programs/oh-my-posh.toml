@@ -1,0 +1,53 @@
+
+version = 2
+final_space = true
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+newline = true
+
+[[blocks.segments]]
+type = 'path'
+style = 'plain'
+background = 'transparent'
+foreground = 'green'
+template = '{{.Path}}'
+
+[blocks.segments.properties]
+style = 'folder'
+
+[[blocks.segments]]
+type = 'text'
+style = 'plain'
+background = 'transparent'
+foreground = 'blue'
+template = ' ❯'
+
+[transient_prompt]
+background = 'transparent'
+foreground_templates = [
+  "{{if eq .Code 0}}blue{{end}}",
+  "{{if qt .Code 0}}red{{end}}",
+]
+template = '❯ '
+
+[secondary_prompt]
+foreground = 'blue'
+background = 'transparent'
+template = '❯ '
+
+[[blocks]]
+type = 'rprompt'
+alignment = 'left'
+
+[[blocks.segments]]
+type = 'executiontime'
+style = 'plain'
+background = 'transparent'
+foreground = 'yellow'
+template = '{{ .FormattedMs }} '
+
+[blocks.segments.properties]
+threshold = 2500
+style = "round"
