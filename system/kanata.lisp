@@ -4,19 +4,28 @@
   tab 
   caps
   ralt
+  f
   h j k l 
   n g
   e d
 )
 
+(defalias
+  tab-hm (tap-hold 75 150 tab (layer-while-held nav))
+  esc-hm (tap-hold 75 150 esc lctl) 
+  alt-os (one-shot 3000 lmet)
+  f-hm (tap-hold 75 150 f (layer-while-held nav))
+)
+
 (deflayer base
-  caps ;; Escape to caps lock.
-  (tap-hold 75 150 tab (layer-while-held nav)) ;; Navigation layer while holding tab.
-  (tap-hold 75 150 esc lctl) ;; Ctrl while holding caps lock, otherwise esc.
-  (one-shot 3000 lmet) ;; One shot meta key.
+  caps 
+  @tab-hm
+  @esc-hm
+  @alt-os
+  @f-hm
   _ _ _ _ 
-  g n ;; Swap 'n' and 'g'.
-  d e ;; Swap 'e' and 'd'.
+  g n
+  d e
 )
 
 (deflayer nav
@@ -24,7 +33,8 @@
   _
   _
   _
-  left down up right ;; Vim like keys everywhere.
+  _
+  left down up right
   _ _
   _ _
 )
