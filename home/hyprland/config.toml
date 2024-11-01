@@ -82,9 +82,8 @@ orientation = "right"
 pseudotile = true
 smart_split = true
 
-# Input settings.
 [input]
-repeat_delay = 175
+repeat_delay = 300
 repeat_rate = 50
 
 # Misc settings.
