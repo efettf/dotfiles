@@ -5,6 +5,7 @@ nno Q @
 nno q: :q
 nno Z ZZ
 nno U <c-r>
+nno <c-r> U 
 
 " Plugis specific binds.
 nno <leader>F <cmd>lua require"telescope.builtin".find_files({hidden = true})<cr>
