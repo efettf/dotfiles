@@ -15,6 +15,7 @@
   esc-hm (tap-hold 75 150 esc lctl) 
   alt-os (one-shot 3000 lmet)
   f-hm (tap-hold 75 150 f (layer-while-held nav))
+  e-hm (tap-hold 75 150 e lsft)
 )
 
 (deflayer base
@@ -25,7 +26,7 @@
   @f-hm
   _ _ _ _ 
   g n
-  d e
+  d @e-hm
 )
 
 (deflayer nav
