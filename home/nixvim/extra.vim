@@ -11,6 +11,10 @@ nno <leader>F <cmd>lua require"telescope.builtin".find_files({hidden = true})<cr
 nno <leader>o <cmd>MarkdownPreviewToggle<cr>
 nno <leader>s <cmd>Neogit cwd=%:p:h<cr>
 
+" Change neovide text size with keys.
+nno <c--> <cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<cr>
+nno <c-=> <cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<cr>
+
 " Quickly run normal commands in visual mode.
 vno go :norm<space>
 
