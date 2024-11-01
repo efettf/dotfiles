@@ -11,6 +11,7 @@
     ./nixvim
     ./hyprland
     ./stylix.nix
+    {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
     {programs.qutebrowser = lib.importTOML ./programs/qutebrowser.toml;}
     {programs.tmux.extraConfig = builtins.readFile ./programs/tmux.conf;}
     {programs.hyprlock.settings = lib.importTOML ./programs/hyprlock.toml;}

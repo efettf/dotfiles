@@ -1,0 +1,11 @@
+
+enable = true
+
+latitude = 52
+longitude = 20
+
+[temperature]
+
+day = 6000
+night = 3500
+
