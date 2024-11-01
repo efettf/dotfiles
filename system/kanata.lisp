@@ -16,6 +16,7 @@
   alt-os (one-shot 3000 lmet)
   f-hm (tap-hold 75 150 f (layer-while-held nav))
   e-hm (tap-hold 75 150 e lsft)
+  j-hm (tap-hold 75 150 j lsft)
 )
 
 (deflayer base
@@ -24,7 +25,7 @@
   @esc-hm
   @alt-os
   @f-hm
-  _ _ _ _ 
+  _ @j-hm _ _ 
   g n
   d @e-hm
 )
