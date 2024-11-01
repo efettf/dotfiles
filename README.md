@@ -38,37 +38,6 @@ $ nixos-rebuild switch --use-remote-sudo --flake ".#nixos"
 - **Excellent documentation**: most of advanced options are explained right there in the configuration in comments, so you don't have to look everything up.
 - **Fully open source**: all programs by default are open source and free of charge, please see [list below](#-programs-included) to view full list of them with links.
 
-<!-- Programs in the dependency list, don't list technical stuff,
-you can pull links from "search.nixos.org". -->
-### 🎸 Programs Included
-
-<details open><summary>🔧 Developer tools</summary>
-
-- [git](https://git-scm.com/)
-- [fzf](https://github.com/junegunn/fzf)
-- [tmux](https://tmux.github.io/)
-- [direnv](https://direnv.net)
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
-- [undollar](https://github.com/xtyrrell/undollar)
-- [tealdeer](https://github.com/dbrgn/tealdeer)
-
-</details>
-
-<details open><summary>🌴 General</summary>
-
-- [eza](https://github.com/eza-community/eza)
-- [pass](https://www.passwordstore.org/)
-- [swww](https://github.com/LGFae/swww)
-- [nixvim](https://github.com/nix-community/nixvim)
-- [zoxide](https://github.com/ajeetdsouza/zoxide)
-- [kanata](https://github.com/jtroo/kanata)
-- [alacritty](https://github.com/alacritty/alacritty)
-- [hyprland](https://github.com/hyprwm/Hyprland)
-- [oh-my-posh](https://ohmyposh.dev)
-- [qutebrowser](https://github.com/qutebrowser/qutebrowser)
-
-</details>
-
 ### 💡 Tips
 
 <details><summary>🧪 Flake host expansion</summary>
