@@ -9,6 +9,7 @@ nno U <c-r>
 " Plugis specific binds.
 nno <leader>F <cmd>lua require"telescope.builtin".find_files({hidden = true})<cr>
 nno <leader>o <cmd>MarkdownPreviewToggle<cr>
+nno <leader>c <cmd>Neogit<cr>
 
 " Quickly run normal commands in visual mode.
 vno go :norm<space>

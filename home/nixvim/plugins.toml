@@ -2,6 +2,7 @@
 lsp.enable = true
 cmp.enable = true
 noice.enable = true
+neogit.enable = true
 comment.enable = true
 auto-save.enable = true
 which-key.enable = true
