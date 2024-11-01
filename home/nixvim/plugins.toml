@@ -22,6 +22,9 @@ statix.enable = true
 dotfiles = true
 custom = [ "^.git", "*.lock" ]
 
+[nvim-tree.view]
+side = "right"
+
 [telescope.keymaps]
 "<leader>f" = "find_files"
 "<leader>n" = "live_grep"
