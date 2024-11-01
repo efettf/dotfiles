@@ -7,6 +7,7 @@ comment.enable = true
 auto-save.enable = true
 which-key.enable = true
 telescope.enable = true
+nvim-tree.enable = true
 conform-nvim.enable = true
 web-devicons.enable = true
 nvim-colorizer.enable = true
@@ -16,6 +17,10 @@ markdown-preview.enable = true
 [lsp.servers]
 nixd.enable = true
 statix.enable = true
+
+[nvim-tree.filters]
+dotfiles = true
+custom = [ "^.git", "*.lock" ]
 
 [telescope.keymaps]
 "<leader>f" = "find_files"
