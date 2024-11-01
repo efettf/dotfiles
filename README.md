@@ -95,11 +95,12 @@ It will use sudo only if it needs to, so it won't run everything as root.
 
 </details>
 
-### 🧼 Custom Modules
+<details><summary>🧼 Custom modules</summary>
+
+###
 
 To import custom modules such as stylix please go to _../flake.nix_.
 Here's a snippet of a custom module implementation:
-
 ```patch
 --- a/flake.nix
 +++ b/flake.nix
@@ -112,6 +113,8 @@ Here's a snippet of a custom module implementation:
            ];
          }
 ```
+
+</details>
 
 <!-- Catppuccin banner at the bottom for the looks, 
 make sure to remove it when changing theme as well as the colors in banners above. -->
