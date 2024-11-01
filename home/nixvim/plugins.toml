@@ -42,12 +42,12 @@ name = "lsp"
 
 [[cmp.settings.sources]]
 name = "path"
-keyword_lenght = 2
+keyword_length = 2
 
 [[cmp.settings.sources]]
 name = "emoji"
-keyword_lenght = 2
+keyword_length = 2
 
 [[cmp.settings.sources]]
 name = "buffer"
-keyword_lenght = 2
+keyword_length = 2
