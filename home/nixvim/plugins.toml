@@ -29,8 +29,8 @@ side = "right"
 "<leader>f" = "find_files"
 "<leader>n" = "live_grep"
 
-[cmp.settings.experimental]
-ghost_text = true
+[cmp.settings]
+experimental.ghost_text = true
 
 [cmp.settings.mapping]
 "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' })"
@@ -45,9 +45,6 @@ name = "path"
 keyword_length = 2
 
 [[cmp.settings.sources]]
-name = "emoji"
-keyword_length = 2
-
-[[cmp.settings.sources]]
 name = "buffer"
 keyword_length = 2
+
