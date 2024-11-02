@@ -42,7 +42,7 @@ name = "path"
 keyword_length = 2
 
 [conform-nvim.settings.formatters_by_ft]
-nix = "alejandra"
+nix = [ "alejandra" ]
 
 [lsp]
 enable = true
