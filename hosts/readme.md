@@ -10,14 +10,13 @@ To add new host source in flake,
 please add this snippet to it with your host names assigned.
 
 ```patch
---- a/flake.nix
-+++ b/flake.nix
-@@ -51,5 +51,6 @@
-     };
-   in {
-     nixosConfigurations.nixos = mkSystem "nixos";
-+    nixosConfigurations.host1 = mkSystem "host2";
+--- a/default.nix
++++ b/default.nix
+@@ -29,4 +29,5 @@
    };
+ in {
+   nixos = mkSystem "nixos";
++  host1 = mkSystem "host2";
  }
 ```
 
