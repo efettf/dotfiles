@@ -3,21 +3,27 @@
   pkgs,
   ...
 }: let
-  cmp-emoji = pkgs.vimUtils.buildVimPlugin {
-    pname = "cmp-emoji";
-    version = "1.0";
-    src = pkgs.fetchgit {
-      url = "https://github.com/efettf/cmp-emoji.nvim";
-      hash = "sha256-AESd8x6IdlVeGMIzjbbfG0aYHvIaQTGkxa2Xh8lhC5Y=";
+  mkPlugin = {
+    user ? "efettf",
+    repo,
+    hash,
+  }:
+    pkgs.vimUtils.buildVimPlugin {
+      pname = repo;
+      version = "1.0";
+      src = pkgs.fetchgit {
+        url = "https://github.com/${user}/${repo}";
+        inherit hash;
+      };
     };
+  cmp-emoji = mkPlugin {
+    repo = "cmp-emoji.nvim";
+    hash = "sha256-YOgwJ4oEbTsw6/73Ex9XfcaQeKaGJ9fJdv367IOXa1Q=";
   };
-  recorder = pkgs.vimUtils.buildVimPlugin {
-    pname = "recorder";
-    version = "1.0";
-    src = pkgs.fetchgit {
-      url = "https://github.com/chrisgrieser/nvim-recorder";
-      hash = "sha256-7Uzd1SHuMjdVmqvjnktdW5jiIvdgP7L3AIIFFOFDngA=";
-    };
+  recorder = mkPlugin {
+    user = "chrisgrieser";
+    repo = "nvim-recorder";
+    hash = "sha256-7Uzd1SHuMjdVmqvjnktdW5jiIvdgP7L3AIIFFOFDngA=";
   };
 in {
   imports = [
