@@ -6,6 +6,8 @@
         # Nixos specific configurations go here.
         ../system
 
+        ../files.nix
+
         # Import hardware scan result for host.
         ./${host}.nix
 
