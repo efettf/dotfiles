@@ -1,36 +1,24 @@
 
-lsp.enable = true
-cmp.enable = true
 noice.enable = true
 neogit.enable = true
 comment.enable = true
 auto-save.enable = true
 which-key.enable = true
 telescope.enable = true
-nvim-tree.enable = true
 conform-nvim.enable = true
 web-devicons.enable = true
 nvim-colorizer.enable = true
 nvim-autopairs.enable = true
 markdown-preview.enable = true
 
-[lsp.servers]
-nixd.enable = true
-statix.enable = true
+cmp-nvim-lsp.enable = true
+cmp-path.enable = true
+cmp-buffer.enable = true
 
-[nvim-tree.filters]
-dotfiles = true
-custom = [ "^.git", "*.lock" ]
-
-[nvim-tree.view]
-side = "right"
-
-[telescope.keymaps]
-"<leader>f" = "find_files"
-"<leader>n" = "live_grep"
-
-[cmp.settings]
-experimental.ghost_text = true
+[cmp]
+enable = true
+settings.experimental.ghost_text = true
+autoEnableSources = false
 
 [cmp.settings.mapping]
 "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' })"
@@ -39,6 +27,11 @@ experimental.ghost_text = true
 
 [[cmp.settings.sources]]
 name = "lsp"
+priority = 100
+
+[[cmp.settings.sources]]
+name = "emoji"
+option.insert = false
 
 [[cmp.settings.sources]]
 name = "path"
@@ -48,3 +41,17 @@ keyword_length = 2
 name = "buffer"
 keyword_length = 2
 
+[lsp]
+enable = true
+servers.nixd.enable = true
+servers.statix.enable = true
+
+[nvim-tree]
+enable = true
+filters.dotfiles = true
+filters.custom = [ "^.git", "*.lock" ]
+view.side = "right"
+
+[telescope.keymaps]
+"<leader>f" = "find_files"
+"<leader>n" = "live_grep"
