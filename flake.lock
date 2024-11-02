@@ -358,11 +358,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1730573281,
-        "narHash": "sha256-bSdyYUfS8uvorWCBbxZ7+nebdKh34Ngb8YfJ2Zvg2tk=",
+        "lastModified": 1730578456,
+        "narHash": "sha256-3zvvW5dMJPoXqS/xPtgQrSW8tjKOiof8iSupI4IwXYE=",
         "owner": "efettf",
         "repo": "homix.nix",
-        "rev": "f600e9c0179c4fd26c6c03f7c47526e938b0e1c3",
+        "rev": "2b1fd05222023460738c29a1f45bf925c6b240fd",
         "type": "github"
       },
       "original": {
