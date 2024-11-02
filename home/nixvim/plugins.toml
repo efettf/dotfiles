@@ -13,6 +13,7 @@ nvim-autopairs.enable = true
 markdown-preview.enable = true
 
 cmp-path.enable = true
+cmp-spell.enable = true
 cmp-nvim-lsp.enable = true
 cmp-treesitter.enable = true
 
@@ -44,6 +45,10 @@ option.insert = false
 [[cmp.settings.sources]]
 name = "path"
 keyword_length = 2
+
+[[cmp.settings.sources]]
+name = "spell"
+keyword_length = 4
 
 [conform-nvim.settings]
 formatters_by_ft.nix = [ "alejandra" ]
