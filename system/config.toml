@@ -94,5 +94,7 @@ efi.canTouchEfiVariables = true
 # Makes user not have super user access.
 isNormalUser = true
 
+homix = true
+
 # Set extra groups for user.
 extraGroups = ["wheel"]

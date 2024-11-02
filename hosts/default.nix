@@ -12,6 +12,7 @@
         # Nixos module imports go here.
         inputs.home-manager.nixosModules.home-manager
         inputs.index.nixosModules.nix-index
+        inputs.homix.nixosModules.default
 
         # Enable comma - run software without installing it.
         {programs.nix-index-database.comma.enable = true;}
