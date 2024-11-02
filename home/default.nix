@@ -7,7 +7,6 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ./files.nix
     ./nixvim
     ./hyprland
     ./stylix.nix
