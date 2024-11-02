@@ -20,10 +20,14 @@ please add this snippet to it with your host names assigned.
  }
 ```
 
+> [!NOTE]
+> Make sure that you are in the _hosts_ directory
+> before running those commands.
+
 Afterwards to generate hardware configuration for your host run:
 
 ```bash
-$ nixos-generate-config --show-hardware-config > hosts/host2.nix
+$ nixos-generate-config --show-hardware-config > host2.nix
 ```
 
 And to switch to your host:
