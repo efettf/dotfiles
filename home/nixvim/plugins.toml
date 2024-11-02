@@ -13,7 +13,6 @@ nvim-autopairs.enable = true
 markdown-preview.enable = true
 
 cmp-path.enable = true
-cmp-buffer.enable = true
 cmp-nvim-lsp.enable = true
 cmp-treesitter.enable = true
 
@@ -40,10 +39,6 @@ option.insert = false
 
 [[cmp.settings.sources]]
 name = "path"
-keyword_length = 2
-
-[[cmp.settings.sources]]
-name = "buffer"
 keyword_length = 2
 
 [lsp]
