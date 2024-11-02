@@ -16,6 +16,10 @@ cmp-path.enable = true
 cmp-nvim-lsp.enable = true
 cmp-treesitter.enable = true
 
+[lsp]
+enable = true
+servers.nixd.enable = true
+
 [cmp]
 enable = true
 settings.experimental.ghost_text = true
@@ -41,12 +45,9 @@ option.insert = false
 name = "path"
 keyword_length = 2
 
-[conform-nvim.settings.formatters_by_ft]
-nix = [ "alejandra" ]
-
-[lsp]
-enable = true
-servers.nixd.enable = true
+[conform-nvim.settings]
+formatters_by_ft.nix = [ "alejandra" ]
+format_on_save.quiet = false
 
 [nvim-tree]
 enable = true
