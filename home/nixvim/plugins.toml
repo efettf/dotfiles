@@ -47,7 +47,6 @@ nix = [ "alejandra" ]
 [lsp]
 enable = true
 servers.nixd.enable = true
-servers.statix.enable = true
 
 [nvim-tree]
 enable = true
