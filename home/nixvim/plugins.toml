@@ -5,15 +5,17 @@ comment.enable = true
 auto-save.enable = true
 which-key.enable = true
 telescope.enable = true
+treesitter.enable = true
 conform-nvim.enable = true
 web-devicons.enable = true
 nvim-colorizer.enable = true
 nvim-autopairs.enable = true
 markdown-preview.enable = true
 
-cmp-nvim-lsp.enable = true
 cmp-path.enable = true
 cmp-buffer.enable = true
+cmp-nvim-lsp.enable = true
+cmp-treesitter.enable = true
 
 [cmp]
 enable = true
@@ -30,16 +32,24 @@ name = "lsp"
 priority = 100
 
 [[cmp.settings.sources]]
+name = "treesitter"
+keyword_length = 2
+priority = 90
+
+[[cmp.settings.sources]]
 name = "emoji"
 option.insert = false
+priority = 75
 
 [[cmp.settings.sources]]
 name = "path"
 keyword_length = 2
+priority = 60
 
 [[cmp.settings.sources]]
 name = "buffer"
 keyword_length = 2
+priority = 50
 
 [lsp]
 enable = true

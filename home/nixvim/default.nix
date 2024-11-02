@@ -27,6 +27,16 @@ in {
   ];
   programs.nixvim = {
     enable = true;
+    plugins.treesitter.grammarPackages =  with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [ 
+      markdown
+      regex
+      toml
+      bash 
+      yaml
+      lua
+      nix
+      vim
+    ];
     extraPlugins = [
       cmp-emoji
       recorder
