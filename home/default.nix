@@ -43,6 +43,7 @@
       swww
       direnv
       zoxide
+      statix
       ripgrep
       undollar
       tealdeer
