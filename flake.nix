@@ -8,9 +8,6 @@
     # Manage style of your desktop to be uniform.
     stylix.url = "github:danth/stylix/release-24.05";
 
-    # Database for comma.
-    index.url = "github:nix-community/nix-index-database";
-
     # Manage your neovim config like nixos.
     nixvim.url = "github:nix-community/nixvim";
 
