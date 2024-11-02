@@ -1,5 +1,5 @@
 {
-  outputs = inputs: { nixosConfigurations = import ./hosts inputs; };
+  outputs = inputs: {nixosConfigurations = import ./hosts inputs;};
 
   inputs = {
     # 'pkgs' source, you can change system version here.

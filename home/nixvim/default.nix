@@ -1,7 +1,7 @@
 {
-  lib, 
-  pkgs, 
-  ... 
+  lib,
+  pkgs,
+  ...
 }: let
   cmp-emoji = pkgs.vimUtils.buildVimPlugin {
     pname = "cmp-emoji";
@@ -27,11 +27,11 @@ in {
   ];
   programs.nixvim = {
     enable = true;
-    plugins.treesitter.grammarPackages =  with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [ 
+    plugins.treesitter.grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       markdown
       regex
       toml
-      bash 
+      bash
       yaml
       lua
       nix
