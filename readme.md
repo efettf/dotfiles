@@ -64,25 +64,6 @@ It will use sudo only if it needs to, so it won't run everything as root.
 
 </details>
 
-<details><summary>🧼 Custom modules</summary>
-
-###
-
-To import custom modules such as stylix please go to _../flake.nix_.
-Here's a snippet of a custom module implementation:
-```patch
---- a/flake.nix
-+++ b/flake.nix
-@@ -44,6 +44,7 @@
-
-             # Home manager module imports go here.
-             inputs.stylix.homeManagerModules.stylix
-+            inputs.custom.homeManagerModules.custom
-             inputs.nixvim.homeManagerModules.nixvim
-           ];
-         }
-```
-
 </details>
 
 <!-- Catppuccin banner at the bottom for the looks, 
