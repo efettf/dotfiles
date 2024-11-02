@@ -32,8 +32,7 @@ nno <m-d>l <c-w>>
 nno <m-d>z <c-w>q
 nno <m-d>Z <c-w>q
 
-" Move up a file with ctrl + l.
-nno <c-l> gf
+nno <c-l> <cmd>lua vim.lsp.buf.definition({})<cr>
 nno <c-j> <c-o>
 nno <c-k> <c-i>
 
