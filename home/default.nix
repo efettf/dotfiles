@@ -43,13 +43,10 @@
       swww
       direnv
       zoxide
-      statix
       ripgrep
       undollar
       tealdeer
-      alejandra
       oh-my-posh
-      gitmoji-cli
       wl-clipboard
     ];
 
