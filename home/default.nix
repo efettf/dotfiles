@@ -39,6 +39,7 @@
       fzf
       pass
       swww
+      comma
       direnv
       zoxide
       ripgrep
