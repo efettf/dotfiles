@@ -7,7 +7,7 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ./nixvim
+    # ./nixvim
     ./hyprland
     ./stylix.nix
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
@@ -41,6 +41,7 @@
       swww
       comma
       direnv
+      neovim
       zoxide
       ripgrep
       undollar
