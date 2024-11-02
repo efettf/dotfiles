@@ -29,27 +29,22 @@ autoEnableSources = false
 
 [[cmp.settings.sources]]
 name = "lsp"
-priority = 100
 
 [[cmp.settings.sources]]
 name = "treesitter"
 keyword_length = 2
-priority = 90
 
 [[cmp.settings.sources]]
 name = "emoji"
 option.insert = false
-priority = 75
 
 [[cmp.settings.sources]]
 name = "path"
 keyword_length = 2
-priority = 60
 
 [[cmp.settings.sources]]
 name = "buffer"
 keyword_length = 2
-priority = 50
 
 [lsp]
 enable = true
