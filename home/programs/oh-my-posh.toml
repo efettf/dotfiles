@@ -13,16 +13,33 @@ style = 'plain'
 background = 'transparent'
 foreground = 'green'
 template = '{{.Path}}'
+properties.style = 'full'
 
-[blocks.segments.properties]
-style = 'folder'
+[[blocks]]
+type = 'rprompt'
+alignment = 'left'
+
+[[blocks.segments]]
+type = 'executiontime'
+style = 'plain'
+background = 'transparent'
+foreground = 'yellow'
+template = '{{ .FormattedMs }} '
+properties.threshold = 2500
+properties.style = "round"
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+newline = true
 
 [[blocks.segments]]
 type = 'text'
 style = 'plain'
+newline = true
 background = 'transparent'
 foreground = 'blue'
-template = ' ❯'
+template = '❯'
 
 [transient_prompt]
 background = 'transparent'
@@ -35,19 +52,5 @@ template = '❯ '
 [secondary_prompt]
 foreground = 'blue'
 background = 'transparent'
-template = '❯ '
+template = '❯❯'
 
-[[blocks]]
-type = 'rprompt'
-alignment = 'left'
-
-[[blocks.segments]]
-type = 'executiontime'
-style = 'plain'
-background = 'transparent'
-foreground = 'yellow'
-template = '{{ .FormattedMs }} '
-
-[blocks.segments.properties]
-threshold = 2500
-style = "round"
