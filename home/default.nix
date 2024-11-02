@@ -46,6 +46,7 @@
       ripgrep
       undollar
       tealdeer
+      alejandra
       oh-my-posh
       wl-clipboard
     ];
