@@ -36,6 +36,7 @@
 
     # Packages for home manager user.
     packages = with pkgs; [
+      fd
       git
       eza
       fzf
