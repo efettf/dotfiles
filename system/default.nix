@@ -29,10 +29,17 @@
     tealdeer
     alejandra
     alacritty
+    hyprcursor
     oh-my-posh
     qutebrowser
     wl-clipboard
+    bibata-cursors
   ];
+
+  environment.variables = {
+    HYPRCURSOR_SIZE = "19";
+    HYPRCURSOR_THEME = "Bibata-Modern-Classic";
+  };
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
