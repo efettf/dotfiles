@@ -20,6 +20,11 @@
       hash = "sha256-H8bouVCS46h0DgQ+oYY8JitahQDj0V9p2cOoD4cQX+Q=";
     };
 
+    ".config/bat/themes/catppuccin-mocha.tmTheme".source = pkgs.fetchurl {
+      url = "https://raw.githubusercontent.com/catppuccin/bat/refs/heads/main/themes/Catppuccin%20Mocha.tmTheme";
+      hash = "sha256-UBuh6EeUhD5V9TjAo7hBRaGCt3KjkkO7QDxuaEBzN0s=";
+    };
+
     ".config/qutebrowser/config.py".source = ./home/programs/qutebrowser.py;
 
     ".config/ohmyposh/config.toml".source = ./home/programs/oh-my-posh.toml;

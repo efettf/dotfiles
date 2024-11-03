@@ -14,7 +14,6 @@
   ];
 
   programs = {
-    bat.enable = true;
     neovide.enable = true;
     hyprlock.enable = true;
   };
@@ -29,6 +28,7 @@
       git
       eza
       fzf
+      bat
       gcc
       pass
       swww
