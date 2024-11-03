@@ -9,12 +9,7 @@
   imports = [
     ./hyprland
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
-    {programs.neovide.settings = lib.importTOML ./programs/neovide.toml;}
   ];
-
-  programs = {
-    neovide.enable = true;
-  };
 
   home = {
     username = "lynx";
@@ -35,6 +30,7 @@
       direnv
       neovim
       zoxide
+      neovide
       ripgrep
       undollar
       tealdeer
