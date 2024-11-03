@@ -9,7 +9,6 @@
   imports = [
     ./hyprland
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
-    {programs.qutebrowser = lib.importTOML ./programs/qutebrowser.toml;}
     {programs.neovide.settings = lib.importTOML ./programs/neovide.toml;}
     {programs.hyprlock.settings = lib.importTOML ./programs/hyprlock.toml;}
     {programs.alacritty.settings = lib.importTOML ./programs/alacritty.toml;}
@@ -20,7 +19,6 @@
     neovide.enable = true;
     hyprlock.enable = true;
     alacritty.enable = true;
-    qutebrowser.enable = true;
   };
 
   home = {
@@ -46,6 +44,7 @@
       tealdeer
       alejandra
       oh-my-posh
+      qutebrowser
       wl-clipboard
     ];
 

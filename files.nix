@@ -14,6 +14,8 @@
       hash = "sha256-1agBX7r4tEdG3fRvsuXHj+YfhsIj0eLLA1Wl8fP+UbQ=";
     };
 
+    ".config/qutebrowser/config.py".source = ./home/programs/qutebrowser.py;
+
     ".config/ohmyposh/config.toml".source = ./home/programs/oh-my-posh.toml;
   };
 }
