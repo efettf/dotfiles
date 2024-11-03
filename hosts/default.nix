@@ -22,7 +22,6 @@
 
             # Home manager module imports go here.
             inputs.stylix.homeManagerModules.stylix
-            inputs.nixvim.homeManagerModules.nixvim
           ];
         }
       ];

@@ -8,9 +8,6 @@
     # Manage style of your desktop to be uniform.
     stylix.url = "github:danth/stylix/release-24.05";
 
-    # Manage your neovim config like nixos.
-    nixvim.url = "github:nix-community/nixvim";
-
     homix.url = "github:efettf/homix.nix";
 
     # Manage your home directory like nixos.
@@ -19,7 +16,6 @@
     # Make sure to specify all follows here,
     # to make sure flake won't have to download 2 nixpkgs.
     homix.inputs.nixpkgs.follows = "nixpkgs";
-    nixvim.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 }

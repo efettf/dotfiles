@@ -7,7 +7,6 @@
   programs.home-manager.enable = true;
 
   imports = [
-    # ./nixvim
     ./hyprland
     ./stylix.nix
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
