@@ -1,0 +1,90 @@
+
+zinit="$HOME/.local/share/zinit/zinit.git"
+
+[ ! -d $zinit ] && mkdir -p "$(dirname $zinit)"
+[ ! -d $zinit/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$zinit"
+
+source "${zinit}/zinit.zsh"
+
+
+zinit light zsh-users/zsh-autosuggestions
+
+zinit light https://github.com/efettf/zsh-vi-mode
+ZVM_CURSOR_STYLE_ENABLED=false
+
+zinit ice wait lucid
+zinit light zsh-users/zsh-syntax-highlighting
+
+zinit ice wait lucid
+zinit light zsh-users/zsh-completions
+
+zinit ice wait"1" lucid
+zinit light Aloxaf/fzf-tab
+
+zinit ice wait"2" lucid
+zinit light hlissner/zsh-autopair
+
+
+export EDITOR='nvim'
+export PAGER='less -r'
+
+
+mkdir() { command mkdir -p "$@" && cd "$@" || exit; }
+tldr() { command tldr --color=always "$@" | bat -p --color=always; }
+
+
+alias l='eza'
+alias push='git push'
+alias power=', acpi -b'
+alias c='git commit'
+alias s=', gitmoji -l | fzf'
+alias ..='.. && l'
+alias q='exit'
+alias zrm='zoxide remove $(pwd)'
+alias nc='ncmpcpp'
+alias v='eval "$EDITOR"'
+alias yt-dlp=', yt-dlp'
+alias cv=', dipc'
+alias n='git'
+alias g='git'
+
+
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/config.toml)" 
+eval "$(zoxide     init zsh)"
+eval "$(direnv     hook zsh)"
+eval "$(fzf           --zsh)"
+
+
+setopt hist_ignore_all_dups
+setopt autocd extendedglob
+setopt hist_ignore_space
+setopt hist_find_no_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt appendhistory
+setopt sharehistory
+
+bindkey '^[OA' history-search-backward
+bindkey '^[OB' history-search-forward
+bindkey '^e'   edit-command-line
+
+zvm_bindkey visual "e" zvm_vi_delete
+zvm_bindkey vicmd  "e" zvm_vi_delete
+
+zstyle ':completion:*' list-colors "${LS_COLORS}"
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' menu no
+
+HISTFILE=~/.history
+SAVEHIST=7000
+HISTSIZE=7000
+HISTDUP=erase
+
+KEYTIMEOUT=1
+
+autoload edit-command-line
+zle -N   edit-command-line
+
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
