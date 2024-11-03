@@ -7,11 +7,6 @@ y = 9 # down - up
 [window]
 opacity = 0.85
 
-[general]
-import = [
-  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
-]
-
 [font]
 bold_italic.family = "JetBrainsMono Nerd Font"
 normal.family = "JetBrainsMono Nerd Font"

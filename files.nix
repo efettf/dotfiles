@@ -13,11 +13,10 @@
 
     ".config/hypr/hyprland.conf".source = ./programs/hyprland.conf;
 
-    ".config/alacritty/alacritty.toml".source = ./programs/alacritty.toml;
-    ".config/alacritty/catppuccin".source = pkgs.fetchgit {
-      url = "https://github.com/catppuccin/alacritty";
-      hash = "sha256-H8bouVCS46h0DgQ+oYY8JitahQDj0V9p2cOoD4cQX+Q=";
-    };
+    ".config/alacritty/alacritty.toml".text = (builtins.readFile ./programs/alacritty.toml) + (builtins.readFile (pkgs.fetchurl {
+      url = "https://raw.githubusercontent.com/catppuccin/alacritty/refs/heads/main/catppuccin-mocha.toml";
+      hash = "sha256-lJzvF8PsUEILgscLIuOqLqCl0n38wTKEGSvVKEtdssU=";
+    }));
 
     ".config/bat/themes/catppuccin-mocha.tmTheme".source = pkgs.fetchurl {
       url = "https://raw.githubusercontent.com/catppuccin/bat/refs/heads/main/themes/Catppuccin%20Mocha.tmTheme";
