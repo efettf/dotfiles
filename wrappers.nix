@@ -5,12 +5,14 @@
     env."BAT_THEME".value = "catppuccin-mocha";
   };
 
+  wrappers.alacritty = {
+    basePackage = pkgs.alacritty;
+    flags = [ "--config-file" ./programs/alacritty.toml ];
+  };
+
   wrappers.qutebrowser = {
     basePackage = pkgs.qutebrowser;
-    flags = [ 
-      "-C" 
-      ./programs/qutebrowser.py
-    ];
+    flags = [ "-C" ./programs/qutebrowser.py ];
   };
 
   wrappers.eza = {
