@@ -2,6 +2,7 @@
   inherit (self) inputs;
   mkSystem = host:
     inputs.nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
       modules = [
         # Nixos specific configurations go here.
         ../system

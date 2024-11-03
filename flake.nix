@@ -7,4 +7,9 @@
     url = "github:efettf/homix.nix";
     inputs.nixpkgs.follows = "nixpkgs";
   };
+
+  inputs.wallpapers = {
+    url = "github:efettf/wallpapers";
+    flake = false;
+  };
 }

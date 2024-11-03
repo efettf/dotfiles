@@ -38,7 +38,24 @@
     "root": {
       "inputs": {
         "homix": "homix",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "wallpapers": "wallpapers"
+      }
+    },
+    "wallpapers": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1730630169,
+        "narHash": "sha256-WJeNNBgpBqnfiNjEWZfhBIR/eB7TFZRVJjUPD18rAC4=",
+        "owner": "efettf",
+        "repo": "wallpapers",
+        "rev": "17cda4ad696a9f94edecde4307bc621df1289b90",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "wallpapers",
+        "type": "github"
       }
     }
   },

@@ -1,9 +1,6 @@
-{pkgs, ...}: {
+{pkgs, inputs, ...}: {
   homix = {
-    "wallpapers".source = pkgs.fetchgit {
-      url = "https://github.com/efettf/wallpapers";
-      hash = "sha256-WJeNNBgpBqnfiNjEWZfhBIR/eB7TFZRVJjUPD18rAC4=";
-    };
+    "wallpapers".source = inputs.wallpapers;
 
     ".config/tmux/tmux.conf".source = ./programs/tmux.conf;
     ".config/tmux/tpm".source = pkgs.fetchgit {
