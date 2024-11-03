@@ -4,11 +4,21 @@
 x = 8 # left - right
 y = 10 # down - up
 
-# Cursor settings.
+[window]
+opacity = 0.85
+
+[general]
+import = [
+  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
+]
+
+[font]
+bold_italic.family = "JetBrainsMono Nerd Font"
+normal.family = "JetBrainsMono Nerd Font"
+italic.family = "JetBrainsMono Nerd Font"
+bold.family = "JetBrainsMono Nerd Font"
+
 [cursor]
 thickness = 0.35
-
-# Don't change shape when window out of focus.
 unfocused_hollow = false 
-
 style.shape = "Underline"

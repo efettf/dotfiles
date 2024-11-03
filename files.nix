@@ -14,6 +14,12 @@
       hash = "sha256-1agBX7r4tEdG3fRvsuXHj+YfhsIj0eLLA1Wl8fP+UbQ=";
     };
 
+    ".config/alacritty/alacritty.toml".source = ./home/programs/alacritty.toml;
+    ".config/alacritty/catppuccin".source = pkgs.fetchgit {
+      url = "https://github.com/catppuccin/alacritty";
+      hash = "sha256-H8bouVCS46h0DgQ+oYY8JitahQDj0V9p2cOoD4cQX+Q=";
+    };
+
     ".config/qutebrowser/config.py".source = ./home/programs/qutebrowser.py;
 
     ".config/ohmyposh/config.toml".source = ./home/programs/oh-my-posh.toml;

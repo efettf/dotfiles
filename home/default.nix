@@ -11,14 +11,12 @@
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
     {programs.neovide.settings = lib.importTOML ./programs/neovide.toml;}
     {programs.hyprlock.settings = lib.importTOML ./programs/hyprlock.toml;}
-    {programs.alacritty.settings = lib.importTOML ./programs/alacritty.toml;}
   ];
 
   programs = {
     bat.enable = true;
     neovide.enable = true;
     hyprlock.enable = true;
-    alacritty.enable = true;
   };
 
   home = {
@@ -43,6 +41,7 @@
       undollar
       tealdeer
       alejandra
+      alacritty
       oh-my-posh
       qutebrowser
       wl-clipboard
