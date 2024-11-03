@@ -18,11 +18,15 @@ Public repository with my nixos dotfiles, they are not designed to be riced in a
 <!-- Create a line seperating stuff on github. -->
 ##
 
-### 💨 Installation
-
 > [!NOTE]
 > Make sure you check out the config before installing it,
 > as it may add changes that you don't want.
+
+### 💨 Installation
+
+> [!TIP]
+> Use remote sudo will run rebuild as user and use
+> sudo when needed.
 
 ```bash
 $ git clone https://github.com/efettf/dotfiles.git
@@ -37,34 +41,7 @@ $ nixos-rebuild switch --use-remote-sudo --flake ".#nixos"
 - **Modular configuration**: everything is easy to understand and manage, uses toml for basic configuration files so its easy to see what is happening at a quick glance.
 - **Excellent documentation**: most of advanced options are explained right there in the configuration in comments, so you don't have to look everything up.
 - **Fully open source**: all programs by default are open source and free of charge.
-
-### 💡 Tips
-
-<details><summary>🧪 Flake host expansion</summary>
-
-###
-
-You can use this command if _nixos_ **is** your host name:
-```bash
-$ nixos-rebuild switch --flake .
-```
-As . expands to _.#hostname.
-
-</details>
-
-<details><summary>🫧 Run rebuild as user</summary>
-
-###
-
-If you want to rebuild system without sudo you can run:
-```bash
-$ nixos-rebuild switch --use-remote-sudo
-```
-It will use sudo only if it needs to, so it won't run everything as root.
-
-</details>
-
-</details>
+- **Lightweight**: flake only uses nixpkgs and homix, which is under 100 lines of nix code.
 
 <!-- Catppuccin banner at the bottom for the looks, 
 make sure to remove it when changing theme as well as the colors in banners above. -->
