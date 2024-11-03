@@ -29,10 +29,8 @@
     undollar
     tealdeer
     alejandra
-    alacritty
     hyprcursor
     oh-my-posh
-    qutebrowser
     wl-clipboard
     bibata-cursors
   ];
