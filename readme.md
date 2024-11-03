@@ -46,7 +46,6 @@ $ nixos-rebuild switch --use-remote-sudo --flake ".#nixos"
 - **Modular configuration**: everything is easy to understand and manage, uses toml for basic configuration files so its easy to see what is happening at a quick glance.
 - **Excellent documentation**: most of advanced options are explained right there in the configuration in comments, so you don't have to look everything up.
 - **Fully open source**: all programs by default are open source and free of charge.
-- **Lightweight**: flake only uses nixpkgs and homix, which is under 100 lines of nix code.
 
 <!-- Catppuccin banner at the bottom for the looks, 
 make sure to remove it when changing theme as well as the colors in banners above. -->
