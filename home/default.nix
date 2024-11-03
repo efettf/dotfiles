@@ -8,7 +8,6 @@
 
   imports = [
     ./hyprland
-    ./stylix.nix
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
     {programs.qutebrowser = lib.importTOML ./programs/qutebrowser.toml;}
     {programs.neovide.settings = lib.importTOML ./programs/neovide.toml;}

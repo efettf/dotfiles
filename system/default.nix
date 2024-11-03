@@ -10,6 +10,10 @@
 
   environment.systemPackages = [(pkgs.writeScriptBin "sudo" ''exec doas "$@"'')];
 
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
+
   # Set default user shell to zsh.
   users.defaultUserShell = pkgs.zsh;
 

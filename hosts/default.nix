@@ -19,9 +19,6 @@
           home-manager.users.lynx.imports = [
             # Home manager specific configurations go here.
             ../home
-
-            # Home manager module imports go here.
-            inputs.stylix.homeManagerModules.stylix
           ];
         }
       ];

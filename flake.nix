@@ -5,9 +5,6 @@
     # 'pkgs' source, you can change system version here.
     nixpkgs.url = "github:nixos/nixpkgs";
 
-    # Manage style of your desktop to be uniform.
-    stylix.url = "github:danth/stylix/release-24.05";
-
     homix.url = "github:efettf/homix.nix";
 
     # Manage your home directory like nixos.
