@@ -23,8 +23,6 @@
       hash = "sha256-UBuh6EeUhD5V9TjAo7hBRaGCt3KjkkO7QDxuaEBzN0s=";
     };
 
-    ".config/qutebrowser/config.py".source = ./programs/qutebrowser.py;
-
     ".config/ohmyposh/config.toml".source = ./programs/oh-my-posh.toml;
   };
 }
