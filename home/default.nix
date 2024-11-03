@@ -10,12 +10,10 @@
     ./hyprland
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
     {programs.neovide.settings = lib.importTOML ./programs/neovide.toml;}
-    {programs.hyprlock.settings = lib.importTOML ./programs/hyprlock.toml;}
   ];
 
   programs = {
     neovide.enable = true;
-    hyprlock.enable = true;
   };
 
   home = {
