@@ -37,6 +37,7 @@
       git
       eza
       fzf
+      gcc
       pass
       swww
       comma
