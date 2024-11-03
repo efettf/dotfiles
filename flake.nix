@@ -19,6 +19,11 @@
       flake = false;
     };
 
+    zinit = {
+      url = "github:zdharma-continuum/zinit";
+      flake = false;
+    };
+
     tpm = {
       url = "github:tmux-plugins/tpm";
       flake = false;
