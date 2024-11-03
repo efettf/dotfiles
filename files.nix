@@ -1,12 +1,13 @@
-{pkgs, inputs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   homix = {
     "wallpapers".source = inputs.wallpapers;
 
     ".config/tmux/tmux.conf".source = ./programs/tmux.conf;
-    ".config/tmux/tpm".source = pkgs.fetchgit {
-      url = "https://github.com/tmux-plugins/tpm";
-      hash = "sha256-1agBX7r4tEdG3fRvsuXHj+YfhsIj0eLLA1Wl8fP+UbQ=";
-    };
+    ".config/tmux/tpm".source = inputs.tpm;
 
     ".config/hypr/hyprland.conf".source = ./programs/hyprland.conf;
 
