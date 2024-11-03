@@ -2,7 +2,7 @@
 # Window padding on borders.
 [window.padding]
 x = 8 # left - right
-y = 10 # down - up
+y = 9 # down - up
 
 [window]
 opacity = 0.85
