@@ -2,7 +2,7 @@
   homix = {
     "wallpapers".source = pkgs.fetchgit {
       url = "https://github.com/efettf/wallpapers";
-      hash = "sha256-Rinz1qPIaljSt0/dGb+kZEFGQXcQ855fI4EjZP1m7nM=";
+      hash = "sha256-WJeNNBgpBqnfiNjEWZfhBIR/eB7TFZRVJjUPD18rAC4=";
     };
 
     ".config/tmux/tmux.conf".source = ./programs/tmux.conf;
