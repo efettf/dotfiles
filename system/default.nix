@@ -1,4 +1,5 @@
 {
+  inputs,
   pkgs,
   lib,
   ...
@@ -10,12 +11,23 @@
 
   environment.systemPackages = with pkgs; [
     (pkgs.writeScriptBin "sudo" ''exec doas "$@"'')
+    (inputs.wrapper-manager.lib.build {
+      inherit pkgs;
+      modules = [{
+        wrappers.bat = {
+          basePackage = pkgs.bat;
+          env."BAT_THEME".value = "catppuccin-mocha";
+        };
+        wrappers.eza = {
+          basePackage = pkgs.eza;
+          flags = [ "--icons=always" "--no-quotes" ];
+        };
+      }];
+    })
     gh
     fd
     git
-    eza
     fzf
-    bat
     gcc
     pass
     swww
