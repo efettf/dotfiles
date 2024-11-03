@@ -14,6 +14,8 @@
       hash = "sha256-1agBX7r4tEdG3fRvsuXHj+YfhsIj0eLLA1Wl8fP+UbQ=";
     };
 
+    ".config/hypr/hyprland.conf".source = ./home/programs/hyprland.conf;
+
     ".config/alacritty/alacritty.toml".source = ./home/programs/alacritty.toml;
     ".config/alacritty/catppuccin".source = pkgs.fetchgit {
       url = "https://github.com/catppuccin/alacritty";

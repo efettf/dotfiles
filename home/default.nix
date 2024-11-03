@@ -6,11 +6,6 @@
   # Make home manager manage itself.
   programs.home-manager.enable = true;
 
-  imports = [
-    ./hyprland
-    {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
-  ];
-
   home = {
     username = "lynx";
     homeDirectory = "/home/lynx";
