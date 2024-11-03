@@ -11,14 +11,12 @@
     {services.wlsunset = lib.importTOML ./programs/wlsunset.toml;}
     {programs.qutebrowser = lib.importTOML ./programs/qutebrowser.toml;}
     {programs.neovide.settings = lib.importTOML ./programs/neovide.toml;}
-    {programs.tmux.extraConfig = builtins.readFile ./programs/tmux.conf;}
     {programs.hyprlock.settings = lib.importTOML ./programs/hyprlock.toml;}
     {programs.alacritty.settings = lib.importTOML ./programs/alacritty.toml;}
   ];
 
   programs = {
     bat.enable = true;
-    tmux.enable = true;
     neovide.enable = true;
     hyprlock.enable = true;
     alacritty.enable = true;
@@ -38,6 +36,7 @@
       gcc
       pass
       swww
+      tmux
       comma
       direnv
       neovim
