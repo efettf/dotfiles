@@ -10,6 +10,7 @@
 
   environment.systemPackages = with pkgs; [
     (pkgs.writeScriptBin "sudo" ''exec doas "$@"'')
+    gh
     fd
     git
     eza
