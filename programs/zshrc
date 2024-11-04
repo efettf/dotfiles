@@ -40,6 +40,7 @@ alias nc='ncmpcpp'
 alias v='eval "$EDITOR"'
 alias yt-dlp=', yt-dlp'
 alias cv=', dipc'
+alias vi='neovide --fork'
 alias n='git'
 alias g='git'
 
