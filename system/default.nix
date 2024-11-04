@@ -31,6 +31,7 @@
     alejandra
     hyprcursor
     oh-my-posh
+    qutebrowser
     wl-clipboard
     bibata-cursors
   ];
