@@ -24,7 +24,6 @@
     direnv
     neovim
     zoxide
-    neovide
     ripgrep
     undollar
     tealdeer
