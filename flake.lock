@@ -41,8 +41,7 @@
         "nixpkgs": "nixpkgs",
         "tpm": "tpm",
         "wallpapers": "wallpapers",
-        "wrapper-manager": "wrapper-manager",
-        "zinit": "zinit"
+        "wrapper-manager": "wrapper-manager"
       }
     },
     "tpm": {
@@ -94,22 +93,6 @@
       "original": {
         "owner": "viperML",
         "repo": "wrapper-manager",
-        "type": "github"
-      }
-    },
-    "zinit": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1729075782,
-        "narHash": "sha256-14LO/GVpJaiM7Ba6ZZoPFjgL3QCo9nc3owWUe7T2Ql0=",
-        "owner": "zdharma-continuum",
-        "repo": "zinit",
-        "rev": "0c471af3fe6aa80a5ddc0fddfb741bc5b3f96cde",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zdharma-continuum",
-        "repo": "zinit",
         "type": "github"
       }
     }

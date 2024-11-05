@@ -1,5 +1,9 @@
 
-source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+# Bootstrap zinit.
+zinit="$HOME/.local/share/zinit/zinit.git"
+[ ! -d $zinit ] && mkdir -p "$(dirname $zinit)"
+[ ! -d $zinit/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$zinit"
+source "${zinit}/zinit.zsh"
 
 
 zinit light zsh-users/zsh-autosuggestions
