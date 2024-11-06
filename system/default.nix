@@ -10,7 +10,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    (pkgs.writeScriptBin "sudo" ''exec doas "$@"'')
     (inputs.wrapper-manager.lib.build { inherit pkgs; modules = [ ../wrappers.nix ]; })
     gh
     fd

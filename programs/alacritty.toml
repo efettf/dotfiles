@@ -3,9 +3,6 @@
 x = 8 # left - right
 y = 9 # down - up
 
-[window]
-opacity = 0.85
-
 [font]
 bold_italic.family = "JetBrainsMono Nerd Font"
 normal.family = "JetBrainsMono Nerd Font"
