@@ -1,5 +1,20 @@
 {
   "nodes": {
+    "based": {
+      "locked": {
+        "lastModified": 1730922955,
+        "narHash": "sha256-6aL4ZoieS8bRb8WZvQx6osDa9odM/aM6oZs1EqiJxDo=",
+        "owner": "efettf",
+        "repo": "based.nixos",
+        "rev": "5c743a22459f8d8853fb54ba81dc47293957a893",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "based.nixos",
+        "type": "github"
+      }
+    },
     "homix": {
       "inputs": {
         "nixpkgs": [
@@ -37,6 +52,7 @@
     },
     "root": {
       "inputs": {
+        "based": "based",
         "homix": "homix",
         "nixpkgs": "nixpkgs",
         "tpm": "tpm",

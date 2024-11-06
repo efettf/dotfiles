@@ -1,7 +1,4 @@
 
-# Enable wi-fi support via network manager.
-networking.networkmanager.enable = true
-
 # Set host name, required to rebuiled the system.
 networking.hostName = "nixos"
 
@@ -10,9 +7,6 @@ time.timeZone = "Europe/Warsaw"
 
 # Enable firewall.
 networking.firewall.enable = true
-
-# Enable flakes and nix command.
-nix.settings.experimental-features = [ "nix-command", "flakes" ]
 
 # Bluetooth settings.
 [hardware.bluetooth]
@@ -66,22 +60,6 @@ gnupg.agent.enable = true
 
 # Enable zsh shell.
 zsh.enable = true
-
-# Disable nano, you can get it back using 'nix-shell -p nano'.
-nano.enable = false
-
-# Security settings.
-[security]
-
-# Simple sudo replacement.
-doas.enable = true
-
-# Disable sudo, you can get it back using 'nix-shell -p sudo'.
-sudo.enable = false
-
-# Removes password prompts for your wheel group,
-# you can manage user groups below at '[users.users.*]'.
-doas.wheelNeedsPassword = false
 
 # Boot loader settings, required to rebuiled the system.
 [boot.loader]
