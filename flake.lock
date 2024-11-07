@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1731013073,
-        "narHash": "sha256-7c0kvj/zbzy0IK8zCjb86WEoSIm36G0jiEajVepjvQw=",
+        "lastModified": 1731013219,
+        "narHash": "sha256-XSUokJlJn+UUWKHUsqLPCSiSn5pJC2h5uVfX37fvtF0=",
         "owner": "efettf",
         "repo": "based.nixos",
-        "rev": "46c8fe049002a569c24fdc5b3ab5004d4a3e4e07",
+        "rev": "de7901764c6ac10a3461f322bab68d7655401d8e",
         "type": "github"
       },
       "original": {
