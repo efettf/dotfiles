@@ -10,9 +10,12 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    (inputs.wrapper-manager.lib.build { inherit pkgs; modules = [ ../wrappers.nix ]; })
+    (inputs.wrapper-manager.lib.build {
+      inherit pkgs;
+      modules = [../wrappers.nix];
+    })
     (st.overrideAttrs (oldAttrs: rec {
-      buildInputs = oldAttrs.buildInputs ++ [ harfbuzz ];
+      buildInputs = oldAttrs.buildInputs ++ [harfbuzz];
       patches = [
         (fetchpatch {
           url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
