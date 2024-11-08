@@ -18,6 +18,10 @@
           url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
           hash = "sha256-kFmGCrsqiphY1uiRCX/Gz4yOdlLxIIHBlsM1pvW5TTA=";
         })
+        (fetchpatch {
+          url = "https://st.suckless.org/patches/undercurl/st-undercurl-0.9-20240103.diff";
+          hash = "sha256-9ReeNknxQJnu4l3kR+G3hfNU+oxGca5agqzvkulhaCg=";
+        })
       ];
       configFile = writeText "config.def.h" (builtins.readFile ../programs/st.h);
       postPatch = "${oldAttrs.postPatch}\n cp ${configFile} config.def.h";
