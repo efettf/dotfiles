@@ -65,7 +65,6 @@ in {
     ripgrep
     undollar
     tealdeer
-    hyprcursor
     oh-my-posh
     qutebrowser
     wl-clipboard

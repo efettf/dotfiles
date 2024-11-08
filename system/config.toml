@@ -52,9 +52,6 @@ hybrid-sleep.enable = false
 # Nixos system settings for programs.
 [programs]
 
-# Enable hyprland.
-hyprland.enable = true
-
 # Enable gnupg.
 gnupg.agent.enable = true
 
