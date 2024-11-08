@@ -14,6 +14,10 @@
         url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch";
         hash = "sha256-0AGMq507WmW2QJW02u6eJDuQmGBAiVPbEw79npwqEDU=";
       })
+      (pkgs.fetchpatch {
+        url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/alwayscenter/alwayscenter.patch";
+        hash = "sha256-JaM/YAXioRi16TRKLvDvHAsn4HQ9jpaBAhvHyp/r/+I=";
+      })
     ];
     configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/dwl.h);
     postPatch = old.postPatch + "cp ${configFile} config.def.h";
