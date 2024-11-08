@@ -29,6 +29,16 @@
       configFile = writeText "config.def.h" (builtins.readFile ../programs/st.h);
       postPatch = "${oldAttrs.postPatch}\n cp ${configFile} config.def.h";
     }))
+    (dwl.overrideAttrs (oldAttrs: rec {
+      patches = [
+        (pkgs.fetchpatch {
+          url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch";
+          hash = "sha256-6knXrYblzaqjy5ZG8YG2VKwHeaHB+rij+8ZxXe5LqTE=";
+        })
+      ];
+      configFile = writeText "config.def.h" (builtins.readFile ../programs/dwl.h);
+      postPatch = "${oldAttrs.postPatch}\n cp ${configFile} config.def.h";
+    }))
     gh
     fd
     git
@@ -50,19 +60,6 @@
     qutebrowser
     wl-clipboard
     bibata-cursors
-  ];
-
-  nixpkgs.overlays = [
-    (self: super: {
-      dwl = super.dwl.overrideAttrs (oldAttrs: rec {
-        patches = [
-          (pkgs.fetchpatch {
-            url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch";
-            hash = "sha256-6knXrYblzaqjy5ZG8YG2VKwHeaHB+rij+8ZxXe5LqTE=";
-          })
-        ];
-      });
-    })
   ];
 
   fonts.packages = with pkgs; [
