@@ -4,7 +4,7 @@
   lib,
   ...
 }: let
-  dwl = (pkgs.dwl.overrideAttrs (oldAttrs: rec {
+  dwl = (pkgs.dwl.overrideAttrs (old: rec {
     patches = [
       (pkgs.fetchpatch {
         url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch";
@@ -12,8 +12,23 @@
       })
     ];
     configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/dwl.h);
-    postPatch = "${oldAttrs.postPatch}\n cp ${configFile} config.def.h";
+    postPatch = old.postPatch + "cp ${configFile} config.def.h";
     passthru.providedSessions = ["dwl"];
+  }));
+  st = (pkgs.st.overrideAttrs (old: rec {
+    buildInputs = old.buildInputs ++ [pkgs.harfbuzz];
+    patches = [
+      (pkgs.fetchpatch {
+        url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
+        hash = "sha256-kFmGCrsqiphY1uiRCX/Gz4yOdlLxIIHBlsM1pvW5TTA=";
+      })
+      (pkgs.fetchpatch {
+        url = "https://st.suckless.org/patches/undercurl/st-undercurl-0.9-20240103.diff";
+        hash = "sha256-9ReeNknxQJnu4l3kR+G3hfNU+oxGca5agqzvkulhaCg=";
+      })
+    ];
+    configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/st.h);
+    postPatch = old.postPatch + "cp ${configFile} config.def.h";
   }));
 in {
   imports = [
@@ -26,21 +41,6 @@ in {
       inherit pkgs;
       modules = [../wrappers.nix];
     })
-    (st.overrideAttrs (oldAttrs: rec {
-      buildInputs = oldAttrs.buildInputs ++ [harfbuzz];
-      patches = [
-        (fetchpatch {
-          url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
-          hash = "sha256-kFmGCrsqiphY1uiRCX/Gz4yOdlLxIIHBlsM1pvW5TTA=";
-        })
-        (fetchpatch {
-          url = "https://st.suckless.org/patches/undercurl/st-undercurl-0.9-20240103.diff";
-          hash = "sha256-9ReeNknxQJnu4l3kR+G3hfNU+oxGca5agqzvkulhaCg=";
-        })
-      ];
-      configFile = writeText "config.def.h" (builtins.readFile ../programs/st.h);
-      postPatch = "${oldAttrs.postPatch}\n cp ${configFile} config.def.h";
-    }))
     gh
     fd
     git
@@ -62,7 +62,10 @@ in {
     qutebrowser
     wl-clipboard
     bibata-cursors
-  ] ++ [dwl];
+  ] ++ [
+    st
+    dwl
+  ];
 
   services.displayManager.sessionPackages = [ dwl ];
 
