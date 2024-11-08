@@ -37,7 +37,6 @@
     ripgrep
     undollar
     tealdeer
-    alejandra
     hyprcursor
     oh-my-posh
     qutebrowser
