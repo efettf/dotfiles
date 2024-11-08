@@ -23,10 +23,5 @@
       url = "github:efettf/wallpapers";
       flake = false;
     };
-
-    tpm = {
-      url = "github:tmux-plugins/tpm";
-      flake = false;
-    };
   };
 }

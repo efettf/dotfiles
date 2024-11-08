@@ -7,7 +7,6 @@
     "wallpapers".source = inputs.wallpapers;
 
     ".config/tmux/tmux.conf".source = ./programs/tmux.conf;
-    ".config/tmux/tpm".source = inputs.tpm;
 
     ".config/hypr/hyprland.conf".source = ./programs/hyprland.conf;
 

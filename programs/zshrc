@@ -9,6 +9,10 @@ zinit="$HOME/.local/share/zinit/zinit.git"
 [ ! -d $zinit/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$zinit"
 source "${zinit}/zinit.zsh"
 
+# Bootstrap tpm.
+tpm="$HOME/.config/tmux/tpm"
+[ ! -d $tpm ] && mkdir -p "$(dirname $tpm)"
+[ ! -d $tpm/.git ] && git clone https://github.com/tmux-plugins/tpm.git "$tpm"
 
 zinit light zsh-users/zsh-autosuggestions
 
