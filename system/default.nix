@@ -19,7 +19,7 @@
         hash = "sha256-JaM/YAXioRi16TRKLvDvHAsn4HQ9jpaBAhvHyp/r/+I=";
       })
     ];
-    configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/dwl.h);
+    configFile = pkgs.writeText "config.def.h" (builtins.readFile "${inputs.suckless}/dwl.h");
     postPatch = old.postPatch + "cp ${configFile} config.def.h";
     passthru.providedSessions = ["dwl"];
   }));
@@ -35,7 +35,7 @@
         hash = "sha256-9ReeNknxQJnu4l3kR+G3hfNU+oxGca5agqzvkulhaCg=";
       })
     ];
-    configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/st.h);
+    configFile = pkgs.writeText "config.def.h" (builtins.readFile "${inputs.suckless}/st.h");
     postPatch = old.postPatch + "cp ${configFile} config.def.h";
   }));
 in {

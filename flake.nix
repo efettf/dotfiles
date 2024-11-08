@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    suckless = {
+      url = "github:efettf/suckless";
+      flake = false;
+    };
+
     based = {
       url = "github:efettf/based.nixos";
       inputs.nixpkgs.follows = "nixpkgs";
