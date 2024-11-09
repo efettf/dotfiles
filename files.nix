@@ -19,6 +19,8 @@
       hash = "sha256-TNLCq5eqBd3BKm/Bd0H4q1YanjsYDqNKbFFkjR4zbJ4=";
     };
 
+    ".profile".source = ./programs/profile.sh;
+
     ".zshrc".source = ./programs/zshrc;
 
     ".config/ohmyposh/config.toml".source = ./programs/oh-my-posh.toml;

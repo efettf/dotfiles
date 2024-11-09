@@ -72,11 +72,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1731176874,
+        "lastModified": 1731178252,
         "narHash": "sha256-nVfvKqUorggwwK+/vRlJiKfLEsEs1Kb6o2BRrdQfjsw=",
         "owner": "efettf",
         "repo": "dotfiles-suckless",
-        "rev": "e405b887e0f205cd96cd195994cdfc3a51ff5a21",
+        "rev": "1deb17fede34c4f18450089a97941cd252b2a0c1",
         "type": "github"
       },
       "original": {
