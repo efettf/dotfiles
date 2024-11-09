@@ -24,19 +24,8 @@
     passthru.providedSessions = ["dwl"];
   });
   st = pkgs.st.overrideAttrs (old: rec {
+    src = inputs.st;
     buildInputs = old.buildInputs ++ [pkgs.harfbuzz];
-    patches = [
-      (pkgs.fetchpatch {
-        url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
-        hash = "sha256-kFmGCrsqiphY1uiRCX/Gz4yOdlLxIIHBlsM1pvW5TTA=";
-      })
-      (pkgs.fetchpatch {
-        url = "https://st.suckless.org/patches/undercurl/st-undercurl-0.9-20240103.diff";
-        hash = "sha256-9ReeNknxQJnu4l3kR+G3hfNU+oxGca5agqzvkulhaCg=";
-      })
-    ];
-    configFile = pkgs.writeText "config.def.h" (builtins.readFile "${inputs.suckless}/st.h");
-    postPatch = old.postPatch + "cp ${configFile} config.def.h";
   });
 in {
   imports = [

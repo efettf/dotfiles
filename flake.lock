@@ -60,9 +60,26 @@
         "base": "base",
         "homix": "homix",
         "nixpkgs": "nixpkgs",
+        "st": "st",
         "suckless": "suckless",
         "wallpapers": "wallpapers",
         "wrapper-manager": "wrapper-manager"
+      }
+    },
+    "st": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1731154119,
+        "narHash": "sha256-64+vUlsxSk2fsNr5tgMHZVFu6maq1F+4jvnshtS8jms=",
+        "owner": "efettf",
+        "repo": "st",
+        "rev": "4cc11b3588d04579b4a895b372d70c73558c8afa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "st",
+        "type": "github"
       }
     },
     "suckless": {

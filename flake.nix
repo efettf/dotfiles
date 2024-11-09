@@ -19,6 +19,11 @@
       flake = false;
     };
 
+    st = {
+      url = "github:efettf/st";
+      flake = false;
+    };
+
     base = {
       url = "github:efettf/dotfiles-base";
       inputs.nixpkgs.follows = "nixpkgs";
