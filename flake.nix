@@ -9,8 +9,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    wrapper-manager = {
-      url = "github:viperML/wrapper-manager";
+    wrapper = {
+      url = "github:efettf/wrapper";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

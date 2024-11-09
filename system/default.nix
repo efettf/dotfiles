@@ -10,7 +10,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    (inputs.wrapper-manager.lib.build {
+    (inputs.wrapper.lib.build {
       inherit pkgs;
       modules = [../wrappers.nix];
     })
