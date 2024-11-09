@@ -10,7 +10,7 @@
     };
 
     wrapper = {
-      url = "github:efettf/wrapper";
+      url = "github:efettf/wrapper.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -25,7 +25,7 @@
     };
 
     wallpapers = {
-      url = "github:efettf/wallpapers";
+      url = "github:efettf/dotfiles-wallpapers";
       flake = false;
     };
   };

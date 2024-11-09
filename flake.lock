@@ -20,22 +20,6 @@
         "type": "github"
       }
     },
-    "dwl": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1731156042,
-        "narHash": "sha256-vGg1f9o/abvaoOokJSteC3fYkTM03z3gDLBzOZe5iKQ=",
-        "owner": "efettf",
-        "repo": "dwl",
-        "rev": "ae2373d91d9e089efa60e362fad684d6b43483e5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efettf",
-        "repo": "dwl",
-        "type": "github"
-      }
-    },
     "homix": {
       "inputs": {
         "nixpkgs": [
@@ -78,39 +62,21 @@
         "nixpkgs": "nixpkgs",
         "suckless": "suckless",
         "wallpapers": "wallpapers",
-        "wrapper-manager": "wrapper-manager"
-      }
-    },
-    "st": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1731157022,
-        "narHash": "sha256-R6Pk48et1iVC1H8v7fxnZvHry8G/FPMckf2Ulmr+NZY=",
-        "owner": "efettf",
-        "repo": "st",
-        "rev": "2e9b13aa67e5f7eb3f83e5e90ab56334d89b597e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efettf",
-        "repo": "st",
-        "type": "github"
+        "wrapper": "wrapper"
       }
     },
     "suckless": {
       "inputs": {
-        "dwl": "dwl",
         "nixpkgs": [
           "nixpkgs"
-        ],
-        "st": "st"
+        ]
       },
       "locked": {
-        "lastModified": 1731158290,
-        "narHash": "sha256-KpvB5ldQ5LLCWPgd+rku09QHEH3E2/NMTK8lh1NsYnQ=",
+        "lastModified": 1731161854,
+        "narHash": "sha256-6jMB7WZHgma4loqN5+YP68iQnIbruowEaFHc15pY7g8=",
         "owner": "efettf",
         "repo": "dotfiles-suckless",
-        "rev": "5d08c39c44c8f1b9174f0d68cc09a34b4cc7e6b8",
+        "rev": "3ba3d2a50d4ffd4a8e36ec466347b09e2bbf6db4",
         "type": "github"
       },
       "original": {
@@ -125,28 +91,28 @@
         "lastModified": 1730630169,
         "narHash": "sha256-WJeNNBgpBqnfiNjEWZfhBIR/eB7TFZRVJjUPD18rAC4=",
         "owner": "efettf",
-        "repo": "wallpapers",
+        "repo": "dotfiles-wallpapers",
         "rev": "17cda4ad696a9f94edecde4307bc621df1289b90",
         "type": "github"
       },
       "original": {
         "owner": "efettf",
-        "repo": "wallpapers",
+        "repo": "dotfiles-wallpapers",
         "type": "github"
       }
     },
-    "wrapper-manager": {
+    "wrapper": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1731159429,
-        "narHash": "sha256-osCF/ytQgZmryuDM3QG2O4QHHYf0s0LD9xbLBH6ObGs=",
+        "lastModified": 1731160214,
+        "narHash": "sha256-gE2ZkTHbQ9DDxqa2bfJPCCBeeuS8aoVAwdYSv1FCWc8=",
         "owner": "efettf",
         "repo": "wrapper",
-        "rev": "e0ad8eba8192604b2a16a56dddf255127d69c82d",
+        "rev": "985ca6814040421252af4733700ef179c034816e",
         "type": "github"
       },
       "original": {
