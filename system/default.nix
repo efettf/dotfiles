@@ -53,7 +53,6 @@ in {
       gh
       fd
       git
-      dwl
       fzf
       gcc
       pass
