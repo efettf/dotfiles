@@ -20,6 +20,22 @@
         "type": "github"
       }
     },
+    "dwl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1731156042,
+        "narHash": "sha256-vGg1f9o/abvaoOokJSteC3fYkTM03z3gDLBzOZe5iKQ=",
+        "owner": "efettf",
+        "repo": "dwl",
+        "rev": "ae2373d91d9e089efa60e362fad684d6b43483e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "dwl",
+        "type": "github"
+      }
+    },
     "homix": {
       "inputs": {
         "nixpkgs": [
@@ -58,6 +74,7 @@
     "root": {
       "inputs": {
         "base": "base",
+        "dwl": "dwl",
         "homix": "homix",
         "nixpkgs": "nixpkgs",
         "st": "st",

@@ -5,22 +5,7 @@
   ...
 }: let
   dwl = pkgs.dwl.overrideAttrs (old: rec {
-    patches = [
-      (pkgs.fetchpatch {
-        url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch";
-        hash = "sha256-6knXrYblzaqjy5ZG8YG2VKwHeaHB+rij+8ZxXe5LqTE=";
-      })
-      (pkgs.fetchpatch {
-        url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch";
-        hash = "sha256-0AGMq507WmW2QJW02u6eJDuQmGBAiVPbEw79npwqEDU=";
-      })
-      (pkgs.fetchpatch {
-        url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/alwayscenter/alwayscenter.patch";
-        hash = "sha256-JaM/YAXioRi16TRKLvDvHAsn4HQ9jpaBAhvHyp/r/+I=";
-      })
-    ];
-    configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/dwl.h);
-    postPatch = old.postPatch + "cp ${configFile} config.def.h";
+    src = inputs.dwl;
     passthru.providedSessions = ["dwl"];
   });
   st = pkgs.st.overrideAttrs (old: rec {
