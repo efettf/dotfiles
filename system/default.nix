@@ -4,10 +4,10 @@
   lib,
   ...
 }: let
-  dwl = pkgs.dwl.overrideAttrs (old: rec {
+  dwl = pkgs.dwl.overrideAttrs rec {
     src = inputs.dwl;
     passthru.providedSessions = ["dwl"];
-  });
+  };
   st = pkgs.st.overrideAttrs (old: rec {
     src = inputs.st;
     buildInputs = old.buildInputs ++ [pkgs.harfbuzz];
