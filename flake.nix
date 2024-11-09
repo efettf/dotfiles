@@ -14,11 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    suckless = {
-      url = "github:efettf/suckless";
-      flake = false;
-    };
-
     st = {
       url = "github:efettf/st";
       flake = false;
