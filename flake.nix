@@ -19,11 +19,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    suckless = {
-      url = "github:efettf/dotfiles-suckless";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     wallpapers = {
       url = "github:efettf/dotfiles-wallpapers";
       flake = false;
