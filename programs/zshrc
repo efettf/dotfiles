@@ -89,6 +89,8 @@ HISTDUP=erase
 
 KEYTIMEOUT=1
 
+export PATH=$HOME/scripts:$PATH
+
 autoload edit-command-line
 zle -N   edit-command-line
 
