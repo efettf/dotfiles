@@ -52,15 +52,15 @@
     passthru.providedSessions = ["dwl"];
   });
   st = pkgs.st.overrideAttrs (old: rec {
-    buildInputs = old.buildInputs ++ [pkgs.harfbuzz];
+    buildInputs = old.buildInputs ++ [pkgs.harfbuzz pkgs.xorg.libXcursor];
     patches = [
       (getStPatch {
         url = "themed_cursor/st-themed_cursor-0.8.1";
-        hash = "sha256-3Ooy0+YrEVnqTVEA6NBTvdZvkfAIhGdsxea0OnXWEyw=";
+        hash = "sha256-eR8APOltj7nm3GTmmJDquIuLvvDMglSc2MW5hAOwyAo=";
       })
       (getStPatch {
         url = "ligatures/0.9.2/st-ligatures-20240427-0.9.2";
-        hash = "sha256-kFmGCrsqiphY1uiRCX/Gz4yOdlLxIIHBlsM1pvW5TTA=";
+        hash = "sha256-mrBTVc5uF9KT+dXd+3DsSsrtSa6g2LfF0OEezrnoAMg=";
       })
       (getStPatch {
         url = "undercurl/st-undercurl-0.9-20240103";
