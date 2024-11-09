@@ -74,10 +74,9 @@
     "root": {
       "inputs": {
         "base": "base",
-        "dwl": "dwl",
         "homix": "homix",
         "nixpkgs": "nixpkgs",
-        "st": "st",
+        "suckless": "suckless",
         "wallpapers": "wallpapers",
         "wrapper-manager": "wrapper-manager"
       }
@@ -85,16 +84,38 @@
     "st": {
       "flake": false,
       "locked": {
-        "lastModified": 1731154119,
-        "narHash": "sha256-64+vUlsxSk2fsNr5tgMHZVFu6maq1F+4jvnshtS8jms=",
+        "lastModified": 1731157022,
+        "narHash": "sha256-R6Pk48et1iVC1H8v7fxnZvHry8G/FPMckf2Ulmr+NZY=",
         "owner": "efettf",
         "repo": "st",
-        "rev": "4cc11b3588d04579b4a895b372d70c73558c8afa",
+        "rev": "2e9b13aa67e5f7eb3f83e5e90ab56334d89b597e",
         "type": "github"
       },
       "original": {
         "owner": "efettf",
         "repo": "st",
+        "type": "github"
+      }
+    },
+    "suckless": {
+      "inputs": {
+        "dwl": "dwl",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "st": "st"
+      },
+      "locked": {
+        "lastModified": 1731158290,
+        "narHash": "sha256-KpvB5ldQ5LLCWPgd+rku09QHEH3E2/NMTK8lh1NsYnQ=",
+        "owner": "efettf",
+        "repo": "dotfiles-suckless",
+        "rev": "5d08c39c44c8f1b9174f0d68cc09a34b4cc7e6b8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "dotfiles-suckless",
         "type": "github"
       }
     },

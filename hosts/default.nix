@@ -13,6 +13,7 @@
         ./${host}.nix
 
         # Nixos module imports go here.
+        inputs.suckless.nixosModules.default
         inputs.homix.nixosModules.default
         inputs.base.nixosModules.default
       ];

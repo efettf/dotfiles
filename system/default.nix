@@ -3,54 +3,38 @@
   pkgs,
   lib,
   ...
-}: let
-  dwl = pkgs.dwl.overrideAttrs rec {
-    src = inputs.dwl;
-    passthru.providedSessions = ["dwl"];
-  };
-  st = pkgs.st.overrideAttrs (old: rec {
-    src = inputs.st;
-    buildInputs = old.buildInputs ++ [pkgs.harfbuzz];
-  });
-in {
+}: {
   imports = [
     (lib.importTOML ./config.toml)
     {services.kanata.keyboards.main.config = builtins.readFile ./kanata.lisp;}
   ];
 
-  environment.systemPackages = with pkgs;
-    [
-      (inputs.wrapper-manager.lib.build {
-        inherit pkgs;
-        modules = [../wrappers.nix];
-      })
-      gh
-      fd
-      git
-      fzf
-      gcc
-      pass
-      swww
-      tmux
-      comma
-      direnv
-      neovim
-      zoxide
-      ripgrep
-      undollar
-      tealdeer
-      alejandra
-      oh-my-posh
-      qutebrowser
-      wl-clipboard
-      bibata-cursors
-    ]
-    ++ [
-      st
-      dwl
-    ];
-
-  services.displayManager.sessionPackages = [dwl];
+  environment.systemPackages = with pkgs; [
+    (inputs.wrapper-manager.lib.build {
+      inherit pkgs;
+      modules = [../wrappers.nix];
+    })
+    gh
+    fd
+    git
+    fzf
+    gcc
+    pass
+    swww
+    tmux
+    comma
+    direnv
+    neovim
+    zoxide
+    ripgrep
+    undollar
+    tealdeer
+    alejandra
+    oh-my-posh
+    qutebrowser
+    wl-clipboard
+    bibata-cursors
+  ];
 
   fonts.packages = with pkgs; [
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
