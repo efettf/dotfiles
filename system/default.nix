@@ -66,6 +66,7 @@ in {
       ripgrep
       undollar
       tealdeer
+      alejandra
       oh-my-posh
       qutebrowser
       wl-clipboard
