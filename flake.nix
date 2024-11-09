@@ -19,8 +19,8 @@
       flake = false;
     };
 
-    based = {
-      url = "github:efettf/based.nixos";
+    base = {
+      url = "github:efettf/dotfiles-base";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

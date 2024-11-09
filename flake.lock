@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "based": {
+    "base": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -10,13 +10,13 @@
         "lastModified": 1731013219,
         "narHash": "sha256-XSUokJlJn+UUWKHUsqLPCSiSn5pJC2h5uVfX37fvtF0=",
         "owner": "efettf",
-        "repo": "based.nixos",
+        "repo": "dotfiles-base",
         "rev": "de7901764c6ac10a3461f322bab68d7655401d8e",
         "type": "github"
       },
       "original": {
         "owner": "efettf",
-        "repo": "based.nixos",
+        "repo": "dotfiles-base",
         "type": "github"
       }
     },
@@ -57,7 +57,7 @@
     },
     "root": {
       "inputs": {
-        "based": "based",
+        "base": "base",
         "homix": "homix",
         "nixpkgs": "nixpkgs",
         "suckless": "suckless",
