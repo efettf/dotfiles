@@ -72,11 +72,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1731161854,
-        "narHash": "sha256-6jMB7WZHgma4loqN5+YP68iQnIbruowEaFHc15pY7g8=",
+        "lastModified": 1731171243,
+        "narHash": "sha256-aOthhjtCOD+Xj9K5ij5vKkvFbmYh8oXALkCyUPrPvgE=",
         "owner": "efettf",
         "repo": "dotfiles-suckless",
-        "rev": "3ba3d2a50d4ffd4a8e36ec466347b09e2bbf6db4",
+        "rev": "d8d86b5ebc9d473ad98519028e2912456aa1b1df",
         "type": "github"
       },
       "original": {
@@ -111,13 +111,13 @@
         "lastModified": 1731160214,
         "narHash": "sha256-gE2ZkTHbQ9DDxqa2bfJPCCBeeuS8aoVAwdYSv1FCWc8=",
         "owner": "efettf",
-        "repo": "wrapper",
+        "repo": "wrapper.nix",
         "rev": "985ca6814040421252af4733700ef179c034816e",
         "type": "github"
       },
       "original": {
         "owner": "efettf",
-        "repo": "wrapper",
+        "repo": "wrapper.nix",
         "type": "github"
       }
     }
