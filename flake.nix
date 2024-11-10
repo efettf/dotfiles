@@ -24,6 +24,11 @@
       flake = false;
     };
 
+    dmenu = {
+      url = "github:efettf/dmenu";
+      flake = false;
+    };
+
     dwl = {
       url = "github:efettf/dwl";
       flake = false;

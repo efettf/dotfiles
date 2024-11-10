@@ -4,14 +4,6 @@
   lib,
   ...
 }: let
-  getDmenuPatch = {
-    url,
-    hash,
-  }:
-    pkgs.fetchpatch {
-      url = "https://raw.githubusercontent.com/efettf/dmenu-patches/refs/heads/main/${url}.diff";
-      inherit hash;
-    };
   dwl = pkgs.dwl.overrideAttrs (old: rec {
     src = inputs.dwl;
     passthru.providedSessions = ["dwl"];
@@ -22,24 +14,7 @@
     src = inputs.st;
     buildInputs = old.buildInputs ++ [pkgs.harfbuzz pkgs.xorg.libXcursor];
   });
-  dmenu = pkgs.dmenu.overrideAttrs (old: rec {
-    patches = [
-      (getDmenuPatch {
-        url = "grid/dmenu-grid-4.9";
-        hash = "sha256-8XKruOAX/J8FxfLJPaIQ5nZjBxvJNWJ6hboZXoXvziY=";
-      })
-      (getDmenuPatch {
-        url = "fuzzymatch/dmenu-fuzzymatch-5.3";
-        hash = "sha256-eMLMgMhR3BuOG/pcEJdkouh/HvELwjKs9vpM3BBl/Wc=";
-      })
-      (getDmenuPatch {
-        url = "center/dmenu-center-5.2";
-        hash = "sha256-qfPInuNejJE3jXchVXlRMCmzbgKJkzdNKLP9hCzSCsU=";
-      })
-    ];
-    configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/dmenu.h);
-    postPatch = old.postPatch + "cp ${configFile} config.def.h";
-  });
+  dmenu = pkgs.dmenu.overrideAttrs rec {src = inputs.dmenu;};
 in {
   imports = [
     (lib.importTOML ./config.toml)

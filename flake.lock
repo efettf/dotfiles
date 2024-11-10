@@ -20,6 +20,22 @@
         "type": "github"
       }
     },
+    "dmenu": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1731260579,
+        "narHash": "sha256-9Nppe3BrBJMbm2oDH5VdGqZ6lhKOiNouo6K3bmkifdc=",
+        "owner": "efettf",
+        "repo": "dmenu",
+        "rev": "aa4f9bdd975f398b5996599afde99f2d4cd15b4a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "dmenu",
+        "type": "github"
+      }
+    },
     "dwl": {
       "flake": false,
       "locked": {
@@ -74,6 +90,7 @@
     "root": {
       "inputs": {
         "base": "base",
+        "dmenu": "dmenu",
         "dwl": "dwl",
         "homix": "homix",
         "nixpkgs": "nixpkgs",
