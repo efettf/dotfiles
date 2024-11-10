@@ -69,9 +69,12 @@ in {
       neovim
       zoxide
       ripgrep
+      hyprland
       undollar
+      xwayland
       tealdeer
       alejandra
+      hyprcursor
       oh-my-posh
       qutebrowser
       wl-clipboard
@@ -84,11 +87,17 @@ in {
       slstatus
     ];
 
-  services.displayManager.sessionPackages = [dwl];
+  services.displayManager.sessionPackages = [dwl pkgs.hyprland];
 
   fonts.packages = with pkgs; [
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
   ];
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+    configPackages = [pkgs.hyprland];
+  };
 
   # Set default user shell to zsh.
   users.defaultUserShell = pkgs.zsh;
