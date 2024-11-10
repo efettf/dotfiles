@@ -11,6 +11,7 @@
   wrappers.dwl = {
     basePackage = dwl;
     flags = ["-s" "swww-daemon"];
+    env.WLR_DRM_NO_ATOMIC.value = "1";
   };
 
   wrappers.eza = {

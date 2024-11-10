@@ -15,6 +15,7 @@
   dwl = pkgs.dwl.overrideAttrs (old: rec {
     src = inputs.dwl;
     passthru.providedSessions = ["dwl"];
+    buildInputs = old.buildInputs ++ [pkgs.libdrm pkgs.fcft];
   });
   st = pkgs.st.overrideAttrs (old: rec {
     src = inputs.st;
