@@ -17,6 +17,7 @@
     passthru.providedSessions = ["dwl"];
     buildInputs = old.buildInputs ++ [pkgs.libdrm pkgs.fcft];
   });
+  slstatus = pkgs.slstatus.overrideAttrs rec {src = inputs.slstatus;};
   st = pkgs.st.overrideAttrs (old: rec {
     src = inputs.st;
     buildInputs = old.buildInputs ++ [pkgs.harfbuzz pkgs.xorg.libXcursor];
@@ -49,7 +50,10 @@ in {
     [
       (inputs.wrapper.lib.build {
         inherit pkgs;
-        specialArgs = {inherit dwl;};
+        specialArgs = {
+          inherit dwl;
+          inherit slstatus;
+        };
         modules = [../wrappers.nix];
       })
       gh
@@ -73,7 +77,12 @@ in {
       wl-clipboard
       bibata-cursors
     ]
-    ++ [st dwl dmenu];
+    ++ [
+      st
+      dwl
+      dmenu
+      slstatus
+    ];
 
   services.displayManager.sessionPackages = [dwl];
 

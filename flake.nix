@@ -19,6 +19,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    slstatus = {
+      url = "github:efettf/slstatus";
+      flake = false;
+    };
+
     dwl = {
       url = "github:efettf/dwl";
       flake = false;
