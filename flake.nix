@@ -19,6 +19,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    st = {
+      url = "github:efettf/st";
+      flake = false;
+    };
+
     wallpapers = {
       url = "github:efettf/dotfiles-wallpapers";
       flake = false;

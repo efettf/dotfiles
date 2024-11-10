@@ -60,18 +60,35 @@
         "base": "base",
         "homix": "homix",
         "nixpkgs": "nixpkgs",
+        "st": "st",
         "wallpapers": "wallpapers",
         "wrapper": "wrapper"
+      }
+    },
+    "st": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1731237017,
+        "narHash": "sha256-JSjgmRz5dZPjcSPRaEN0FflZczUK4HA+NIdmbzKoLaQ=",
+        "owner": "efettf",
+        "repo": "st",
+        "rev": "9f2e6d136ed8c81054010ac1513dff6a78fddee3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "st",
+        "type": "github"
       }
     },
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1730630169,
-        "narHash": "sha256-WJeNNBgpBqnfiNjEWZfhBIR/eB7TFZRVJjUPD18rAC4=",
+        "lastModified": 1731238653,
+        "narHash": "sha256-fO+7Uz9sfDbZ/SOLvMPTkEqDPPH2x5z1VxTH7/3a+HA=",
         "owner": "efettf",
         "repo": "dotfiles-wallpapers",
-        "rev": "17cda4ad696a9f94edecde4307bc621df1289b90",
+        "rev": "099c4d5afc9abdca7ffd95ecaaa6cad79911994a",
         "type": "github"
       },
       "original": {
