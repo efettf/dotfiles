@@ -12,35 +12,8 @@
       url = "https://raw.githubusercontent.com/efettf/dmenu-patches/refs/heads/main/${url}.diff";
       inherit hash;
     };
-  getDwlPatch = {
-    name,
-    hash,
-  }:
-    pkgs.fetchpatch {
-      url = "https://raw.githubusercontent.com/efettf/dwl-patches/refs/heads/main/${name}/${name}.patch";
-      inherit hash;
-    };
   dwl = pkgs.dwl.overrideAttrs (old: rec {
-    patches = [
-      (getDwlPatch {
-        name = "cursortheme";
-        hash = "sha256-x9sN0cUZbEXyJM/3gQQgZRwVZknjAbvKtm+B41JokII=";
-      })
-      (getDwlPatch {
-        name = "gaps";
-        hash = "sha256-6knXrYblzaqjy5ZG8YG2VKwHeaHB+rij+8ZxXe5LqTE=";
-      })
-      (getDwlPatch {
-        name = "warpcursor";
-        hash = "sha256-0AGMq507WmW2QJW02u6eJDuQmGBAiVPbEw79npwqEDU=";
-      })
-      (getDwlPatch {
-        name = "alwayscenter";
-        hash = "sha256-JaM/YAXioRi16TRKLvDvHAsn4HQ9jpaBAhvHyp/r/+I=";
-      })
-    ];
-    configFile = pkgs.writeText "config.def.h" (builtins.readFile ../programs/dwl.h);
-    postPatch = old.postPatch + "cp ${configFile} config.def.h";
+    src = inputs.dwl;
     passthru.providedSessions = ["dwl"];
   });
   st = pkgs.st.overrideAttrs (old: rec {
