@@ -75,6 +75,7 @@ in {
     [
       (inputs.wrapper.lib.build {
         inherit pkgs;
+        specialArgs = {inherit dwl;};
         modules = [../wrappers.nix];
       })
       gh

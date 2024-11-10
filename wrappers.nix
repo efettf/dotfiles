@@ -1,7 +1,16 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  dwl,
+  ...
+}: {
   wrappers.bat = {
     basePackage = pkgs.bat;
     env."BAT_THEME".value = "catppuccin-mocha";
+  };
+
+  wrappers.dwl = {
+    basePackage = dwl;
+    flags = ["-s" "swww-daemon"];
   };
 
   wrappers.eza = {
