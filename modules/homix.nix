@@ -3,11 +3,10 @@
   lib,
   pkgs,
   ...
-}: let
-  inherit (lib) mkOption mkDefault replaceStrings mkEnableOption types filterAttrs attrValues mkIf mkDerivedConfig;
-  inherit (builtins) map listToAttrs attrNames concatStringsSep;
-  inherit (pkgs) writeShellScript writeText;
-in {
+}:
+with builtins;
+with pkgs;
+with lib; {
   options = {
     homix = mkOption {
       default = {};
