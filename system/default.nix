@@ -31,7 +31,6 @@ in {
         };
         modules = [../wrappers.nix];
       })
-      (pkgs.writeScriptBin "sudo" ''exec doas "$@"'')
       gh
       fd
       git
@@ -51,6 +50,7 @@ in {
       oh-my-posh
       qutebrowser
       wl-clipboard
+      doas-sudo-shim
       bibata-cursors
     ]
     ++ [
