@@ -12,8 +12,7 @@
         # Import hardware scan result for host.
         ./${host}.nix
 
-        # Nixos module imports go here.
-        inputs.homix.nixosModules.default
+        ../modules/homix.nix
       ];
     };
 in {

@@ -4,11 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
 
-    homix = {
-      url = "github:efettf/homix.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     wrapper = {
       url = "github:viperML/wrapper-manager";
       inputs.nixpkgs.follows = "nixpkgs";

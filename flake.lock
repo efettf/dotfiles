@@ -32,26 +32,6 @@
         "type": "github"
       }
     },
-    "homix": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1730652378,
-        "narHash": "sha256-S6uPPNDxifUieKRuVY7lG1Hja6ujkKVCeR2bCS0XzH8=",
-        "owner": "efettf",
-        "repo": "homix.nix",
-        "rev": "5bb22432e1c4f480528ac9206f840dac34b79526",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efettf",
-        "repo": "homix.nix",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1730023928,
@@ -71,7 +51,6 @@
       "inputs": {
         "dmenu": "dmenu",
         "dwl": "dwl",
-        "homix": "homix",
         "nixpkgs": "nixpkgs",
         "slstatus": "slstatus",
         "st": "st",
