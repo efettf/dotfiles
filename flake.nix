@@ -1,37 +1,25 @@
 {
-  outputs = inputs: {nixosConfigurations = import ./hosts inputs;};
+  outputs = inputs: with inputs; flakelight ./. {nixosConfigurations = import ./.;};
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs";
 
-    wrapper = {
-      url = "github:viperML/wrapper-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+  inputs.flakelight.url = "github:nix-community/flakelight";
 
-    slstatus = {
-      url = "github:efettf/slstatus";
-      flake = false;
-    };
+  inputs.wrapper.url = "github:viperML/wrapper-manager";
+  inputs.wrapper.inputs.nixpkgs.follows = "nixpkgs";
 
-    dmenu = {
-      url = "github:efettf/dmenu";
-      flake = false;
-    };
+  inputs.slstatus.url = "github:efettf/slstatus";
+  inputs.slstatus.flake = false;
 
-    dwl = {
-      url = "github:efettf/dwl";
-      flake = false;
-    };
+  inputs.dmenu.url = "github:efettf/dmenu";
+  inputs.dmenu.flake = false;
 
-    st = {
-      url = "github:efettf/st";
-      flake = false;
-    };
+  inputs.dwl.url = "github:efettf/dwl";
+  inputs.dwl.flake = false;
 
-    wallpapers = {
-      url = "github:efettf/dotfiles-wallpapers";
-      flake = false;
-    };
-  };
+  inputs.st.url = "github:efettf/st";
+  inputs.st.flake = false;
+
+  inputs.wallpapers.url = "github:efettf/dotfiles-wallpapers";
+  inputs.wallpapers.flake = false;
 }

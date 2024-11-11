@@ -18,7 +18,7 @@
 in {
   imports = [
     (lib.importTOML ./config.toml)
-    {services.kanata.keyboards.main.config = builtins.readFile ./kanata.lisp;}
+    {services.kanata.keyboards.main.config = builtins.readFile ../config/kanata.lisp;}
   ];
 
   environment.systemPackages = with pkgs;
@@ -29,7 +29,7 @@ in {
           inherit dwl;
           inherit slstatus;
         };
-        modules = [../wrappers.nix];
+        modules = [./wrappers.nix];
       })
       gh
       fd
