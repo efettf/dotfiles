@@ -30,6 +30,7 @@ in {
       };
       modules = [./wrappers.nix];
     })
+    (writeShellScriptBin "sudo" ''exec doas $@'')
     gh
     fd
     st
@@ -53,7 +54,6 @@ in {
     oh-my-posh
     qutebrowser
     wl-clipboard
-    doas-sudo-shim
     bibata-cursors
   ];
 
