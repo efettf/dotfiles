@@ -19,8 +19,6 @@
       hash = "sha256-TNLCq5eqBd3BKm/Bd0H4q1YanjsYDqNKbFFkjR4zbJ4=";
     };
 
-    ".config/hypr/hyprland.conf".source = ./programs/hyprland.conf;
-
     ".profile".source = ./programs/profile.sh;
 
     ".zshrc".source = ./programs/zshrc;
