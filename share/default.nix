@@ -21,44 +21,41 @@ in {
     {services.kanata.keyboards.main.config = builtins.readFile ../config/kanata.lisp;}
   ];
 
-  environment.systemPackages = with pkgs;
-    [
-      (inputs.wrapper.lib.build {
-        inherit pkgs;
-        specialArgs = {
-          inherit dwl;
-          inherit slstatus;
-        };
-        modules = [./wrappers.nix];
-      })
-      gh
-      fd
-      git
-      fzf
-      gcc
-      pass
-      swww
-      tmux
-      comma
-      direnv
-      neovim
-      zoxide
-      ripgrep
-      undollar
-      tealdeer
-      alejandra
-      oh-my-posh
-      qutebrowser
-      wl-clipboard
-      doas-sudo-shim
-      bibata-cursors
-    ]
-    ++ [
-      st
-      dwl
-      dmenu
-      slstatus
-    ];
+  environment.systemPackages = with pkgs; [
+    (inputs.wrapper.lib.build {
+      inherit pkgs;
+      specialArgs = {
+        inherit dwl;
+        inherit slstatus;
+      };
+      modules = [./wrappers.nix];
+    })
+    gh
+    fd
+    st
+    git
+    fzf
+    dwl
+    gcc
+    pass
+    swww
+    tmux
+    dmenu
+    comma
+    direnv
+    neovim
+    zoxide
+    ripgrep
+    undollar
+    slstatus
+    tealdeer
+    alejandra
+    oh-my-posh
+    qutebrowser
+    wl-clipboard
+    doas-sudo-shim
+    bibata-cursors
+  ];
 
   services.displayManager.sessionPackages = [dwl];
 
