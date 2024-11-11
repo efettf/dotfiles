@@ -7,12 +7,12 @@
   dwl = pkgs.dwl.overrideAttrs (old: rec {
     src = inputs.dwl;
     passthru.providedSessions = ["dwl"];
-    buildInputs = old.buildInputs ++ [pkgs.libdrm pkgs.fcft];
+    buildInputs = old.buildInputs ++ (with pkgs; [libdrm fcft]);
   });
   slstatus = pkgs.slstatus.overrideAttrs rec {src = inputs.slstatus;};
   st = pkgs.st.overrideAttrs (old: rec {
     src = inputs.st;
-    buildInputs = old.buildInputs ++ [pkgs.harfbuzz pkgs.xorg.libXcursor];
+    buildInputs = old.buildInputs ++ (with pkgs; [harfbuzz xorg.libXcursor]);
   });
   dmenu = pkgs.dmenu.overrideAttrs rec {src = inputs.dmenu;};
 in {
