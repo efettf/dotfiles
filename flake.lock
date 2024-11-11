@@ -19,11 +19,11 @@
     "dwl": {
       "flake": false,
       "locked": {
-        "lastModified": 1731279252,
-        "narHash": "sha256-rtdYDfDP1BWh9QV0Nnk6RiF45GcgY4fAh6Wgly14KWI=",
+        "lastModified": 1731329736,
+        "narHash": "sha256-7zvwq2PWGlfame6WJOkK+cInxj2BteP9QyijH6pTuiY=",
         "owner": "efettf",
         "repo": "dwl",
-        "rev": "110c450e3ece63f403bc4e5c9aa302cca5a3daf7",
+        "rev": "c2464caa3ea08cf86554ea40fc83217a9f0bf1cf",
         "type": "github"
       },
       "original": {

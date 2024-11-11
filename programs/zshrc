@@ -64,12 +64,15 @@ eval "$(fzf           --zsh)"
 
 setopt hist_ignore_all_dups
 setopt autocd extendedglob
+setopt interactivecomments
 setopt hist_ignore_space
 setopt hist_find_no_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt appendhistory
 setopt sharehistory
+
+unsetopt extended_glob
 
 bindkey '^[OA' history-search-backward
 bindkey '^[OB' history-search-forward
