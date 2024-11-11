@@ -2,9 +2,6 @@
 # Enable wi-fi support via network manager.
 networking.networkmanager.enable = true
 
-# Set host name, required to rebuiled the system.
-networking.hostName = "nixos"
-
 # Set your time zone.
 time.timeZone = "Europe/Warsaw"
 
