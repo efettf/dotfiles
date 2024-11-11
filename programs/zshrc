@@ -72,8 +72,6 @@ setopt hist_ignore_dups
 setopt appendhistory
 setopt sharehistory
 
-unsetopt extended_glob
-
 bindkey '^[OA' history-search-backward
 bindkey '^[OB' history-search-forward
 bindkey '^e'   edit-command-line
