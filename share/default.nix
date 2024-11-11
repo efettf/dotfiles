@@ -17,6 +17,7 @@
   dmenu = pkgs.dmenu.overrideAttrs rec {src = inputs.dmenu;};
 in {
   imports = [
+    ./files.nix
     (lib.importTOML ./config.toml)
     {services.kanata.keyboards.main.config = builtins.readFile ../config/kanata.lisp;}
   ];
