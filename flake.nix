@@ -10,7 +10,7 @@
     };
 
     wrapper = {
-      url = "github:efettf/wrapper.nix";
+      url = "github:viperML/wrapper-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

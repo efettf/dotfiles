@@ -155,16 +155,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1731160214,
-        "narHash": "sha256-gE2ZkTHbQ9DDxqa2bfJPCCBeeuS8aoVAwdYSv1FCWc8=",
-        "owner": "efettf",
-        "repo": "wrapper.nix",
-        "rev": "985ca6814040421252af4733700ef179c034816e",
+        "lastModified": 1724503599,
+        "narHash": "sha256-WVhNq3QjnG/2mi772CkTxZCQcomKV5S03TbQKwe1Kj4=",
+        "owner": "viperML",
+        "repo": "wrapper-manager",
+        "rev": "c936f9203217e654a6074d206505c16432edbc70",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
-        "repo": "wrapper.nix",
+        "owner": "viperML",
+        "repo": "wrapper-manager",
         "type": "github"
       }
     }
