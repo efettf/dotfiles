@@ -1,4 +1,7 @@
 
+# Enable wi-fi support via network manager.
+networking.networkmanager.enable = true
+
 # Set host name, required to rebuiled the system.
 networking.hostName = "nixos"
 
@@ -49,6 +52,15 @@ suspend.enable = false
 hibernate.enable = false
 hybrid-sleep.enable = false
 
+[security]
+doas.enable = true
+
+sudo.enable = false
+
+# Removes password prompts for your wheel group,
+# you can manage user groups below at '[users.users.*]'.
+doas.wheelNeedsPassword = false
+
 # Nixos system settings for programs.
 [programs]
 
@@ -57,6 +69,10 @@ gnupg.agent.enable = true
 
 # Enable zsh shell.
 zsh.enable = true
+
+# Disable nano, you can get it back using 'nix-shell -p nano'.
+nano.enable = false
+
 
 # Boot loader settings, required to rebuiled the system.
 [boot.loader]

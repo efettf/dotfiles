@@ -14,11 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    base = {
-      url = "github:efettf/dotfiles-base";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     slstatus = {
       url = "github:efettf/slstatus";
       flake = false;

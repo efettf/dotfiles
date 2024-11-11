@@ -14,7 +14,6 @@
 
         # Nixos module imports go here.
         inputs.homix.nixosModules.default
-        inputs.base.nixosModules.default
       ];
     };
 in {

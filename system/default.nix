@@ -31,6 +31,7 @@ in {
         };
         modules = [../wrappers.nix];
       })
+      (pkgs.writeScriptBin "sudo" ''exec doas "$@"'')
       gh
       fd
       git
@@ -76,6 +77,9 @@ in {
 
   # Set default user shell to zsh.
   users.defaultUserShell = pkgs.zsh;
+
+  # Enable flakes and nix command.
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # System backup version, to update system see 'flake.nix' instead.
   system.stateVersion = "24.05";
