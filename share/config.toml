@@ -84,5 +84,7 @@ isNormalUser = true
 
 homix = true
 
+initialPassword = "nixos"
+
 # Set extra groups for user.
 extraGroups = ["wheel"]
