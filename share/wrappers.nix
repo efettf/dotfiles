@@ -3,9 +3,10 @@
   pkgs,
   dwl,
   ...
-}: {
+}:
+with pkgs; {
   wrappers.bat = {
-    basePackage = pkgs.bat;
+    basePackage = bat;
     env."BAT_THEME".value = "catppuccin-mocha";
   };
 
@@ -21,7 +22,7 @@
   };
 
   wrappers.eza = {
-    basePackage = pkgs.eza;
+    basePackage = eza;
     flags = ["--icons=always" "--no-quotes"];
   };
 }
