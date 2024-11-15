@@ -49,6 +49,8 @@ alias yt-dlp=', yt-dlp'
 alias cv=', dipc'
 alias n='git'
 alias g='git'
+alias ni='gitu'
+alias gi='gitu'
 
 
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/config.toml)" 

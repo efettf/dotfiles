@@ -89,7 +89,7 @@
         "nixpkgs": "nixpkgs_2",
         "slstatus": "slstatus",
         "st": "st",
-        "wallpapers": "wallpapers",
+        "walls": "walls",
         "wrapper": "wrapper"
       }
     },
@@ -125,19 +125,19 @@
         "type": "github"
       }
     },
-    "wallpapers": {
+    "walls": {
       "flake": false,
       "locked": {
-        "lastModified": 1731238653,
-        "narHash": "sha256-fO+7Uz9sfDbZ/SOLvMPTkEqDPPH2x5z1VxTH7/3a+HA=",
+        "lastModified": 1731361689,
+        "narHash": "sha256-H6jZP5CTWb5NJF9+PrwjzGx6tcGPgC9B4fvCI9rWuAI=",
         "owner": "efettf",
-        "repo": "dotfiles-wallpapers",
-        "rev": "099c4d5afc9abdca7ffd95ecaaa6cad79911994a",
+        "repo": "walls",
+        "rev": "31c61a31202a14efd9b96203043161ea7e622b62",
         "type": "github"
       },
       "original": {
         "owner": "efettf",
-        "repo": "dotfiles-wallpapers",
+        "repo": "walls",
         "type": "github"
       }
     },

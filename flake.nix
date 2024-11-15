@@ -20,6 +20,6 @@
   inputs.st.url = "github:efettf/st";
   inputs.st.flake = false;
 
-  inputs.wallpapers.url = "github:efettf/dotfiles-wallpapers";
-  inputs.wallpapers.flake = false;
+  inputs.walls.url = "github:efettf/walls";
+  inputs.walls.flake = false;
 }

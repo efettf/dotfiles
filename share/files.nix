@@ -4,7 +4,7 @@
   ...
 }: {
   homix = {
-    "wallpapers".source = inputs.wallpapers;
+    "wallpapers".source = inputs.walls;
 
     ".config/tmux/tmux.conf".source = ../config/tmux.conf;
 
