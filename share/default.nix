@@ -40,6 +40,7 @@ in {
     dwl
     gcc
     pass
+    gitu
     swww
     tmux
     dmenu
