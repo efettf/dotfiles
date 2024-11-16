@@ -15,13 +15,6 @@ networking.firewall.enable = true
 enable = true
 powerOnBoot = true
 
-# Kanata settings.
-[services.kanata]
-
-# Enable kanata and make it process all keys.
-enable = true
-keyboards.main.extraDefCfg = "process-unmapped-keys yes"
-
 # Service settings.
 [services]
 

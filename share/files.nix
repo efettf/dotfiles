@@ -22,7 +22,5 @@
     };
 
     ".profile".source = ../config/profile.sh;
-
-    ".config/ohmyposh/config.toml".source = ../config/oh-my-posh.toml;
   };
 }

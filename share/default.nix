@@ -18,7 +18,6 @@ in {
   imports = [
     ./files.nix
     (lib.importTOML ./config.toml)
-    {services.kanata.keyboards.main.config = builtins.readFile ../config/kanata.lisp;}
   ];
 
   environment.systemPackages = with pkgs; [
@@ -45,7 +44,6 @@ in {
     undollar
     tealdeer
     alejandra
-    oh-my-posh
     qutebrowser
     wl-clipboard
     bibata-cursors
