@@ -51,8 +51,6 @@ in {
     bibata-cursors
   ];
 
-  programs.fish.enable = true;
-
   environment.variables = {
     "BAT_THEME" = "catppuccin-mocha";
   };
@@ -62,8 +60,6 @@ in {
   fonts.packages = with pkgs; [
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
   ];
-
-  users.defaultUserShell = pkgs.fish;
 
   # Enable flakes and nix command.
   nix.settings.experimental-features = ["nix-command" "flakes"];
