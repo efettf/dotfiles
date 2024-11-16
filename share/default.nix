@@ -21,7 +21,6 @@ in {
   ];
 
   environment.systemPackages = with pkgs; [
-    (writeShellScriptBin "sudo" ''exec doas $@'')
     gh
     fd
     st
@@ -45,6 +44,7 @@ in {
     alejandra
     qutebrowser
     wl-clipboard
+    doas-sudo-shim
     bibata-cursors
   ];
 
