@@ -1,1 +1,8 @@
-{imports = [./fish ./kanata ./gitu];}
+{
+  imports = [
+    ./kanata
+    ./fish
+    ./tmux
+    ./gitu
+  ];
+}

@@ -32,7 +32,6 @@ in {
     bat
     pass
     swww
-    tmux
     dmenu
     comma
     direnv
