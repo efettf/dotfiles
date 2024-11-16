@@ -32,7 +32,6 @@ in {
     gcc
     bat
     pass
-    gitu
     swww
     tmux
     dmenu

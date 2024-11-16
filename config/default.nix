@@ -1,1 +1,1 @@
-{imports = [./fish ./kanata];}
+{imports = [./fish ./kanata ./gitu];}

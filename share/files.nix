@@ -6,8 +6,6 @@
   homix = {
     "wallpapers".source = inputs.walls;
 
-    ".config/gitu/config.toml".source = ../config/gitu.toml;
-
     ".config/tmux/tmux.conf".source = ../config/tmux.conf;
 
     ".config/bat/themes/catppuccin-mocha.tmTheme".source = pkgs.fetchurl {
