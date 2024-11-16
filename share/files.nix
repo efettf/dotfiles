@@ -23,8 +23,6 @@
 
     ".profile".source = ../config/profile.sh;
 
-    ".zshrc".source = ../config/zshrc;
-
     ".config/ohmyposh/config.toml".source = ../config/oh-my-posh.toml;
   };
 }

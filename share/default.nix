@@ -34,7 +34,6 @@ in {
     bat
     pass
     gitu
-    fish
     swww
     tmux
     dmenu
@@ -52,6 +51,8 @@ in {
     bibata-cursors
   ];
 
+  programs.fish.enable = true;
+
   environment.variables = {
     "BAT_THEME" = "catppuccin-mocha";
   };
@@ -62,8 +63,7 @@ in {
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
   ];
 
-  # Set default user shell to zsh.
-  users.defaultUserShell = pkgs.zsh;
+  users.defaultUserShell = pkgs.fish;
 
   # Enable flakes and nix command.
   nix.settings.experimental-features = ["nix-command" "flakes"];
