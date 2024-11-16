@@ -95,11 +95,11 @@
     "st": {
       "flake": false,
       "locked": {
-        "lastModified": 1731237017,
-        "narHash": "sha256-JSjgmRz5dZPjcSPRaEN0FflZczUK4HA+NIdmbzKoLaQ=",
+        "lastModified": 1731770696,
+        "narHash": "sha256-Nn6LfCZHdC9xa2RbYZKUXJNrmhxN8SuQRFVwl/R64/8=",
         "owner": "efettf",
         "repo": "st",
-        "rev": "9f2e6d136ed8c81054010ac1513dff6a78fddee3",
+        "rev": "3d39d233645dd9c9189ee16f1d9cefceb3f32bed",
         "type": "github"
       },
       "original": {
