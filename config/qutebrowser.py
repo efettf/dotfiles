@@ -3,7 +3,7 @@ config.load_autoconfig()
 
 c.zoom.levels = ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100", "110", "120", "130", "140", "150", "160", "170", "180", "190", "200", "210", "220", "230", "240", "250"]
 
-c.url.searchengines['DEFAULT'] = "https://search.hbubli.cc/search?q={}"
+c.url.searchengines['DEFAULT'] = "https://search.inetol.net/search?q={}"
 c.url.searchengines['gh'] = "https://github.com/search?q={}"
 c.url.searchengines['in'] = "https://cal1.iv.ggtyler.dev/search?q={}"
 c.url.searchengines['np'] = "https://search.nixos.org/packages?channel=24.05&query={}"
