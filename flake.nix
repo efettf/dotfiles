@@ -5,9 +5,6 @@
 
   inputs.flakelight.url = "github:nix-community/flakelight";
 
-  inputs.wrapper.url = "github:viperML/wrapper-manager";
-  inputs.wrapper.inputs.nixpkgs.follows = "nixpkgs";
-
   inputs.dmenu.url = "github:efettf/dmenu";
   inputs.dmenu.flake = false;
 

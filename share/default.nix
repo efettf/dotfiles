@@ -22,21 +22,16 @@ in {
   ];
 
   environment.systemPackages = with pkgs; [
-    (inputs.wrapper.lib.build {
-      inherit pkgs;
-      specialArgs = {
-        inherit dwl;
-      };
-      modules = [./wrappers.nix];
-    })
     (writeShellScriptBin "sudo" ''exec doas $@'')
     gh
     fd
     st
     git
+    eza
     fzf
     dwl
     gcc
+    bat
     pass
     gitu
     fish
@@ -56,6 +51,10 @@ in {
     wl-clipboard
     bibata-cursors
   ];
+
+  environment.variables = {
+    "BAT_THEME" = "catppuccin-mocha";
+  };
 
   services.displayManager.sessionPackages = [dwl];
 

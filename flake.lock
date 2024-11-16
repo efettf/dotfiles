@@ -19,11 +19,11 @@
     "dwl": {
       "flake": false,
       "locked": {
-        "lastModified": 1731762032,
-        "narHash": "sha256-AsWTcZMLGjirD1JORwQq4JKOFZWdRVSrup0LKfNY+oQ=",
+        "lastModified": 1731780265,
+        "narHash": "sha256-nbNBX+4eOiYd3tWuWNtnlC+ysLfy4C10sqKODvpJk6Q=",
         "owner": "efettf",
         "repo": "dwl",
-        "rev": "469a6b4663a1c736d8ef1723ae659782aab9d729",
+        "rev": "c1a253286fe18549945c8cb30c0abe0239d818b2",
         "type": "github"
       },
       "original": {
@@ -88,8 +88,7 @@
         "flakelight": "flakelight",
         "nixpkgs": "nixpkgs_2",
         "st": "st",
-        "walls": "walls",
-        "wrapper": "wrapper"
+        "walls": "walls"
       }
     },
     "st": {
@@ -121,26 +120,6 @@
       "original": {
         "owner": "efettf",
         "repo": "walls",
-        "type": "github"
-      }
-    },
-    "wrapper": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1724503599,
-        "narHash": "sha256-WVhNq3QjnG/2mi772CkTxZCQcomKV5S03TbQKwe1Kj4=",
-        "owner": "viperML",
-        "repo": "wrapper-manager",
-        "rev": "c936f9203217e654a6074d206505c16432edbc70",
-        "type": "github"
-      },
-      "original": {
-        "owner": "viperML",
-        "repo": "wrapper-manager",
         "type": "github"
       }
     }
