@@ -8,9 +8,6 @@
   inputs.wrapper.url = "github:viperML/wrapper-manager";
   inputs.wrapper.inputs.nixpkgs.follows = "nixpkgs";
 
-  inputs.slstatus.url = "github:efettf/slstatus";
-  inputs.slstatus.flake = false;
-
   inputs.dmenu.url = "github:efettf/dmenu";
   inputs.dmenu.flake = false;
 

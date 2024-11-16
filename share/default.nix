@@ -9,7 +9,6 @@
     passthru.providedSessions = ["dwl"];
     buildInputs = old.buildInputs ++ (with pkgs; [libdrm fcft]);
   });
-  slstatus = pkgs.slstatus.overrideAttrs rec {src = inputs.slstatus;};
   st = pkgs.st.overrideAttrs (old: rec {
     src = inputs.st;
     buildInputs = old.buildInputs ++ (with pkgs; [harfbuzz xorg.libXcursor]);
@@ -27,7 +26,6 @@ in {
       inherit pkgs;
       specialArgs = {
         inherit dwl;
-        inherit slstatus;
       };
       modules = [./wrappers.nix];
     })
@@ -50,7 +48,6 @@ in {
     zoxide
     ripgrep
     undollar
-    slstatus
     tealdeer
     alejandra
     oh-my-posh

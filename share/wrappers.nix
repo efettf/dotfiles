@@ -1,5 +1,4 @@
 {
-  slstatus,
   pkgs,
   dwl,
   ...
@@ -8,11 +7,6 @@ with pkgs; {
   wrappers.bat = {
     basePackage = bat;
     env."BAT_THEME".value = "catppuccin-mocha";
-  };
-
-  wrappers.slstatus = {
-    basePackage = slstatus;
-    flags = ["-s"];
   };
 
   wrappers.dwl = {

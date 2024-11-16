@@ -87,26 +87,9 @@
         "dwl": "dwl",
         "flakelight": "flakelight",
         "nixpkgs": "nixpkgs_2",
-        "slstatus": "slstatus",
         "st": "st",
         "walls": "walls",
         "wrapper": "wrapper"
-      }
-    },
-    "slstatus": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1731251018,
-        "narHash": "sha256-uqpkpZI80+KpTbJjJV1r/oaDLa/ZhGoBAMuiTfpGt0U=",
-        "owner": "efettf",
-        "repo": "slstatus",
-        "rev": "b5a48eff997e3006b27d7ea12d1d586fb3fdd71b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efettf",
-        "repo": "slstatus",
-        "type": "github"
       }
     },
     "st": {
