@@ -39,6 +39,7 @@ in {
     gcc
     pass
     gitu
+    fish
     swww
     tmux
     dmenu
