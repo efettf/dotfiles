@@ -15,6 +15,8 @@
       hash = "sha256-UBuh6EeUhD5V9TjAo7hBRaGCt3KjkkO7QDxuaEBzN0s=";
     };
 
+    ".config/fish/config.fish".source = ../config/config.fish;
+
     ".config/qutebrowser/config.py".source = ../config/qutebrowser.py;
     ".config/qutebrowser/theme.py".source = pkgs.fetchurl {
       url = "https://raw.githubusercontent.com/catppuccin/qutebrowser/main/setup.py";
