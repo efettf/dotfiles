@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.fish.enable = true;
 
-  homix.".config/fish/config.fish".source = ./config.fish;
+  files.".config/fish/config.fish".source = ./config.fish;
 
   users.defaultUserShell = pkgs.fish;
   documentation.man.generateCaches = false;

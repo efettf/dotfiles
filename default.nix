@@ -7,7 +7,7 @@ with self; let
       ./share
       ./config
       ./hosts/${host}
-      ./modules/homix.nix
+      ./modules/files.nix
       {networking.hostName = host;}
     ];
   };

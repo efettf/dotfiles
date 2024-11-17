@@ -10,7 +10,7 @@
     alejandra
   ];
 
-  homix.".config/nvim/init.lua".text =
+  files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
     + ''
       local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

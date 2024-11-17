@@ -4,5 +4,5 @@
     gitu
   ];
 
-  homix.".config/gitu/config.toml".source = ./config.toml;
+  files.".config/gitu/config.toml".source = ./config.toml;
 }

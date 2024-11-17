@@ -8,7 +8,7 @@ with builtins;
 with pkgs;
 with lib; {
   options = {
-    homix = mkOption {
+    files = mkOption {
       default = {};
       type = types.attrsOf (types.submodule ({
         name,
@@ -38,7 +38,7 @@ with lib; {
           path = mkDefault name;
           source = mkIf (config.text != null) (
             let
-              name' = "homix-" + replaceStrings ["/"] ["-"] name;
+              name' = "files-" + replaceStrings ["/"] ["-"] name;
             in
               mkDerivedConfig options.text (writeText name')
           );
@@ -47,37 +47,37 @@ with lib; {
     };
     users.users = mkOption {
       type = types.attrsOf (types.submodule {
-        options.homix = mkEnableOption "Enable homix for selected user";
+        options.files = mkEnableOption "Enable homix for selected user";
       });
     };
   };
 
   config = let
-    # List of users managed by homix.
-    users = attrNames (filterAttrs (name: user: user.homix) config.users.users);
+    # List of users managed by files.
+    users = attrNames (filterAttrs (name: user: user.files) config.users.users);
 
-    homix-link = let
+    files-link = let
       files = map (f: ''
         FILE=$HOME/${f.path}
         [[ -d ${f.source} ]] && rm $FILE
         mkdir -p $(dirname $FILE)
         diff $FILE ${f.source} || ln -sf ${f.source} $FILE
-      '') (attrValues config.homix);
+      '') (attrValues config.files);
     in
-      writeShellScript "homix-link" ''
+      writeShellScript "files-link" ''
         #!/bin/sh
         ${concatStringsSep "\n" files}
       '';
 
     mkService = user: {
-      name = "homix-" + user;
+      name = "files-" + user;
       value = {
         wantedBy = ["multi-user.target"];
-        description = "Setup homix environment for ${user}.";
+        description = "Setup files environment for ${user}.";
         serviceConfig = {
           Type = "oneshot";
           User = user;
-          ExecStart = homix-link;
+          ExecStart = files-link;
         };
         environment.HOME = config.users.users.${user}.home;
       };
