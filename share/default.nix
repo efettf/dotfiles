@@ -21,6 +21,7 @@ in {
     gh
     fd
     st
+    go
     git
     eza
     fzf
