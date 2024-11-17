@@ -1,4 +1,6 @@
 {pkgs, ...}: {
+  environment.systemPackages = [pkgs.zoxide];
+
   programs.fish.enable = true;
 
   files.".config/fish/config.fish".source = ./config.fish;

@@ -20,8 +20,6 @@
     pass
     swww
     comma
-    zoxide
-    undollar
     tealdeer
     bibata-cursors
   ];
