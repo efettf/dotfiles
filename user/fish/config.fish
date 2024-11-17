@@ -13,13 +13,15 @@ abbr n 'git'
 abbr g 'git'
 
 alias zrm 'zoxide remove $(pwd)'
-alias v   'eval "$EDITOR"'
+alias v   'nvim'
 alias l   'eza'
 
 fish_vi_cursor
 fish_vi_key_bindings
 
 set fish_greeting ''
+
+alias fish_prompt 'echo "$(basename $PWD) ❯ "'
 
 set fish_cursor_default 'underscore'
 set fish_cursor_insert  'underscore'
