@@ -41,7 +41,6 @@ in {
     undollar
     tealdeer
     alejandra
-    qutebrowser
     wl-clipboard
     doas-sudo-shim
     bibata-cursors

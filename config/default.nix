@@ -1,5 +1,6 @@
 {
   imports = [
+    ./qutebrowser
     ./kanata
     ./fish
     ./tmux

@@ -11,12 +11,6 @@
       hash = "sha256-UBuh6EeUhD5V9TjAo7hBRaGCt3KjkkO7QDxuaEBzN0s=";
     };
 
-    ".config/qutebrowser/config.py".source = ../config/qutebrowser.py;
-    ".config/qutebrowser/theme.py".source = pkgs.fetchurl {
-      url = "https://raw.githubusercontent.com/catppuccin/qutebrowser/main/setup.py";
-      hash = "sha256-TNLCq5eqBd3BKm/Bd0H4q1YanjsYDqNKbFFkjR4zbJ4=";
-    };
-
     ".profile".source = ../config/profile.sh;
   };
 }
