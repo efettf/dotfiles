@@ -3,7 +3,12 @@
   lib,
   ...
 }: {
-  environment.systemPackages = [pkgs.neovim];
+  environment.systemPackages = with pkgs; [
+    gcc
+    neovim
+    ripgrep
+    alejandra
+  ];
 
   homix.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
