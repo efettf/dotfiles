@@ -5,5 +5,6 @@
     ./fish
     ./tmux
     ./gitu
+    ./bat
   ];
 }

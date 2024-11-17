@@ -26,7 +26,6 @@ in {
     fzf
     dwl
     gcc
-    bat
     pass
     swww
     dmenu
