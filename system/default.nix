@@ -4,7 +4,13 @@
   lib,
   ...
 }: {
-  imports = [(lib.importTOML ./config.toml)];
+  imports = [
+    (lib.importTOML ./config.toml)
+    ./boot-loader
+    ./bluetooth
+    ./security
+    ./network
+  ];
 
   environment.systemPackages = with pkgs; [
     gh
@@ -17,7 +23,6 @@
     zoxide
     undollar
     tealdeer
-    doas-sudo-shim
     bibata-cursors
   ];
 

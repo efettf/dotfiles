@@ -4,8 +4,8 @@ with self; let
     specialArgs = {inherit inputs;};
     modules = [
       ./bin
-      ./share
-      ./config
+      ./user
+      ./system
       ./hosts/${host}
       ./modules/files.nix
       {networking.hostName = host;}

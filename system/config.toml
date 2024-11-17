@@ -1,0 +1,40 @@
+
+# Set your time zone.
+time.timeZone = "Europe/Warsaw"
+
+# Service settings.
+[services]
+
+# Enable SSH.
+openssh.enable = true
+
+# Enable touchpad support.
+libinput.enable = true
+
+# Nixos system settings for ly display manager.
+[services.displayManager.ly]
+
+enable = true
+settings.vi_mode = true
+
+# Nixos system settings for systemd services targets.
+[systemd.targets]
+
+# Disable sleep.
+sleep.enable = false
+suspend.enable = false
+hibernate.enable = false
+hybrid-sleep.enable = false
+
+# User configuration.
+[users.users.lynx]
+
+# Makes user not have super user access.
+isNormalUser = true
+
+files = true
+
+initialPassword = "nixos"
+
+# Set extra groups for user.
+extraGroups = ["wheel"]

@@ -1,5 +1,6 @@
-{
+{lib, ...}: {
   imports = [
+    (lib.importTOML ./config.toml)
     ./qutebrowser
     ./kanata
     ./dmenu
