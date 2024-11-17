@@ -6,8 +6,8 @@ with self; let
       ./bin
       ./user
       ./system
+      ./modules
       ./hosts/${host}
-      ./modules/files.nix
       {networking.hostName = host;}
     ];
   };
