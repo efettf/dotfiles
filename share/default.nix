@@ -15,10 +15,7 @@
   });
   dmenu = pkgs.dmenu.overrideAttrs rec {src = inputs.dmenu;};
 in {
-  imports = [
-    ./files.nix
-    (lib.importTOML ./config.toml)
-  ];
+  imports = [(lib.importTOML ./config.toml)];
 
   environment.systemPackages = with pkgs; [
     gh

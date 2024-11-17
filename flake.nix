@@ -13,7 +13,4 @@
 
   inputs.st.url = "github:efettf/st";
   inputs.st.flake = false;
-
-  inputs.walls.url = "github:efettf/walls";
-  inputs.walls.flake = false;
 }
