@@ -1,9 +1,9 @@
 {pkgs, ...}:
 with pkgs;
 with builtins; {
+  imports = [./emoji];
   environment.systemPackages = [
-    (writeShellScriptBin "emoji" (readFile ./emoji))
-    (writeShellScriptBin "initrepo" (readFile ./initrepo))
-    (writeShellScriptBin "wallpaper" (readFile ./wallpaper))
+    (writeShellScriptBin "initrepo" (readFile ./initrepo.sh))
+    (writeShellScriptBin "wallpaper" (readFile ./wallpaper.sh))
   ];
 }
