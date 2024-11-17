@@ -7,7 +7,7 @@ with self; let
       ./user
       ./system
       ./modules
-      ./hosts/${host}
+      ./hosts/${host}.nix
       {networking.hostName = host;}
     ];
   };
