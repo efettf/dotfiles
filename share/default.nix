@@ -32,7 +32,6 @@ in {
     dmenu
     comma
     direnv
-    neovim
     zoxide
     ripgrep
     undollar

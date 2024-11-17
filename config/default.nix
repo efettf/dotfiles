@@ -4,6 +4,7 @@
     ./kanata
     ./fish
     ./tmux
+    ./nvim
     ./gitu
     ./bat
   ];
