@@ -4,6 +4,9 @@ if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
 
 fundle plugin 'zzhaolei/transient.fish'
 fundle plugin 'meaningful-ooo/sponge'
+fundle plugin 'nickeb96/puffer-fish'
+fundle plugin 'kidonng/zoxide.fish'
+fundle plugin 'laughedelic/pisces'
 
 fundle init
 
@@ -26,6 +29,4 @@ alias fish_prompt 'echo "$(basename $PWD) ❯ "'
 set fish_cursor_default 'underscore'
 set fish_cursor_insert  'underscore'
 set fish_cursor_visual  'underscore'
-
-zoxide init fish | source
 
