@@ -11,4 +11,4 @@ with self; let
       {networking.hostName = host;}
     ];
   };
-in {nixos = mkSystem "nixos";}
+in {laptop = mkSystem "laptop";}
