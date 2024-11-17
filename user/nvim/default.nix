@@ -11,6 +11,8 @@
     alejandra
   ];
 
+  files.".config/nvim/extra.vim".source = ./config.vim;
+
   files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
     + ''

@@ -1,4 +1,6 @@
 
+vim.cmd('source ~/.config/nvim/extra.vim')
+
 local o = vim.o
 local g = vim.g
 local a = vim.api
