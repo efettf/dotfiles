@@ -1,9 +1,12 @@
-{lib, ...}: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   imports = [
     (lib.importTOML ./config.toml)
     ./qutebrowser
     ./kanata
-    ./dmenu
     ./fish
     ./tmux
     ./nvim
@@ -11,5 +14,18 @@
     ./bat
     ./dwl
     ./st
+  ];
+
+  environment.systemPackages = with pkgs; [
+    gh
+    fd
+    go
+    fzf
+    eza
+    pass
+    swww
+    comma
+    tealdeer
+    bibata-cursors
   ];
 }

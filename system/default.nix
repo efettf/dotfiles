@@ -12,18 +12,6 @@
     ./network
   ];
 
-  environment.systemPackages = with pkgs; [
-    gh
-    fd
-    go
-    eza
-    pass
-    swww
-    comma
-    tealdeer
-    bibata-cursors
-  ];
-
   fonts.packages = with pkgs; [
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
   ];
