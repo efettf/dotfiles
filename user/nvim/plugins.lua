@@ -24,7 +24,7 @@
 },
 {
   "lewis6991/gitsigns.nvim",
-  opts = {},
+  opts = {}
 },
 {
   'echasnovski/mini.base16',
@@ -50,24 +50,20 @@
         base0F = "#f2cdcd"
       }
     })
-  end,
-},
-{
-  "folke/noice.nvim",
-  opts = { },
+  end
 },
 {
   "okuuva/auto-save.nvim",
   event = { "InsertLeave", "TextChanged" },
   keys = {
-    { "<leader>a", "<cmd>ASToggle<cr>", desc = "Auto save toggle" },
+    { "<leader>a", "<cmd>ASToggle<cr>", desc = "Auto save toggle" }
   },
   opts = {}
 },
 {
   'windwp/nvim-autopairs',
   event = "InsertEnter",
-  config = true,
+  config = true
 },
 {
   "hrsh7th/nvim-cmp",
@@ -75,34 +71,31 @@
   dependencies = {
     "hrsh7th/cmp-path",
     "f3fora/cmp-spell",
-    "ray-x/cmp-treesitter",
+    "ray-x/cmp-treesitter"
   },
   config = function()
     require("cmp").setup({
       sources = require("cmp").config.sources({
         { name = "path" },
         { name = "treesitter", keyword_length = 2 },
-        { name = "spell", keyword_length = 4 },
+        { name = "spell", keyword_length = 4 }
       }),
       mapping = require("cmp").mapping.preset.insert({
         ['<down>'] = require('cmp').mapping.select_next_item(),
         ['<up>'] = require('cmp').mapping.select_prev_item(),
-        ['<tab>'] = require('cmp').mapping.confirm({ select = true }),
+        ['<tab>'] = require('cmp').mapping.confirm({ select = true })
       })
     })
   end
 },
 {
   "chrisgrieser/nvim-recorder",
-  opts = {
-
-  },
+  opts = {}
 },
 {
   "stevearc/oil.nvim",
   opts = {},
-  keys = { { "-", "<cmd>Oil<cr>", desc = "Enter oil" } },
-  cmd = "Oil"
+  keys = { { "-", "<cmd>Oil<cr>", desc = "Enter oil" } }
 },
 {
   {
@@ -111,8 +104,8 @@
     cmd = "Telescope",
     keys = {
       { "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Telescope files" },
-      { "<leader>n", "<cmd>Telescope live_grep<cr>", desc = "Telescope grep" },
-    },
+      { "<leader>n", "<cmd>Telescope live_grep<cr>", desc = "Telescope grep" }
+    }
   }
 },
 {
@@ -131,14 +124,12 @@
         "nix",
         "regex",
         "markdown",
-        "markdown_inline",
+        "markdown_inline"
       }
     })
-  end,
+  end
 },
 {
-  "folke/which-key.nvim",
-  keys = { "<leader>", "d", "c", "v", "g" },
-  cmd = "WhichKey",
+  "folke/which-key.nvim"
 }
 
