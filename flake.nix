@@ -5,9 +5,6 @@
 
   inputs.flakelight.url = "github:nix-community/flakelight";
 
-  inputs.dmenu.url = "github:efettf/dmenu";
-  inputs.dmenu.flake = false;
-
   inputs.dwl.url = "github:efettf/dwl";
   inputs.dwl.flake = false;
 

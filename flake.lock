@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "dmenu": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1731359315,
-        "narHash": "sha256-s6mH4eWscZJAKTCsaCuOBDKg3g6esYohUnW9VHvAUbo=",
-        "owner": "efettf",
-        "repo": "dmenu",
-        "rev": "220efae30eac45e37361cfbbb82a15dec5ce4fad",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efettf",
-        "repo": "dmenu",
-        "type": "github"
-      }
-    },
     "dwl": {
       "flake": false,
       "locked": {
@@ -83,7 +67,6 @@
     },
     "root": {
       "inputs": {
-        "dmenu": "dmenu",
         "dwl": "dwl",
         "flakelight": "flakelight",
         "nixpkgs": "nixpkgs_2",
