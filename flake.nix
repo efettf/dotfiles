@@ -7,7 +7,4 @@
 
   inputs.dwl.url = "github:efettf/dwl";
   inputs.dwl.flake = false;
-
-  inputs.st.url = "github:efettf/st";
-  inputs.st.flake = false;
 }

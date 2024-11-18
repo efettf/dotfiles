@@ -69,24 +69,7 @@
       "inputs": {
         "dwl": "dwl",
         "flakelight": "flakelight",
-        "nixpkgs": "nixpkgs_2",
-        "st": "st"
-      }
-    },
-    "st": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1731953899,
-        "narHash": "sha256-vMMPW8eKwJ+5DfJRdvIg9IuAs7k5mvRTP223W5bmjEQ=",
-        "owner": "efettf",
-        "repo": "st",
-        "rev": "8530e435576708247365839ffa2aa6a09a58da70",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efettf",
-        "repo": "st",
-        "type": "github"
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
