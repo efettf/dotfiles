@@ -76,12 +76,10 @@
     "hrsh7th/cmp-path",
     "f3fora/cmp-spell",
     "ray-x/cmp-treesitter",
-    "efettf/cmp-emoji.nvim",
   },
   config = function()
     require("cmp").setup({
       sources = require("cmp").config.sources({
-        { name = "emoji", option = { insert = false } },
         { name = "path" },
         { name = "treesitter", keyword_length = 2 },
         { name = "spell", keyword_length = 4 },
