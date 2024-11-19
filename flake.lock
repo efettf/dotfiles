@@ -69,7 +69,20 @@
       "inputs": {
         "dwl": "dwl",
         "flakelight": "flakelight",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "st-ligatures": "st-ligatures"
+      }
+    },
+    "st-ligatures": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-szuUPC5O0SZzSWZFa2qBbz8iysuCgmPsbGQ+VEYmF5g=",
+        "type": "file",
+        "url": "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff"
       }
     }
   },
