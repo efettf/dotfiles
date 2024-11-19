@@ -1,11 +1,12 @@
 {
+  lib,
   pkgs,
   inputs,
   ...
 }: let
   dwl = pkgs.dwl.overrideAttrs (old: rec {
     src = inputs.dwl;
-    passthru.providedSessions = ["dwl"];
+    passthru.providedSessions = lib.singleton "dwl";
     buildInputs = old.buildInputs ++ (with pkgs; [libdrm fcft]);
   });
 in {
@@ -14,5 +15,5 @@ in {
     wl-clipboard
   ];
 
-  services.displayManager.sessionPackages = [dwl];
+  services.displayManager.sessionPackages = lib.singleton dwl;
 }

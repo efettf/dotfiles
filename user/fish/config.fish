@@ -1,15 +1,4 @@
 
-# Boostrap fundle.
-if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
-
-fundle plugin 'zzhaolei/transient.fish'
-fundle plugin 'meaningful-ooo/sponge'
-fundle plugin 'nickeb96/puffer-fish'
-fundle plugin 'kidonng/zoxide.fish'
-fundle plugin 'laughedelic/pisces'
-
-fundle init
-
 set EDITOR 'nvim'
 
 abbr n 'git'
