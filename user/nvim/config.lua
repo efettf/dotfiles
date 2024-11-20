@@ -94,8 +94,8 @@ require("mini.base16").setup({
 
 g.mapleader = " "
 
-k.set("n", "<leader>f", "<cmd>Telescope fd<cr>")
-k.set("n", "<leader>n", "<cmd>Telescope grep<cr>")
+k.set("n", "<leader>f", "<cmd>Telescope find_files<cr>")
+k.set("n", "<leader>n", "<cmd>Telescope grep_string<cr>")
 
 k.set("n", "-", "<cmd>Oil<cr>")
 
