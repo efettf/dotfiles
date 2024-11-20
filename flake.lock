@@ -426,7 +426,9 @@
         "nvim-transparent": "nvim-transparent",
         "nvim-treesitter": "nvim-treesitter",
         "nvim-whichkey": "nvim-whichkey",
-        "st-ligatures": "st-ligatures"
+        "st-ligatures": "st-ligatures",
+        "tmux-sensible": "tmux-sensible",
+        "tmux-yank": "tmux-yank"
       }
     },
     "st-ligatures": {
@@ -439,6 +441,38 @@
       "original": {
         "type": "file",
         "url": "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff"
+      }
+    },
+    "tmux-sensible": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660507698,
+        "narHash": "sha256-sw9g1Yzmv2fdZFLJSGhx1tatQ+TtjDYNZI5uny0+5Hg=",
+        "owner": "tmux-plugins",
+        "repo": "tmux-sensible",
+        "rev": "25cb91f42d020f675bb0a2ce3fbd3a5d96119efa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tmux-plugins",
+        "repo": "tmux-sensible",
+        "type": "github"
+      }
+    },
+    "tmux-yank": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1689770565,
+        "narHash": "sha256-/5HPaoOx2U2d8lZZJo5dKmemu6hKgHJYq23hxkddXpA=",
+        "owner": "tmux-plugins",
+        "repo": "tmux-yank",
+        "rev": "acfd36e4fcba99f8310a7dfb432111c242fe7392",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tmux-plugins",
+        "repo": "tmux-yank",
+        "type": "github"
       }
     }
   },

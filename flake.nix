@@ -90,6 +90,12 @@
   inputs.fish-pisces.url = "github:laughedelic/pisces";
   inputs.fish-pisces.flake = false;
 
+  inputs.tmux-yank.url = "github:tmux-plugins/tmux-yank";
+  inputs.tmux-yank.flake = false;
+
+  inputs.tmux-sensible.url = "github:tmux-plugins/tmux-sensible";
+  inputs.tmux-sensible.flake = false;
+
   inputs.st-ligatures.url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
   inputs.st-ligatures.flake = false;
 }
