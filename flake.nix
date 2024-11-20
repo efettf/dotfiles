@@ -21,6 +21,9 @@
   inputs.dwl.url = "github:efettf/dwl";
   inputs.dwl.flake = false;
 
+  inputs.nvim-cmp-lsp.url = "github:hrsh7th/cmp-nvim-lsp";
+  inputs.nvim-cmp-lsp.flake = false;
+
   inputs.nvim-cmp-path.url = "github:hrsh7th/cmp-path";
   inputs.nvim-cmp-path.flake = false;
 
@@ -47,6 +50,9 @@
 
   inputs.nvim-treesitter.url = "github:nvim-treesitter/nvim-treesitter";
   inputs.nvim-treesitter.flake = false;
+
+  inputs.nvim-lspconfig.url = "github:neovim/nvim-lspconfig";
+  inputs.nvim-lspconfig.flake = false;
 
   inputs.nvim-whichkey.url = "github:folke/which-key.nvim";
   inputs.nvim-whichkey.flake = false;

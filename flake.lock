@@ -175,6 +175,22 @@
         "type": "github"
       }
     },
+    "nvim-cmp-lsp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1715931395,
+        "narHash": "sha256-CT1+Z4XJBVsl/RqvJeGmyitD6x7So0ylXvvef5jh7I8=",
+        "owner": "hrsh7th",
+        "repo": "cmp-nvim-lsp",
+        "rev": "39e2eda76828d88b773cc27a3f61d2ad782c922d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hrsh7th",
+        "repo": "cmp-nvim-lsp",
+        "type": "github"
+      }
+    },
     "nvim-cmp-path": {
       "flake": false,
       "locked": {
@@ -284,6 +300,22 @@
       "original": {
         "owner": "lewis6991",
         "repo": "gitsigns.nvim",
+        "type": "github"
+      }
+    },
+    "nvim-lspconfig": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732102521,
+        "narHash": "sha256-ZSuJF9HQJod8wQ8ONTfLf5bYeLPYKS7aS3JPjU+yc94=",
+        "owner": "neovim",
+        "repo": "nvim-lspconfig",
+        "rev": "291a8f1a319dc712db85bcc174b0cf406f0a5b69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neovim",
+        "repo": "nvim-lspconfig",
         "type": "github"
       }
     },
@@ -412,6 +444,7 @@
         "nvim-autosave": "nvim-autosave",
         "nvim-base16": "nvim-base16",
         "nvim-cmp": "nvim-cmp",
+        "nvim-cmp-lsp": "nvim-cmp-lsp",
         "nvim-cmp-path": "nvim-cmp-path",
         "nvim-cmp-spell": "nvim-cmp-spell",
         "nvim-cmp-treesitter": "nvim-cmp-treesitter",
@@ -419,6 +452,7 @@
         "nvim-comment": "nvim-comment",
         "nvim-conform": "nvim-conform",
         "nvim-gitsigns": "nvim-gitsigns",
+        "nvim-lspconfig": "nvim-lspconfig",
         "nvim-oil": "nvim-oil",
         "nvim-plenary": "nvim-plenary",
         "nvim-recorder": "nvim-recorder",

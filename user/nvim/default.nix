@@ -1,16 +1,19 @@
 {
+  config,
   inputs,
   pkgs,
   lib,
   ...
 }: let
   plugins = with inputs; [
+    nvim-cmp-lsp
     nvim-cmp-path
     nvim-cmp-spell
     nvim-cmp-treesitter
     nvim-cmp
     nvim-recorder
     nvim-oil
+    nvim-lspconfig
     nvim-telescope
     nvim-transparent
     nvim-plenary
@@ -28,6 +31,8 @@ in {
   environment.systemPackages = with pkgs; [
     go
     gcc
+    nil
+    gopls
     neovim
     ripgrep
     alejandra

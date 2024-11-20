@@ -43,6 +43,9 @@ require("transparent").setup({})
 require("nvim-autopairs").setup({})
 require("nvim-treesitter").setup ({})
 
+require("lspconfig").gopls.setup({})
+require("lspconfig").nil_ls.setup({})
+
 require("conform").setup({
   formatters_by_ft = {
     go = { "gofmt" },
@@ -57,6 +60,7 @@ require("conform").setup({
 require("cmp").setup({
   sources = require("cmp").config.sources({
     { name = "path" },
+    { name = "nvim_lsp", keyword_length = 2 },
     { name = "treesitter", keyword_length = 2 },
     { name = "spell", keyword_length = 4 }
   }),
