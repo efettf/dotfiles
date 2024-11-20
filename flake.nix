@@ -1,10 +1,22 @@
 {
-  outputs = inputs: with inputs; flakelight ./. {nixosConfigurations = import ./.;};
+  outputs = inputs: {
+    nixosConfigurations = let
+      mkSystem = host:
+        inputs.nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [
+            ./bin
+            ./user
+            ./system
+            ./modules
+            ./hosts/${host}.nix
+            {networking.hostName = host;}
+          ];
+        };
+    in {laptop = mkSystem "laptop";};
+  };
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs";
-
-  inputs.flakelight.url = "github:nix-community/flakelight";
-  inputs.flakelight.inputs.nixpkgs.follows = "nixpkgs";
 
   inputs.dwl.url = "github:efettf/dwl";
   inputs.dwl.flake = false;
