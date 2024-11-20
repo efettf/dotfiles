@@ -32,8 +32,6 @@ hybrid-sleep.enable = false
 # Makes user not have super user access.
 isNormalUser = true
 
-files = true
-
 initialPassword = "nixos"
 
 # Set extra groups for user.
