@@ -16,92 +16,94 @@
     in {laptop = mkSystem "laptop";};
   };
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs";
 
-  inputs.dwl.url = "github:efettf/dwl";
-  inputs.dwl.flake = false;
+    dwl.url = "github:efettf/dwl";
+    dwl.flake = false;
 
-  inputs.nvim-cmp-lsp.url = "github:hrsh7th/cmp-nvim-lsp";
-  inputs.nvim-cmp-lsp.flake = false;
+    nvim-cmp-lsp.url = "github:hrsh7th/cmp-nvim-lsp";
+    nvim-cmp-lsp.flake = false;
 
-  inputs.nvim-cmp-path.url = "github:hrsh7th/cmp-path";
-  inputs.nvim-cmp-path.flake = false;
+    nvim-cmp-path.url = "github:hrsh7th/cmp-path";
+    nvim-cmp-path.flake = false;
 
-  inputs.nvim-cmp-spell.url = "github:f3fora/cmp-spell";
-  inputs.nvim-cmp-spell.flake = false;
+    nvim-cmp-spell.url = "github:f3fora/cmp-spell";
+    nvim-cmp-spell.flake = false;
 
-  inputs.nvim-cmp-treesitter.url = "github:ray-x/cmp-treesitter";
-  inputs.nvim-cmp-treesitter.flake = false;
+    nvim-cmp-treesitter.url = "github:ray-x/cmp-treesitter";
+    nvim-cmp-treesitter.flake = false;
 
-  inputs.nvim-plenary.url = "github:nvim-lua/plenary.nvim";
-  inputs.nvim-plenary.flake = false;
+    nvim-plenary.url = "github:nvim-lua/plenary.nvim";
+    nvim-plenary.flake = false;
 
-  inputs.nvim-cmp.url = "github:hrsh7th/nvim-cmp";
-  inputs.nvim-cmp.flake = false;
+    nvim-cmp.url = "github:hrsh7th/nvim-cmp";
+    nvim-cmp.flake = false;
 
-  inputs.nvim-recorder.url = "github:chrisgrieser/nvim-recorder";
-  inputs.nvim-recorder.flake = false;
+    nvim-recorder.url = "github:chrisgrieser/nvim-recorder";
+    nvim-recorder.flake = false;
 
-  inputs.nvim-oil.url = "github:stevearc/oil.nvim";
-  inputs.nvim-oil.flake = false;
+    nvim-oil.url = "github:stevearc/oil.nvim";
+    nvim-oil.flake = false;
 
-  inputs.nvim-telescope.url = "github:nvim-telescope/telescope.nvim";
-  inputs.nvim-telescope.flake = false;
+    nvim-telescope.url = "github:nvim-telescope/telescope.nvim";
+    nvim-telescope.flake = false;
 
-  inputs.nvim-treesitter.url = "github:nvim-treesitter/nvim-treesitter";
-  inputs.nvim-treesitter.flake = false;
+    nvim-treesitter.url = "github:nvim-treesitter/nvim-treesitter";
+    nvim-treesitter.flake = false;
 
-  inputs.nvim-lspconfig.url = "github:neovim/nvim-lspconfig";
-  inputs.nvim-lspconfig.flake = false;
+    nvim-lspconfig.url = "github:neovim/nvim-lspconfig";
+    nvim-lspconfig.flake = false;
 
-  inputs.nvim-whichkey.url = "github:folke/which-key.nvim";
-  inputs.nvim-whichkey.flake = false;
+    nvim-whichkey.url = "github:folke/which-key.nvim";
+    nvim-whichkey.flake = false;
 
-  inputs.nvim-autopairs.url = "github:windwp/nvim-autopairs";
-  inputs.nvim-autopairs.flake = false;
+    nvim-autopairs.url = "github:windwp/nvim-autopairs";
+    nvim-autopairs.flake = false;
 
-  inputs.nvim-autosave.url = "github:okuuva/auto-save.nvim";
-  inputs.nvim-autosave.flake = false;
+    nvim-autosave.url = "github:okuuva/auto-save.nvim";
+    nvim-autosave.flake = false;
 
-  inputs.nvim-base16.url = "github:echasnovski/mini.base16";
-  inputs.nvim-base16.flake = false;
+    nvim-base16.url = "github:echasnovski/mini.base16";
+    nvim-base16.flake = false;
 
-  inputs.nvim-gitsigns.url = "github:lewis6991/gitsigns.nvim";
-  inputs.nvim-gitsigns.flake = false;
+    nvim-gitsigns.url = "github:lewis6991/gitsigns.nvim";
+    nvim-gitsigns.flake = false;
 
-  inputs.nvim-conform.url = "github:stevearc/conform.nvim";
-  inputs.nvim-conform.flake = false;
+    nvim-conform.url = "github:stevearc/conform.nvim";
+    nvim-conform.flake = false;
 
-  inputs.nvim-colorizer.url = "github:norcalli/nvim-colorizer.lua";
-  inputs.nvim-colorizer.flake = false;
+    nvim-colorizer.url = "github:norcalli/nvim-colorizer.lua";
+    nvim-colorizer.flake = false;
 
-  inputs.nvim-comment.url = "github:numToStr/Comment.nvim";
-  inputs.nvim-comment.flake = false;
+    nvim-comment.url = "github:numToStr/Comment.nvim";
+    nvim-comment.flake = false;
 
-  inputs.nvim-transparent.url = "github:xiyaowong/transparent.nvim";
-  inputs.nvim-transparent.flake = false;
+    nvim-transparent.url = "github:xiyaowong/transparent.nvim";
+    nvim-transparent.flake = false;
 
-  inputs.fish-transient.url = "github:zzhaolei/transient.fish";
-  inputs.fish-transient.flake = false;
+    fish-transient.url = "github:zzhaolei/transient.fish";
+    fish-transient.flake = false;
 
-  inputs.fish-sponge.url = "github:meaningful-ooo/sponge";
-  inputs.fish-sponge.flake = false;
+    fish-sponge.url = "github:meaningful-ooo/sponge";
+    fish-sponge.flake = false;
 
-  inputs.fish-puffer.url = "github:nickeb96/puffer-fish";
-  inputs.fish-puffer.flake = false;
+    fish-puffer.url = "github:nickeb96/puffer-fish";
+    fish-puffer.flake = false;
 
-  inputs.fish-zoxide.url = "github:kidonng/zoxide.fish";
-  inputs.fish-zoxide.flake = false;
+    fish-zoxide.url = "github:kidonng/zoxide.fish";
+    fish-zoxide.flake = false;
 
-  inputs.fish-pisces.url = "github:laughedelic/pisces";
-  inputs.fish-pisces.flake = false;
+    fish-pisces.url = "github:laughedelic/pisces";
+    fish-pisces.flake = false;
 
-  inputs.tmux-yank.url = "github:tmux-plugins/tmux-yank";
-  inputs.tmux-yank.flake = false;
+    tmux-yank.url = "github:tmux-plugins/tmux-yank";
+    tmux-yank.flake = false;
 
-  inputs.tmux-sensible.url = "github:tmux-plugins/tmux-sensible";
-  inputs.tmux-sensible.flake = false;
+    tmux-sensible.url = "github:tmux-plugins/tmux-sensible";
+    tmux-sensible.flake = false;
 
-  inputs.st-ligatures.url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
-  inputs.st-ligatures.flake = false;
+    st-ligatures.url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
+    st-ligatures.flake = false;
+  };
 }
