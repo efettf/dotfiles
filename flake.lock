@@ -367,6 +367,22 @@
         "type": "github"
       }
     },
+    "nvim-sentiment": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1685109400,
+        "narHash": "sha256-0ZpqlaCIfFrcfxdp/9BVXYvwgBXsqazo0isrsYfUYyQ=",
+        "owner": "utilyre",
+        "repo": "sentiment.nvim",
+        "rev": "ecde8d877881bb78fdb90060c0991e76770dbdbc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "utilyre",
+        "repo": "sentiment.nvim",
+        "type": "github"
+      }
+    },
     "nvim-telescope": {
       "flake": false,
       "locked": {
@@ -456,6 +472,7 @@
         "nvim-oil": "nvim-oil",
         "nvim-plenary": "nvim-plenary",
         "nvim-recorder": "nvim-recorder",
+        "nvim-sentiment": "nvim-sentiment",
         "nvim-telescope": "nvim-telescope",
         "nvim-transparent": "nvim-transparent",
         "nvim-treesitter": "nvim-treesitter",

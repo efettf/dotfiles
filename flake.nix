@@ -37,6 +37,9 @@
     nvim-plenary.url = "github:nvim-lua/plenary.nvim";
     nvim-plenary.flake = false;
 
+    nvim-sentiment.url = "github:utilyre/sentiment.nvim";
+    nvim-sentiment.flake = false;
+
     nvim-cmp.url = "github:hrsh7th/nvim-cmp";
     nvim-cmp.flake = false;
 

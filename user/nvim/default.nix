@@ -12,6 +12,7 @@
     nvim-cmp
     nvim-recorder
     nvim-oil
+    nvim-sentiment
     nvim-lspconfig
     nvim-telescope
     nvim-transparent
