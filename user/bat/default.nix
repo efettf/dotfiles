@@ -1,5 +1,9 @@
-{pkgs, ...}: {
-  environment.systemPackages = [pkgs.bat];
+{
+  pkgs,
+  lib,
+  ...
+}: {
+  environment.systemPackages = lib.singleton pkgs.bat;
 
   environment.variables."BAT_THEME" = "catppuccin-mocha";
 
