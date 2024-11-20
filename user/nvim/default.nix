@@ -1,8 +1,30 @@
 {
+  inputs,
   pkgs,
   lib,
   ...
-}: {
+}: let
+  plugins = with inputs; [
+    nvim-cmp-path
+    nvim-cmp-spell
+    nvim-cmp-treesitter
+    nvim-cmp
+    nvim-recorder
+    nvim-oil
+    nvim-telescope
+    nvim-transparent
+    nvim-plenary
+    nvim-treesitter
+    nvim-whichkey
+    nvim-autopairs
+    nvim-autosave
+    nvim-base16
+    nvim-gitsigns
+    nvim-colorizer
+    nvim-conform
+    nvim-comment
+  ];
+in {
   environment.systemPackages = with pkgs; [
     go
     gcc
@@ -13,15 +35,19 @@
 
   files.".config/nvim/extra.vim".source = ./config.vim;
 
-  files.".config/nvim/init.lua".text =
-    builtins.readFile ./config.lua
-    + ''
-      local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-      if not (vim.uv or vim.loop).fs_stat(lazypath) then
-        local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", "https://github.com/folke/lazy.nvim.git", lazypath })
-      end
-      vim.opt.rtp:prepend(lazypath)
+  files.".config/nvim/init.lua".source = ./config.lua;
 
-      require("lazy").setup({ spec = { ${builtins.readFile ./plugins.lua} } })
-    '';
+  systemd.services."nvim-plug" = {
+    wantedBy = ["multi-user.target"];
+    serviceConfig = {
+      Type = "oneshot";
+      User = "lynx";
+      ExecStart = pkgs.writeShellScript "nvim-plug" ''
+        mkdir -p /home/lynx/.config/nvim/pack/vendor/start
+        for plugin in ${lib.strings.concatStringsSep " " plugins}; do
+          ln -sf $plugin /home/lynx/.config/nvim/pack/vendor/start
+        done
+      '';
+    };
+  };
 }

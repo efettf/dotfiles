@@ -20,19 +20,17 @@ in {
 
   systemd.services."fish-plug" = {
     wantedBy = ["multi-user.target"];
-    serviceConfig = let
-      fish-plug = pkgs.writeShellScript "fish-plug" ''
+    serviceConfig = {
+      Type = "oneshot";
+      User = "lynx";
+      ExecStart = pkgs.writeShellScript "fish-plug" ''
+        mkdir -p /home/lynx/.config/fish/functions
+        mkdir -p /home/lynx/.config/fish/conf.d
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do
-          mkdir -p /home/lynx/.config/fish/functions
           ln -sf $plugin/functions/* /home/lynx/.config/fish/functions
-          mkdir -p /home/lynx/.config/fish/conf.d
           ln -sf $plugin/conf.d/* /home/lynx/.config/fish/conf.d
         done
       '';
-    in {
-      Type = "oneshot";
-      User = "lynx";
-      ExecStart = fish-plug;
     };
   };
 

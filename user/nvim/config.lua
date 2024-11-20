@@ -34,12 +34,66 @@ o.tabstop = 2
 o.termguicolors = true
 o.writebackup = false
 
+require("oil").setup({})
+require("Comment").setup({})
+require("recorder").setup({})
+require("gitsigns").setup({})
+require("auto-save").setup({})
+require("transparent").setup({})
+require("nvim-autopairs").setup({})
+require("nvim-treesitter").setup ({})
+
+require("conform").setup({
+  formatters_by_ft = {
+    go = { "gofmt" },
+    nix = { "alejandra" }
+  },
+  format_on_save = {
+    timeout_ms = 500,
+    lsp_format = "fallback"
+  }
+})
+
+require("cmp").setup({
+  sources = require("cmp").config.sources({
+    { name = "path" },
+    { name = "treesitter", keyword_length = 2 },
+    { name = "spell", keyword_length = 4 }
+  }),
+  mapping = require("cmp").mapping.preset.insert({
+    ['<down>'] = require('cmp').mapping.select_next_item(),
+    ['<up>'] = require('cmp').mapping.select_prev_item(),
+    ['<tab>'] = require('cmp').mapping.confirm({ select = true })
+  })
+})
+
+require("mini.base16").setup({
+  palette = {
+    base00 = "#1e1e2e",
+    base01 = "#181825",
+    base02 = "#313244",
+    base03 = "#45475a",
+    base04 = "#585b70",
+    base05 = "#cdd6f4",
+    base06 = "#f5e0dc",
+    base07 = "#b4befe",
+    base08 = "#f38ba8",
+    base09 = "#fab387",
+    base0A = "#f9e2af",
+    base0B = "#a6e3a1",
+    base0C = "#94e2d5",
+    base0D = "#89b4fa",
+    base0E = "#cba6f7",
+    base0F = "#f2cdcd"
+  }
+})
+
 g.mapleader = " "
 
+k.set("n", "<leader>f", "<cmd>Telescope fd<cr>")
+k.set("n", "<leader>n", "<cmd>Telescope grep<cr>")
+
+k.set("n", "-", "<cmd>Oil<cr>")
+
 p.shortmess:append "sI"
-
-a.nvim_set_keymap("n", "<c-=>", "<cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<cr>", { silent = true })
-a.nvim_set_keymap("n", "<c-->", "<cmd>lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<cr>", { silent = true })
-
-k.set("n", "<leader>r", "<cmd>Lazy<cr>")
 
