@@ -4,7 +4,7 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    (st.overrideAttrs (old: rec {
+    (st.overrideAttrs (old: {
       patches = [
         inputs.st-ligatures
         ./patches/font.diff

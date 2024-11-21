@@ -1,3 +1,3 @@
 {lib, ...}: {
-  imports = [(lib.importTOML ./config.toml)];
+  imports = lib.singleton (lib.importTOML ./config.toml);
 }

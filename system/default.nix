@@ -11,8 +11,8 @@
     ./network
   ];
 
-  fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["JetBrainsMono"];})
+  fonts.packages = [
+    (pkgs.nerdfonts.override {fonts = lib.singleton "JetBrainsMono";})
   ];
 
   # Enable flakes and nix command.

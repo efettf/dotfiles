@@ -1,8 +1,6 @@
-{pkgs, ...}:
-with pkgs;
-with builtins; {
-  environment.systemPackages = [
-    (writeShellScriptBin "initrepo" (readFile ./initrepo.sh))
-    (writeShellScriptBin "wallpaper" (readFile ./wallpaper.sh))
+{pkgs, ...}: {
+  environment.systemPackages = map (name: pkgs.writeShellScriptBin name (builtins.readFile ./${name}.sh)) [
+    "initrepo"
+    "wallpaper"
   ];
 }
