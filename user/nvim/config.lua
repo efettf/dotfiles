@@ -1,6 +1,8 @@
 
 vim.cmd('source ~/.config/nvim/extra.vim')
 
+vim.wo.fillchars='eob: '
+
 require("cmp").setup({
   sources = require("cmp").config.sources({
     { name = "path" },

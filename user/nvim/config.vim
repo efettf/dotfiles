@@ -1,7 +1,7 @@
 
 set autoread
 set nobackup
-set clipboard="unnamedplus"
+set clipboard^=unnamed,unnamedplus
 set expandtab
 set foldlevel=6
 set formatoptions="cr"
@@ -13,7 +13,9 @@ set magic
 set laststatus=0
 set number
 set noshowmode
+set wrap
 set scrolloff=8
+set nohlsearch
 set shiftwidth=2
 set smartcase
 set smarttab
