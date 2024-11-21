@@ -41,6 +41,9 @@ require("cmp").setup({
     { name = "treesitter", keyword_length = 2 },
     { name = "spell", keyword_length = 4 }
   }),
+  experimental = {
+    ghost_text = true
+  },
   mapping = require("cmp").mapping.preset.insert({
     ['<down>'] = require('cmp').mapping.select_next_item(),
     ['<up>'] = require('cmp').mapping.select_prev_item(),
