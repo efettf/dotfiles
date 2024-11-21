@@ -87,13 +87,13 @@ in {
         lsp_format = "fallback";
       };
       formatters_by_ft = {
-        go = ["gofmt"];
-        nix = ["alejandra"];
+        go = lib.singleton "gofmt";
+        nix = lib.singleton "alejandra";
       };
     };
 
   systemd.services."nvim-plug" = {
-    wantedBy = ["multi-user.target"];
+    wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
       User = "lynx";
