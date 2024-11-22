@@ -44,7 +44,7 @@ with types; {
   };
 
   config.systemd.services."files" = {
-    wantedBy = ["multi-user.target"];
+    wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
       User = "lynx";

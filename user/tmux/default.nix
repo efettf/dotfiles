@@ -14,17 +14,17 @@ in {
   files.".config/tmux/tmux.conf".source = ./config.conf;
 
   systemd.services."tmux-plug" = {
-    wantedBy = ["multi-user.target"];
+    wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
       User = "lynx";
       ExecStart = pkgs.writeShellScript "tmux-plug" ''
-        rm -r /home/lynx/.config/tmux/plugins/*
-        mkdir -p /home/lynx/.config/tmux/plugins
+        rm -r $HOME/.config/tmux/plugins/*
+        mkdir -p $HOME/.config/tmux/plugins
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do
-          ln -sf $plugin /home/lynx/.config/tmux/plugins
+          ln -sf $plugin $HOME/.config/tmux/plugins
         done
-        chmod u+x /home/lynx/.config/tmux/plugins
+        chmod u+x $HOME/.config/tmux/plugins
       '';
     };
   };
