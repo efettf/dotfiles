@@ -129,6 +129,9 @@
     dwl-warpcursor.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch";
     dwl-warpcursor.flake = false;
 
+    dwl-autostart.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/autostart/autostart-0.7.patch";
+    dwl-autostart.flake = false;
+
     dwl-gaps.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch";
     dwl-gaps.flake = false;
 

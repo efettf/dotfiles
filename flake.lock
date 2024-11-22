@@ -1,5 +1,17 @@
 {
   "nodes": {
+    "dwl-autostart": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-v7fReoocxhR3EgHg69VjiPliE3UhRll4cNw1Zxu2VL4=",
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/autostart/autostart-0.7.patch"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/autostart/autostart-0.7.patch"
+      }
+    },
     "dwl-cursortheme": {
       "flake": false,
       "locked": {
@@ -469,6 +481,7 @@
     },
     "root": {
       "inputs": {
+        "dwl-autostart": "dwl-autostart",
         "dwl-cursortheme": "dwl-cursortheme",
         "dwl-gaps": "dwl-gaps",
         "dwl-warpcursor": "dwl-warpcursor",

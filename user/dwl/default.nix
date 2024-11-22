@@ -8,10 +8,12 @@
   dwl = pkgs.dwl.overrideAttrs (old: {
     patches = with inputs; [
       dwl-gaps
+      dwl-autostart
       dwl-warpcursor
       dwl-cursortheme
       ./patches/keys.diff
       ./patches/cursor.diff
+      ./patches/autostart.diff
       (with scheme;
         pkgs.writeText "theme.diff" ''
           --- a/config.def.h
