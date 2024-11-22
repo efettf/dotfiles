@@ -1,26 +1,43 @@
 {
   outputs = inputs: {
     nixosConfigurations = let
-      mkSystem = host:
-        inputs.nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
-          modules = [
-            ./bin
-            ./user
-            ./system
-            ./modules
-            ./hosts/${host}.nix
-            {networking.hostName = host;}
-          ];
+      mkSystem = let
+        scheme = {
+          base00 = "#1e1e2e";
+          base01 = "#181825";
+          base02 = "#313244";
+          base03 = "#45475a";
+          base04 = "#585b70";
+          base05 = "#cdd6f4";
+          base06 = "#f5e0dc";
+          base07 = "#b4befe";
+          base08 = "#f38ba8";
+          base09 = "#fab387";
+          base0A = "#f9e2af";
+          base0B = "#a6e3a1";
+          base0C = "#94e2d5";
+          base0D = "#89b4fa";
+          base0E = "#cba6f7";
+          base0F = "#f2cdcd";
         };
+      in
+        host:
+          inputs.nixpkgs.lib.nixosSystem {
+            specialArgs = {inherit inputs scheme;};
+            modules = [
+              ./bin
+              ./user
+              ./system
+              ./modules
+              ./hosts/${host}.nix
+              {networking.hostName = host;}
+            ];
+          };
     in {laptop = mkSystem "laptop";};
   };
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
-
-    dwl.url = "github:efettf/dwl";
-    dwl.flake = false;
 
     nvim-cmp-lsp.url = "github:hrsh7th/cmp-nvim-lsp";
     nvim-cmp-lsp.flake = false;
@@ -105,6 +122,15 @@
 
     tmux-sensible.url = "github:tmux-plugins/tmux-sensible";
     tmux-sensible.flake = false;
+
+    dwl-cursortheme.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/cursortheme/cursortheme.patch";
+    dwl-cursortheme.flake = false;
+
+    dwl-warpcursor.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch";
+    dwl-warpcursor.flake = false;
+
+    dwl-gaps.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch";
+    dwl-gaps.flake = false;
 
     st-ligatures.url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
     st-ligatures.flake = false;

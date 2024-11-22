@@ -1,19 +1,39 @@
 {
   "nodes": {
-    "dwl": {
+    "dwl-cursortheme": {
       "flake": false,
       "locked": {
-        "lastModified": 1731950397,
-        "narHash": "sha256-dIAePuCzj6VxPgEp5CMqPyXVP8jU+svCY2ablrL6dPc=",
-        "owner": "efettf",
-        "repo": "dwl",
-        "rev": "6b057cb13b255d307c37f5d1d4e33878392d3acb",
-        "type": "github"
+        "narHash": "sha256-6k6FCBNUjv5Gis2607X5tb8LhJdaDsMOT4UmyQvVW/E=",
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/cursortheme/cursortheme.patch"
       },
       "original": {
-        "owner": "efettf",
-        "repo": "dwl",
-        "type": "github"
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/cursortheme/cursortheme.patch"
+      }
+    },
+    "dwl-gaps": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-x0QXS3oJYDNhCUg59vVG67WMLbB2DgaEi9HJMfF4CHk=",
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch"
+      }
+    },
+    "dwl-warpcursor": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-KYr5LDvP5kyyb0LkG8vAjetFbWyc5Vc2IgF+/QCsTSA=",
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch"
       }
     },
     "fish-pisces": {
@@ -449,7 +469,9 @@
     },
     "root": {
       "inputs": {
-        "dwl": "dwl",
+        "dwl-cursortheme": "dwl-cursortheme",
+        "dwl-gaps": "dwl-gaps",
+        "dwl-warpcursor": "dwl-warpcursor",
         "fish-pisces": "fish-pisces",
         "fish-puffer": "fish-puffer",
         "fish-sponge": "fish-sponge",
