@@ -24,6 +24,8 @@ in {
       Type = "oneshot";
       User = "lynx";
       ExecStart = pkgs.writeShellScript "fish-plug" ''
+        rm -r /home/lynx/.config/fish/functions/*
+        rm -r /home/lynx/.config/fish/conf.d/*
         mkdir -p /home/lynx/.config/fish/functions
         mkdir -p /home/lynx/.config/fish/conf.d
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do

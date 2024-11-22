@@ -82,6 +82,7 @@ in {
       Type = "oneshot";
       User = "lynx";
       ExecStart = pkgs.writeShellScript "nvim-plug" ''
+        rm -r /home/lynx/.config/nvim/pack/vendor/start/*
         mkdir -p /home/lynx/.config/nvim/pack/vendor/start
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do
           ln -sf $plugin /home/lynx/.config/nvim/pack/vendor/start

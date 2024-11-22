@@ -19,6 +19,7 @@ in {
       Type = "oneshot";
       User = "lynx";
       ExecStart = pkgs.writeShellScript "tmux-plug" ''
+        rm -r /home/lynx/.config/tmux/plugins/*
         mkdir -p /home/lynx/.config/tmux/plugins
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do
           ln -sf $plugin /home/lynx/.config/tmux/plugins
