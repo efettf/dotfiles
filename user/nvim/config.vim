@@ -10,6 +10,7 @@ set ignorecase
 set incsearch
 set linespace=2
 set magic
+set shm+=I
 set laststatus=0
 set number
 set noshowmode
@@ -30,6 +31,7 @@ set nowritebackup
 
 let mapleader=" "
 
+au BufRead,BufNewFile * lua vim.wo.fillchars='eob: '
 
 nno <leader>f <cmd>Telescope find_files<cr>
 nno <leader>n <cmd>Telescope grep_string<cr>
