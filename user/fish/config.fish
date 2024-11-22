@@ -1,12 +1,12 @@
 
 set EDITOR 'nvim'
 
+abbr v 'nvim'
 abbr n 'git'
 abbr g 'git'
+abbr l 'eza'
 
 alias zrm 'zoxide remove $(pwd)'
-alias v   'nvim'
-alias l   'eza'
 
 fish_vi_key_bindings
 
