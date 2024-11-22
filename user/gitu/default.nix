@@ -1,8 +1,9 @@
-{pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    git
-    gitu
-  ];
+{
+  pkgs,
+  lib,
+  ...
+}: {
+  environment.systemPackages = lib.singleton pkgs.gitu;
 
   files.".config/gitu/config.toml".source = ./config.toml;
 }

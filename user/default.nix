@@ -1,20 +1,34 @@
 {
-  lib,
+  variables,
   pkgs,
+  lib,
   ...
-}: {
-  imports = [
-    (lib.importTOML ./config.toml)
-    ./qutebrowser
-    ./kanata
-    ./fish
-    ./tmux
-    ./nvim
-    ./gitu
-    ./bat
-    ./dwl
-    ./st
-  ];
+}: let
+  conImport = list:
+    map (
+      name: {
+        imports =
+          if variables.programs.${name} == true
+          then lib.singleton ./${name}
+          else [];
+      }
+    )
+    list;
+in {
+  imports =
+    lib.singleton (lib.importTOML ./config.toml)
+    ++ conImport [
+      "qutebrowser"
+      "kanata"
+      "fish"
+      "tmux"
+      "nvim"
+      "gitu"
+      "dwl"
+      "bat"
+      "git"
+      "st"
+    ];
 
   environment.systemPackages = with pkgs; [
     gh
@@ -25,6 +39,7 @@
     pass
     swww
     comma
+    delta
     tealdeer
     bibata-cursors
   ];

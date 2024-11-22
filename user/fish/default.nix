@@ -19,7 +19,7 @@ in {
   files.".config/fish/config.fish".source = ./config.fish;
 
   systemd.services."fish-plug" = {
-    wantedBy = ["multi-user.target"];
+    wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
       User = "lynx";

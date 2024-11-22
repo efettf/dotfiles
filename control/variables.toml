@@ -1,0 +1,14 @@
+
+[programs]
+
+qutebrowser = true
+kanata = true
+fish = true
+tmux = true
+gitu = true
+nvim = true
+dwl = true
+bat = true
+git = true
+st = true
+
