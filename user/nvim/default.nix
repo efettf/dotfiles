@@ -42,20 +42,12 @@ in {
 
   files.".config/nvim/extra.vim".source = ./config.vim;
 
-  files.".config/nvim/init.lua".text = let
-    confPlugin = name: config: ''
-      require("${name}").setup(
-        ${lib.generators.toLua {} config}
-      )
-    '';
-    defaultConfPlugin = list: map (name: ''require("${name}").setup({})'') list;
-  in
+  files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
     + ''
-      require("lspconfig").gopls.setup({})
-      require("lspconfig").nil_ls.setup({})
+      require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
     ''
-    + lib.strings.concatStringsSep "\n" (defaultConfPlugin [
+    + lib.strings.concatStringsSep "\n" (map (name: ''require("${name}").setup({})'') [
       "Comment"
       "recorder"
       "gitsigns"
@@ -65,24 +57,7 @@ in {
       "transparent"
       "nvim-autopairs"
       "nvim-treesitter"
-    ])
-    + confPlugin "oil" {
-      skip_confirm_for_simple_edits = true;
-      prompt_save_on_select_new_entry = false;
-    }
-    + confPlugin "mini.base16" {
-      palette = scheme;
-    }
-    + confPlugin "conform" {
-      format_on_save = {
-        timeout_ms = 500;
-        lsp_format = "fallback";
-      };
-      formatters_by_ft = {
-        go = lib.singleton "gofmt";
-        nix = lib.singleton "alejandra";
-      };
-    };
+    ]);
 
   systemd.services."nvim-plug" = {
     wantedBy = lib.singleton "multi-user.target";
