@@ -7,6 +7,7 @@
   lib,
   ...
 }: let
+  vimSettings = lib.importTOML ./settings.toml;
   plugins = map (name: inputs."nvim-${name}") [
     "cmp-lsp"
     "cmp-path"
@@ -41,17 +42,24 @@ in {
     ]
     ++ (
       if variables.enable.go
-      then with pkgs; [go gopls]
+      then [go gopls]
       else []
     );
 
   files.".config/nvim/extra.vim".source = ./config.vim;
 
-  files.".config/nvim/init.lua".text =
+  files.".config/nvim/init.lua".text = let
+    mkTomlShort = prefix: attr:
+      lib.generators.toLua {asBindings = true;} (lib.attrsets.concatMapAttrs (name: value: {
+          "${prefix}.${name}" = value;
+        })
+        vimSettings.${attr});
+  in
     builtins.readFile ./config.lua
     + ''
       require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
     ''
+    + mkTomlShort "vim.opt" "opts"
     + lib.strings.concatStringsSep "\n" (map (name: ''require("${name}").setup({})'') [
       "Comment"
       "recorder"
