@@ -21,7 +21,7 @@
   };
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
 
     nvim-cmp-lsp.url = "github:hrsh7th/cmp-nvim-lsp";
     nvim-cmp-lsp.flake = false;
