@@ -8,7 +8,6 @@ tmux = true
 gitu = true
 nvim = true
 dwl = true
-bat = true
 git = true
 st = true
 
