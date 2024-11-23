@@ -6,6 +6,7 @@
 }: {
   imports = [
     (lib.importTOML ./config.toml)
+    ./hardware.nix
     ./boot-loader
     ./bluetooth
     ./security

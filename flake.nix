@@ -12,7 +12,6 @@
           ./user
           ./system
           ./modules
-          ./hardware.nix
         ];
       };
   };
