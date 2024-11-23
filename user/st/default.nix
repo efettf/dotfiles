@@ -1,17 +1,19 @@
 {
   scheme,
-  inputs,
   pkgs,
   ...
 }: {
   environment.systemPackages = with pkgs; [
     (st.overrideAttrs (old: {
-      patches = with inputs; [
-        st-ligatures
+      patches = [
+        (fetchpatch {
+          url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
+          hash = "sha256-kFmGCrsqiphY1uiRCX/Gz4yOdlLxIIHBlsM1pvW5TTA=";
+        })
         ./patches/font.diff
         ./patches/cursor.diff
         (with scheme;
-          pkgs.writeText "theme.diff" ''
+          writeText "theme.diff" ''
             --- a/config.def.h
             +++ b/config.def.h
             @@ -96,43 +96,39 @@

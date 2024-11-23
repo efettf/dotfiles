@@ -106,20 +106,5 @@
 
     tmux-sensible.url = "github:tmux-plugins/tmux-sensible";
     tmux-sensible.flake = false;
-
-    dwl-cursortheme.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/cursortheme/cursortheme.patch";
-    dwl-cursortheme.flake = false;
-
-    dwl-warpcursor.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch";
-    dwl-warpcursor.flake = false;
-
-    dwl-autostart.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/autostart/autostart-0.7.patch";
-    dwl-autostart.flake = false;
-
-    dwl-gaps.url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch";
-    dwl-gaps.flake = false;
-
-    st-ligatures.url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
-    st-ligatures.flake = false;
   };
 }

@@ -1,53 +1,5 @@
 {
   "nodes": {
-    "dwl-autostart": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-v7fReoocxhR3EgHg69VjiPliE3UhRll4cNw1Zxu2VL4=",
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/autostart/autostart-0.7.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/autostart/autostart-0.7.patch"
-      }
-    },
-    "dwl-cursortheme": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-6k6FCBNUjv5Gis2607X5tb8LhJdaDsMOT4UmyQvVW/E=",
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/cursortheme/cursortheme.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/cursortheme/cursortheme.patch"
-      }
-    },
-    "dwl-gaps": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-x0QXS3oJYDNhCUg59vVG67WMLbB2DgaEi9HJMfF4CHk=",
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/gaps/gaps.patch"
-      }
-    },
-    "dwl-warpcursor": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-KYr5LDvP5kyyb0LkG8vAjetFbWyc5Vc2IgF+/QCsTSA=",
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/warpcursor/warpcursor.patch"
-      }
-    },
     "fish-pisces": {
       "flake": false,
       "locked": {
@@ -481,10 +433,6 @@
     },
     "root": {
       "inputs": {
-        "dwl-autostart": "dwl-autostart",
-        "dwl-cursortheme": "dwl-cursortheme",
-        "dwl-gaps": "dwl-gaps",
-        "dwl-warpcursor": "dwl-warpcursor",
         "fish-pisces": "fish-pisces",
         "fish-puffer": "fish-puffer",
         "fish-sponge": "fish-sponge",

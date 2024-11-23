@@ -1,16 +1,20 @@
 {
-  inputs,
   scheme,
   pkgs,
   lib,
   ...
 }: let
+  patch = hash: name:
+    pkgs.fetchpatch {
+      url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/${name}/${name}.patch";
+      inherit hash;
+    };
   dwl = pkgs.dwl.overrideAttrs (old: {
-    patches = with inputs; [
-      dwl-gaps
-      dwl-autostart
-      dwl-warpcursor
-      dwl-cursortheme
+    patches = [
+      (patch "sha256-6knXrYblzaqjy5ZG8YG2VKwHeaHB+rij+8ZxXe5LqTE=" "gaps")
+      (patch "sha256-OTQ/0O62wG3OKCzA2FGyFpgbNup5Xmia1techndd4I8=" "autostart")
+      (patch "sha256-0AGMq507WmW2QJW02u6eJDuQmGBAiVPbEw79npwqEDU=" "warpcursor")
+      (patch "sha256-x9sN0cUZbEXyJM/3gQQgZRwVZknjAbvKtm+B41JokII=" "cursortheme")
       ./patches/keys.diff
       ./patches/cursor.diff
       ./patches/autostart.diff
