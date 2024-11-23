@@ -287,6 +287,22 @@
         "type": "github"
       }
     },
+    "nvim-lastplace": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1715994909,
+        "narHash": "sha256-6/Gl7l3ImGqfKkOp0kkHdSQhRCw3jM2NyzRuQfAqAh4=",
+        "owner": "farmergreg",
+        "repo": "vim-lastplace",
+        "rev": "e58cb0df716d3c88605ae49db5c4741db8b48aa9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "farmergreg",
+        "repo": "vim-lastplace",
+        "type": "github"
+      }
+    },
     "nvim-lspconfig": {
       "flake": false,
       "locked": {
@@ -451,6 +467,7 @@
         "nvim-comment": "nvim-comment",
         "nvim-conform": "nvim-conform",
         "nvim-gitsigns": "nvim-gitsigns",
+        "nvim-lastplace": "nvim-lastplace",
         "nvim-lspconfig": "nvim-lspconfig",
         "nvim-oil": "nvim-oil",
         "nvim-plenary": "nvim-plenary",
@@ -460,21 +477,8 @@
         "nvim-transparent": "nvim-transparent",
         "nvim-treesitter": "nvim-treesitter",
         "nvim-whichkey": "nvim-whichkey",
-        "st-ligatures": "st-ligatures",
         "tmux-sensible": "tmux-sensible",
         "tmux-yank": "tmux-yank"
-      }
-    },
-    "st-ligatures": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-szuUPC5O0SZzSWZFa2qBbz8iysuCgmPsbGQ+VEYmF5g=",
-        "type": "file",
-        "url": "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff"
       }
     },
     "tmux-sensible": {

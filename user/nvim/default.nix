@@ -21,6 +21,7 @@
     nvim-treesitter
     nvim-whichkey
     nvim-autopairs
+    nvim-lastplace
     nvim-autosave
     nvim-base16
     nvim-gitsigns

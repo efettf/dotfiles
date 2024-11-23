@@ -86,6 +86,9 @@
     nvim-transparent.url = "github:xiyaowong/transparent.nvim";
     nvim-transparent.flake = false;
 
+    nvim-lastplace.url = "github:farmergreg/vim-lastplace";
+    nvim-lastplace.flake = false;
+
     fish-transient.url = "github:zzhaolei/transient.fish";
     fish-transient.flake = false;
 
