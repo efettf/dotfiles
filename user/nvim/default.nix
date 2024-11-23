@@ -1,4 +1,5 @@
 {
+  settings,
   inputs,
   scheme,
   pkgs,
@@ -63,7 +64,7 @@ in {
     wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
-      User = "lynx";
+      User = settings.user;
       ExecStart = pkgs.writeShellScript "nvim-plug" ''
         rm -r $HOME/.config/nvim/pack/vendor/start/*
         mkdir -p $HOME/.config/nvim/pack/vendor/start

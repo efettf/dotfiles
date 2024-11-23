@@ -1,4 +1,5 @@
 {
+  settings,
   inputs,
   pkgs,
   lib,
@@ -22,7 +23,7 @@ in {
     wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
-      User = "lynx";
+      User = settings.user;
       ExecStart = pkgs.writeShellScript "fish-plug" ''
         rm -r $HOME/.config/fish/completions/*
         rm -r $HOME/.config/fish/functions/*

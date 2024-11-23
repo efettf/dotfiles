@@ -1,4 +1,5 @@
 {
+  settings,
   inputs,
   pkgs,
   lib,
@@ -19,7 +20,7 @@ in {
     wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
-      User = "lynx";
+      User = settings.user;
       ExecStart = pkgs.writeShellScript "tmux-plug" ''
         rm -r $HOME/.config/tmux/plugins/*
         mkdir -p $HOME/.config/tmux/plugins

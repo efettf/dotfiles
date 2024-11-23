@@ -1,4 +1,5 @@
 {
+  settings,
   pkgs,
   lib,
   ...
@@ -11,9 +12,15 @@
     ./network
   ];
 
-  fonts.packages = [
-    (pkgs.nerdfonts.override {fonts = lib.singleton "JetBrainsMono";})
-  ];
+  fonts.packages = lib.singleton (pkgs.nerdfonts.override {fonts = lib.singleton "JetBrainsMono";});
+
+  networking.hostName = settings.host;
+
+  users.users.${settings.user} = {
+    isNormalUser = true;
+    initialPassword = "nixos";
+    extraGroups = lib.singleton "wheel";
+  };
 
   # Enable flakes and nix command.
   nix.settings.experimental-features = ["nix-command" "flakes"];

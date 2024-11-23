@@ -26,13 +26,3 @@ suspend.enable = false
 hibernate.enable = false
 hybrid-sleep.enable = false
 
-# User configuration.
-[users.users.lynx]
-
-# Makes user not have super user access.
-isNormalUser = true
-
-initialPassword = "nixos"
-
-# Set extra groups for user.
-extraGroups = ["wheel"]

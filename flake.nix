@@ -1,23 +1,20 @@
 {
   outputs = inputs: {
-    nixosConfigurations = let
-      mkSystem = let
-        variables = inputs.nixpkgs.lib.importTOML ./vars.toml;
-        scheme = variables.scheme;
-      in
-        host:
-          inputs.nixpkgs.lib.nixosSystem {
-            specialArgs = {inherit inputs scheme variables;};
-            modules = [
-              ./bin
-              ./user
-              ./system
-              ./modules
-              ./hosts/${host}.nix
-              {networking.hostName = host;}
-            ];
-          };
-    in {laptop = mkSystem "laptop";};
+    nixosConfigurations.nixos = let
+      variables = inputs.nixpkgs.lib.importTOML ./vars.toml;
+      settings = variables.settings;
+      scheme = variables.scheme;
+    in
+      inputs.nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs settings scheme variables;};
+        modules = [
+          ./bin
+          ./user
+          ./system
+          ./modules
+          ./hardware.nix
+        ];
+      };
   };
 
   inputs = {

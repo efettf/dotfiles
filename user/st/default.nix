@@ -10,6 +10,10 @@
           url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20240427-0.9.2.diff";
           hash = "sha256-kFmGCrsqiphY1uiRCX/Gz4yOdlLxIIHBlsM1pvW5TTA=";
         })
+        (fetchpatch {
+          url = "https://st.suckless.org/patches/dynamic-cursor-color/st-dynamic-cursor-color-0.8.4.diff";
+          hash = "sha256-DhqbxkG87FsVeridnLidv+u7caBNbroRa2Y3gAYGPU0=";
+        })
         ./patches/font.diff
         ./patches/cursor.diff
         (with scheme;

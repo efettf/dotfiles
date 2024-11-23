@@ -11,6 +11,11 @@ dwl = true
 git = true
 st = true
 
+[settings]
+
+host = "nixos"
+user = "lynx"
+
 [scheme]
 
 base00 = "#1e1e2e"
