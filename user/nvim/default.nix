@@ -5,29 +5,29 @@
   lib,
   ...
 }: let
-  plugins = with inputs; [
-    nvim-cmp-lsp
-    nvim-cmp-path
-    nvim-cmp-spell
-    nvim-cmp-treesitter
-    nvim-cmp
-    nvim-recorder
-    nvim-oil
-    nvim-sentiment
-    nvim-lspconfig
-    nvim-telescope
-    nvim-transparent
-    nvim-plenary
-    nvim-treesitter
-    nvim-whichkey
-    nvim-autopairs
-    nvim-lastplace
-    nvim-autosave
-    nvim-base16
-    nvim-gitsigns
-    nvim-colorizer
-    nvim-conform
-    nvim-comment
+  plugins = map (name: inputs."nvim-${name}") [
+    "cmp-lsp"
+    "cmp-path"
+    "cmp-spell"
+    "cmp-treesitter"
+    "cmp"
+    "recorder"
+    "oil"
+    "sentiment"
+    "lspconfig"
+    "telescope"
+    "transparent"
+    "plenary"
+    "treesitter"
+    "whichkey"
+    "autopairs"
+    "lastplace"
+    "autosave"
+    "base16"
+    "gitsigns"
+    "colorizer"
+    "conform"
+    "comment"
   ];
 in {
   environment.systemPackages = with pkgs; [

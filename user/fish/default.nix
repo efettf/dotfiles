@@ -4,12 +4,12 @@
   lib,
   ...
 }: let
-  plugins = with inputs; [
-    fish-transient
-    fish-sponge
-    fish-puffer
-    fish-zoxide
-    fish-pisces
+  plugins = map (name: inputs."fish-${name}") [
+    "transient"
+    "sponge"
+    "puffer"
+    "zoxide"
+    "pisces"
   ];
 in {
   environment.systemPackages = lib.singleton pkgs.zoxide;

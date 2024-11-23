@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  plugins = with inputs; [
-    tmux-yank
-    tmux-sensible
+  plugins = map (name: inputs."tmux-${name}") [
+    "yank"
+    "sensible"
   ];
 in {
   environment.systemPackages = lib.singleton pkgs.tmux;
