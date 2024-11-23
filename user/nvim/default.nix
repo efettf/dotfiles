@@ -70,8 +70,8 @@ in {
       Type = "oneshot";
       User = settings.user;
       ExecStart = pkgs.writeShellScript "nvim-plug" ''
-        rm -r $HOME/.config/nvim/pack/vendor/start/*
         mkdir -p $HOME/.config/nvim/pack/vendor/start
+        rm -r $HOME/.config/nvim/pack/vendor/start/*
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do
           ln -sf $plugin $HOME/.config/nvim/pack/vendor/start
         done

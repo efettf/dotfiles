@@ -22,8 +22,8 @@ in {
       Type = "oneshot";
       User = settings.user;
       ExecStart = pkgs.writeShellScript "tmux-plug" ''
-        rm -r $HOME/.config/tmux/plugins/*
         mkdir -p $HOME/.config/tmux/plugins
+        rm -r $HOME/.config/tmux/plugins/*
         for plugin in ${lib.strings.concatStringsSep " " (map (name: inputs."tmux-${name}") plugins)}; do
           ln -sf $plugin $HOME/.config/tmux/plugins
         done
