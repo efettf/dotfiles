@@ -57,6 +57,7 @@ in {
     + confPlugin "Comment" {}
     + confPlugin "recorder" {}
     + confPlugin "gitsigns" {}
+    + confPlugin "colorizer" {}
     + confPlugin "sentiment" {}
     + confPlugin "auto-save" {}
     + confPlugin "transparent" {}

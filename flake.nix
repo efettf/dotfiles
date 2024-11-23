@@ -77,7 +77,7 @@
     nvim-conform.url = "github:stevearc/conform.nvim";
     nvim-conform.flake = false;
 
-    nvim-colorizer.url = "github:norcalli/nvim-colorizer.lua";
+    nvim-colorizer.url = "github:nvchad/nvim-colorizer.lua";
     nvim-colorizer.flake = false;
 
     nvim-comment.url = "github:numToStr/Comment.nvim";
