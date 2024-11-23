@@ -2,7 +2,7 @@
   outputs = inputs: {
     nixosConfigurations = let
       mkSystem = let
-        variables = inputs.nixpkgs.lib.importTOML ./control/variables.toml;
+        variables = inputs.nixpkgs.lib.importTOML ./vars.toml;
         scheme = variables.scheme;
       in
         host:
