@@ -48,21 +48,24 @@ in {
         ${lib.generators.toLua {} config}
       )
     '';
+    defaultConfPlugin = list: map (name: ''require("${name}").setup({})'') list;
   in
     builtins.readFile ./config.lua
     + ''
       require("lspconfig").gopls.setup({})
       require("lspconfig").nil_ls.setup({})
     ''
-    + confPlugin "Comment" {}
-    + confPlugin "recorder" {}
-    + confPlugin "gitsigns" {}
-    + confPlugin "colorizer" {}
-    + confPlugin "sentiment" {}
-    + confPlugin "auto-save" {}
-    + confPlugin "transparent" {}
-    + confPlugin "nvim-autopairs" {}
-    + confPlugin "nvim-treesitter" {}
+    + lib.strings.concatStringsSep "\n" (defaultConfPlugin [
+      "Comment"
+      "recorder"
+      "gitsigns"
+      "colorizer"
+      "sentiment"
+      "auto-save"
+      "transparent"
+      "nvim-autopairs"
+      "nvim-treesitter"
+    ])
     + confPlugin "oil" {
       skip_confirm_for_simple_edits = true;
       prompt_save_on_select_new_entry = false;
