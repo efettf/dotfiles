@@ -17,6 +17,9 @@
 in {
   imports =
     lib.singleton (lib.importTOML ./config.toml)
+    ++ [
+      ./tty
+    ]
     ++ conImport [
       "qutebrowser"
       "kanata"
