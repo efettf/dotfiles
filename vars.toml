@@ -1,15 +1,7 @@
 
-[programs]
+[enable]
 
-qutebrowser = true
-kanata = true
-fish = true
-tmux = true
-gitu = true
-nvim = true
-dwl = true
-git = true
-st = true
+go = false
 
 [settings]
 

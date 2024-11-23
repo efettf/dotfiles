@@ -1,4 +1,5 @@
 {
+  variables,
   settings,
   inputs,
   scheme,
@@ -31,15 +32,18 @@
     "comment"
   ];
 in {
-  environment.systemPackages = with pkgs; [
-    go
-    gcc
-    nil
-    gopls
-    neovim
-    ripgrep
-    alejandra
-  ];
+  environment.systemPackages = with pkgs;
+    [
+      nil
+      neovim
+      ripgrep
+      alejandra
+    ]
+    ++ (
+      if variables.enable.go
+      then with pkgs; [go gopls]
+      else []
+    );
 
   files.".config/nvim/extra.vim".source = ./config.vim;
 
