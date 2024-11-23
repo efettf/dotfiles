@@ -43,6 +43,7 @@ in {
     comma
     delta
     tealdeer
+    wlsunset
     bibata-cursors
   ];
 }
