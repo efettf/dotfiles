@@ -25,7 +25,6 @@ in {
       "nvim"
       "gitu"
       "dwl"
-      "bat"
       "git"
       "st"
     ];
