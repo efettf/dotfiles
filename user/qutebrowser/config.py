@@ -29,6 +29,10 @@ config.bind("aj", "hint all hover", mode="normal")
 config.bind("as", "hint all delete", mode="normal")
 
 config.bind("e", "tab-close", mode="normal")
+config.bind("c", "tab-clone", mode="normal")
+
+config.bind("g", "scroll top", mode="normal")
+config.bind("G", "scroll bottom", mode="normal")
 
 config.bind("xe", "config-cycle colors.webpage.darkmode.enabled true false", mode="normal")
 config.bind("xt", "config-cycle tabs.position top right", mode="normal")
