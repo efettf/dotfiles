@@ -18,6 +18,12 @@ require("oil").setup({
   prompt_save_on_select_new_entry = false
 })
 
+require("nvim-treesitter.configs").setup({
+  highlight = {
+    enable = true
+  }
+})
+
 require("Comment").setup({
   toggler = {
       line = '`'
