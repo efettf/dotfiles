@@ -14,8 +14,11 @@
           url = "https://st.suckless.org/patches/dynamic-cursor-color/st-dynamic-cursor-color-0.8.4.diff";
           hash = "sha256-DhqbxkG87FsVeridnLidv+u7caBNbroRa2Y3gAYGPU0=";
         })
+        # .diff for user patches
         ./patches/font.diff
         ./patches/cursor.diff
+        # .patch for modified full patches
+        ./patches/themedcursor.patch
         (with scheme;
           writeText "theme.diff" ''
             --- a/config.def.h

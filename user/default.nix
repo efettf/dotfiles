@@ -27,6 +27,5 @@
     comma
     tealdeer
     wlsunset
-    bibata-cursors
   ];
 }

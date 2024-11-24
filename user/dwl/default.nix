@@ -4,6 +4,7 @@
   lib,
   ...
 }: let
+  cursor = "Banana";
   patch = hash: name:
     pkgs.fetchpatch {
       url = "https://codeberg.org/dwl/dwl-patches/raw/branch/main/patches/${name}/${name}.patch";
@@ -16,7 +17,6 @@
       (patch "sha256-0AGMq507WmW2QJW02u6eJDuQmGBAiVPbEw79npwqEDU=" "warpcursor")
       (patch "sha256-x9sN0cUZbEXyJM/3gQQgZRwVZknjAbvKtm+B41JokII=" "cursortheme")
       ./patches/keys.diff
-      ./patches/cursor.diff
       ./patches/autostart.diff
       (with scheme;
         pkgs.writeText "theme.diff" ''
@@ -40,15 +40,44 @@
            static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
            static const char *cursor_theme            = NULL;
         '')
+      (pkgs.writeText "theme.diff" ''
+        --- a/config.def.h
+        +++ b/config.def.h
+        @@ -13,8 +13,8 @@ static const float focuscolor[]            = COLOR(0x005577ff);
+         static const float urgentcolor[]           = COLOR(0xff0000ff);
+         /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
+         static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
+        -static const char *cursor_theme            = NULL;
+        -static const char cursor_size[]            = "24"; /* Make sure it's a valid integer, otherwise things will break */
+        +static const char *cursor_theme            = "${
+          if cursor == "Banana"
+          then "Banana"
+          else "Bibata-Modern-Classic"
+        }";
+        +static const char cursor_size[]            = "${
+          if cursor == "Banana"
+          then "32"
+          else "19"
+        }"; /* Make sure it's a valid integer, otherwise things will break */
+
+         /* tagging - TAGCOUNT must be no greater than 31 */
+         #define TAGCOUNT (9)
+      '')
     ];
     passthru.providedSessions = lib.singleton "dwl";
     buildInputs = old.buildInputs ++ (with pkgs; [libdrm fcft]);
   });
 in {
-  environment.systemPackages = [
-    dwl
-    pkgs.wl-clipboard
-  ];
+  environment.systemPackages = with pkgs;
+    [
+      dwl
+      wl-clipboard
+    ]
+    ++ (
+      if cursor == "Banana"
+      then lib.singleton banana-cursor
+      else lib.singleton bibata-cursors
+    );
 
   services.displayManager.sessionPackages = lib.singleton dwl;
 }
