@@ -1,7 +1,7 @@
 {
   outputs = inputs: {
     nixosConfigurations.nixos = let
-      variables = inputs.nixpkgs.lib.importTOML ./vars.toml;
+      variables = inputs.nixpkgs.lib.importTOML ./variables.toml;
       settings = variables.settings;
       scheme = variables.scheme;
     in
