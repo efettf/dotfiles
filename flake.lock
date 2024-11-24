@@ -96,6 +96,22 @@
         "type": "github"
       }
     },
+    "nvim-alternatetoggler": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717519568,
+        "narHash": "sha256-+UXbgVRki1CGRDHRNrnXOIvzr+0lCAftzGsGVzVQwL4=",
+        "owner": "rmagatti",
+        "repo": "alternate-toggler",
+        "rev": "819800304d3e8e575fd6aa461a8bcf2217e1cfb6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rmagatti",
+        "repo": "alternate-toggler",
+        "type": "github"
+      }
+    },
     "nvim-autopairs": {
       "flake": false,
       "locked": {
@@ -440,6 +456,7 @@
         "fish-transient": "fish-transient",
         "fish-zoxide": "fish-zoxide",
         "nixpkgs": "nixpkgs",
+        "nvim-alternatetoggler": "nvim-alternatetoggler",
         "nvim-autopairs": "nvim-autopairs",
         "nvim-autosave": "nvim-autosave",
         "nvim-base16": "nvim-base16",

@@ -13,6 +13,7 @@
     "cmp-path"
     "cmp-spell"
     "cmp-treesitter"
+    "alternatetoggler"
     "cmp"
     "recorder"
     "oil"

@@ -61,6 +61,9 @@
     nvim-autosave.url = "github:okuuva/auto-save.nvim";
     nvim-autosave.flake = false;
 
+    nvim-alternatetoggler.url = "github:rmagatti/alternate-toggler";
+    nvim-alternatetoggler.flake = false;
+
     nvim-base16.url = "github:echasnovski/mini.base16";
     nvim-base16.flake = false;
 
