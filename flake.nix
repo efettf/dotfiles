@@ -85,9 +85,6 @@
     nvim-comment.url = "github:numToStr/Comment.nvim";
     nvim-comment.flake = false;
 
-    nvim-transparent.url = "github:xiyaowong/transparent.nvim";
-    nvim-transparent.flake = false;
-
     nvim-lastplace.url = "github:farmergreg/vim-lastplace";
     nvim-lastplace.flake = false;
 

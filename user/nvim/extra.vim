@@ -1,5 +1,25 @@
 
+au BufRead,BufNewFile * lua vim.wo.fillchars='eob: '
+
+au BufRead * hi LineNr guibg=none
+
 let mapleader=" "
+
+nno <expr> j v:count ? 'j' : 'gj'
+nno <expr> k v:count ? 'k' : 'gk'
+
+nno = <c-x>
+nno + <c-a>
+
+nno \ <cmd>ToggleAlternate<cr>
+
+nno Z ZZ
+nno ; :
+
+nno <leader>f <cmd>Telescope find_files<cr>
+nno <leader>n <cmd>Telescope live_grep<cr>
+
+nno - <cmd>Oil<cr>
 
 set autoread
 set nobackup
@@ -29,6 +49,7 @@ set noruler
 set magic
 set wrap
 set scrolloff=8
+set cursorline
 set nohlsearch
 set shiftwidth=2
 set smartcase
