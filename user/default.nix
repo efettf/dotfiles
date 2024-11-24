@@ -3,20 +3,19 @@
   lib,
   ...
 }: {
-  imports =
-    lib.singleton (lib.importTOML ./config.toml)
-    ++ [
-      ./qutebrowser
-      ./kanata
-      ./fish
-      ./tmux
-      ./nvim
-      ./gitu
-      ./dwl
-      ./tty
-      ./git
-      ./st
-    ];
+  imports = [
+    (lib.importTOML ./config.toml)
+    ./qutebrowser
+    ./kanata
+    ./fish
+    ./tmux
+    ./nvim
+    ./gitu
+    ./dwl
+    ./tty
+    ./git
+    ./st
+  ];
 
   environment.systemPackages = with pkgs; [
     gh
