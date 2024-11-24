@@ -5,7 +5,7 @@
  /* Autostart */
  static const char *const autostart[] = {
 -        "wbg", "/path/to/your/image", NULL,
-+        "wlsunset", NULL,
++        "wlsunset", "-l", "52", "-L", "20", NULL,
 +        "swww-daemon", NULL,
          NULL /* terminate */
  };
