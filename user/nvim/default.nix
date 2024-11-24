@@ -55,7 +55,6 @@ in {
       require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
     ''
     + lib.strings.concatStringsSep "\n" (map (name: ''require("${name}").setup({})'') [
-      "Comment"
       "recorder"
       "gitsigns"
       "colorizer"

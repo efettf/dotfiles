@@ -11,6 +11,15 @@ require("oil").setup({
   prompt_save_on_select_new_entry = false
 })
 
+require("Comment").setup({
+  toggler = {
+      line = '`'
+  },
+  opleader = {
+    line = '`'
+  }
+})
+
 require("conform").setup({
   format_on_save = {
     timeout_ms = 500,
