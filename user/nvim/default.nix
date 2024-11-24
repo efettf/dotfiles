@@ -33,6 +33,18 @@
     "conform"
     "comment"
   ];
+  parsers = map (name: pkgs.vimPlugins.nvim-treesitter-parsers.${name}) [
+    "go"
+    "lua"
+    "vim"
+    "nix"
+    "rust"
+    "bash"
+    "query"
+    "vimdoc"
+    "markdown"
+    "markdown_inline"
+  ];
 in {
   environment.systemPackages = with pkgs;
     [
@@ -78,6 +90,9 @@ in {
         rm -r $HOME/.config/nvim/pack/vendor/start/*
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do
           ln -sf $plugin $HOME/.config/nvim/pack/vendor/start
+        done
+        for parser in ${lib.strings.concatStringsSep " " parsers}; do
+          ln -sf $parser $HOME/.config/nvim/pack/vendor/start
         done
       '';
     };
