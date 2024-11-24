@@ -35,6 +35,3 @@ config.bind("xt", "config-cycle tabs.position top right", mode="normal")
 config.bind("xx", "config-cycle tabs.show multiple never", mode="normal")
 
 
-import theme
-theme.setup(c, 'mocha', True)
-
