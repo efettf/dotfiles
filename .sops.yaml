@@ -1,9 +1,0 @@
-# https://inv.nadeko.net/watch?v=G5f6GC7SnhU
-
-keys:
-  - &primary age14vlk7dpr4dkznvzhwv6l38yuxc9u6nucu8a4r8jja96mvga503jq9f904g
-creation_rules:
-  - path_regex: secrets/secrets.yaml$
-    key_groups:
-    - age:
-      - *primary

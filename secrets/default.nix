@@ -1,6 +1,6 @@
 # https://inv.nadeko.net/watch?v=G5f6GC7SnhU
+# https://github.com/Mic92/sops-nix
 {
-  settings,
   inputs,
   pkgs,
   lib,
@@ -15,9 +15,8 @@
 
   sops = {
     defaultSopsFile = ./secrets.yaml;
-    defaultSopsFormat = "yaml";
 
-    age.keyFile = "/home/${settings.user}/.config/sops/age/keys.txt";
+    age.keyFile = "/var/lib/sops-nix/key.txt";
 
     secrets = {
       "github" = {};
