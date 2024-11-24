@@ -1,30 +1,15 @@
-{
-  pkgs,
-  lib,
-  ...
-}: {
-  imports = [
-    (lib.importTOML ./config.toml)
-    ./qutebrowser
-    ./kanata
-    ./fish
-    ./tmux
-    ./nvim
-    ./gitu
-    ./dwl
-    ./tty
-    ./git
-    ./st
-  ];
-
-  environment.systemPackages = with pkgs; [
-    gh
-    fd
-    fzf
-    eza
-    swww
-    comma
-    tealdeer
-    wlsunset
-  ];
+{pkgs, ...}: {
+  config = {
+    environment.systemPackages = [
+      pkgs.gh
+      pkgs.fd
+      pkgs.fzf
+      pkgs.eza
+      pkgs.swww
+      pkgs.comma
+      pkgs.tealdeer
+      pkgs.wlsunset
+    ];
+    programs.nano.enable = false;
+  };
 }

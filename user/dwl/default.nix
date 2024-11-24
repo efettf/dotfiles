@@ -18,7 +18,7 @@
       (patch "sha256-x9sN0cUZbEXyJM/3gQQgZRwVZknjAbvKtm+B41JokII=" "cursortheme")
       ./patches/keys.diff
       ./patches/autostart.diff
-      (with scheme;
+      (
         pkgs.writeText "theme.diff" ''
           --- a/config.def.h
           +++ b/config.def.h
@@ -32,14 +32,15 @@
           -static const float focuscolor[]            = COLOR(0x005577ff);
           -static const float urgentcolor[]           = COLOR(0xff0000ff);
           +static const unsigned int borderpx         = 2;  /* border pixel of windows */
-          +static const float rootcolor[]             = COLOR(0x${lib.strings.removePrefix "#" base00}ff);
-          +static const float bordercolor[]           = COLOR(0x${lib.strings.removePrefix "#" base02}ff);
-          +static const float focuscolor[]            = COLOR(0x${lib.strings.removePrefix "#" base04}ff);
-          +static const float urgentcolor[]           = COLOR(0x${lib.strings.removePrefix "#" base08}ff);
+          +static const float rootcolor[]             = COLOR(0x${lib.strings.removePrefix "#" scheme.base00}ff);
+          +static const float bordercolor[]           = COLOR(0x${lib.strings.removePrefix "#" scheme.base02}ff);
+          +static const float focuscolor[]            = COLOR(0x${lib.strings.removePrefix "#" scheme.base04}ff);
+          +static const float urgentcolor[]           = COLOR(0x${lib.strings.removePrefix "#" scheme.base08}ff);
            /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
            static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
            static const char *cursor_theme            = NULL;
-        '')
+        ''
+      )
       (pkgs.writeText "theme.diff" ''
         --- a/config.def.h
         +++ b/config.def.h
@@ -64,20 +65,22 @@
          #define TAGCOUNT (9)
       '')
     ];
-    passthru.providedSessions = lib.singleton "dwl";
-    buildInputs = old.buildInputs ++ (with pkgs; [libdrm fcft]);
+    passthru.providedSessions = ["dwl"];
+    buildInputs = old.buildInputs ++ [pkgs.libdrm pkgs.fcft];
   });
 in {
-  environment.systemPackages = with pkgs;
-    [
-      dwl
-      wl-clipboard
-    ]
-    ++ (
-      if cursor == "Banana"
-      then lib.singleton banana-cursor
-      else lib.singleton bibata-cursors
-    );
+  config = {
+    environment.systemPackages = with pkgs;
+      [
+        dwl
+        wl-clipboard
+      ]
+      ++ (
+        if cursor == "Banana"
+        then [banana-cursor]
+        else [bibata-cursors]
+      );
 
-  services.displayManager.sessionPackages = lib.singleton dwl;
+    services.displayManager.sessionPackages = lib.singleton dwl;
+  };
 }

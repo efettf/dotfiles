@@ -3,7 +3,7 @@
   lib,
   ...
 }: {
-  console.colors = map (name: lib.strings.removePrefix "#" scheme."${name}") [
+  config.console.colors = map (name: lib.strings.removePrefix "#" scheme."${name}") [
     "base00"
     "base01"
     "base02"
