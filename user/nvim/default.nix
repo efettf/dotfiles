@@ -7,7 +7,6 @@
   lib,
   ...
 }: let
-  vimSettings = lib.importTOML ./settings.toml;
   plugins = map (name: inputs."nvim-${name}") [
     "cmp-lsp"
     "cmp-path"
