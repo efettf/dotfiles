@@ -31,6 +31,9 @@
     nvim-cmp-treesitter.url = "github:ray-x/cmp-treesitter";
     nvim-cmp-treesitter.flake = false;
 
+    nvim-promise.url = "github:kevinhwang91/promise-async";
+    nvim-promise.flake = false;
+
     nvim-plenary.url = "github:nvim-lua/plenary.nvim";
     nvim-plenary.flake = false;
 
@@ -42,6 +45,9 @@
 
     nvim-recorder.url = "github:chrisgrieser/nvim-recorder";
     nvim-recorder.flake = false;
+
+    nvim-ufo.url = "github:kevinhwang91/nvim-ufo";
+    nvim-ufo.flake = false;
 
     nvim-oil.url = "github:stevearc/oil.nvim";
     nvim-oil.flake = false;

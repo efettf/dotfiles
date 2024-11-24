@@ -368,6 +368,22 @@
         "type": "github"
       }
     },
+    "nvim-promise": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1722813441,
+        "narHash": "sha256-9eM66brPjiFlY64vmBetRYrKnpDyN7+/URMm4GsGimA=",
+        "owner": "kevinhwang91",
+        "repo": "promise-async",
+        "rev": "119e8961014c9bfaf1487bf3c2a393d254f337e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kevinhwang91",
+        "repo": "promise-async",
+        "type": "github"
+      }
+    },
     "nvim-recorder": {
       "flake": false,
       "locked": {
@@ -448,6 +464,22 @@
         "type": "github"
       }
     },
+    "nvim-ufo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732255085,
+        "narHash": "sha256-OFYHJKoUG1RcGEAMhwWWAzdLVVB6fNkiRLsKql7eW4c=",
+        "owner": "kevinhwang91",
+        "repo": "nvim-ufo",
+        "rev": "e9886b2b3381b49cadb11ef62a8c51f662927232",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kevinhwang91",
+        "repo": "nvim-ufo",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "fish-pisces": "fish-pisces",
@@ -473,11 +505,13 @@
         "nvim-lspconfig": "nvim-lspconfig",
         "nvim-oil": "nvim-oil",
         "nvim-plenary": "nvim-plenary",
+        "nvim-promise": "nvim-promise",
         "nvim-recorder": "nvim-recorder",
         "nvim-sentiment": "nvim-sentiment",
         "nvim-telescope": "nvim-telescope",
         "nvim-transparent": "nvim-transparent",
         "nvim-treesitter": "nvim-treesitter",
+        "nvim-ufo": "nvim-ufo",
         "tmux-sensible": "tmux-sensible",
         "tmux-yank": "tmux-yank"
       }

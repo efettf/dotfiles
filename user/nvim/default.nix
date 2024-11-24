@@ -15,11 +15,13 @@
     "alternatetoggler"
     "cmp"
     "recorder"
+    "ufo"
     "oil"
     "sentiment"
     "lspconfig"
     "telescope"
     "transparent"
+    "promise"
     "plenary"
     "treesitter"
     "autopairs"
@@ -55,6 +57,7 @@ in {
       require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
     ''
     + lib.strings.concatStringsSep "\n" (map (name: ''require("${name}").setup({})'') [
+      "ufo"
       "recorder"
       "gitsigns"
       "colorizer"
