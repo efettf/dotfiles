@@ -55,7 +55,6 @@
 in {
   environment.systemPackages = with pkgs; [
     go
-    age
     neovim
     ripgrep
 

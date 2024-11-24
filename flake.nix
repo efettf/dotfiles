@@ -12,12 +12,16 @@
           ./user
           ./system
           ./modules
+          ./secrets
         ];
       };
   };
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+
+    sops.url = "github:mic92/sops-nix";
+    sops.inputs.nixpkgs.follows = "nixpkgs";
 
     nvim-sentiment.url = "github:utilyre/sentiment.nvim";
     nvim-sentiment.flake = false;
