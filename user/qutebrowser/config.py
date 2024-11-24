@@ -24,9 +24,8 @@ config.bind("9", "tab-select 9", mode="normal")
 config.bind("=", "zoom-in -q", mode="normal")
 config.bind("-", "zoom-out -q", mode="normal")
 
-config.bind("aa", "hint all yank", mode="normal")
-config.bind("aj", "hint all hover", mode="normal")
-config.bind("as", "hint all delete", mode="normal")
+config.bind("p", "cmd-set-text :open {url:pretty}", mode="normal")
+config.bind("P", "cmd-set-text :open -tr {url:pretty}", mode="normal")
 
 config.bind("e", "tab-close", mode="normal")
 config.bind("c", "tab-clone", mode="normal")
