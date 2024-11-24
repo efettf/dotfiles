@@ -22,7 +22,6 @@
     fd
     fzf
     eza
-    pass
     swww
     comma
     tealdeer

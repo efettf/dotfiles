@@ -1,7 +1,5 @@
 
 [programs]
 
-gnupg.agent.enable = true
-
 nano.enable = false
 
