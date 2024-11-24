@@ -25,7 +25,6 @@
     pass
     swww
     comma
-    delta
     tealdeer
     wlsunset
     bibata-cursors
