@@ -55,9 +55,6 @@
     nvim-lspconfig.url = "github:neovim/nvim-lspconfig";
     nvim-lspconfig.flake = false;
 
-    nvim-whichkey.url = "github:folke/which-key.nvim";
-    nvim-whichkey.flake = false;
-
     nvim-autopairs.url = "github:windwp/nvim-autopairs";
     nvim-autopairs.flake = false;
 

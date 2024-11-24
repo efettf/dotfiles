@@ -22,7 +22,6 @@
     "transparent"
     "plenary"
     "treesitter"
-    "whichkey"
     "autopairs"
     "lastplace"
     "autosave"

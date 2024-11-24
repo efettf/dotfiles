@@ -432,22 +432,6 @@
         "type": "github"
       }
     },
-    "nvim-whichkey": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1730919714,
-        "narHash": "sha256-5t6UnOP2+CXB55/C4YWbp2pE+xKDLMvCJK8m085Fk4w=",
-        "owner": "folke",
-        "repo": "which-key.nvim",
-        "rev": "68e37e12913a66b60073906f5d3f14dee0de19f2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "folke",
-        "repo": "which-key.nvim",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "fish-pisces": "fish-pisces",
@@ -477,7 +461,6 @@
         "nvim-telescope": "nvim-telescope",
         "nvim-transparent": "nvim-transparent",
         "nvim-treesitter": "nvim-treesitter",
-        "nvim-whichkey": "nvim-whichkey",
         "tmux-sensible": "tmux-sensible",
         "tmux-yank": "tmux-yank"
       }
