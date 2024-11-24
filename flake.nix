@@ -19,74 +19,17 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
 
-    nvim-cmp-lsp.url = "github:hrsh7th/cmp-nvim-lsp";
-    nvim-cmp-lsp.flake = false;
-
-    nvim-cmp-path.url = "github:hrsh7th/cmp-path";
-    nvim-cmp-path.flake = false;
-
-    nvim-cmp-spell.url = "github:f3fora/cmp-spell";
-    nvim-cmp-spell.flake = false;
-
-    nvim-cmp-treesitter.url = "github:ray-x/cmp-treesitter";
-    nvim-cmp-treesitter.flake = false;
-
-    nvim-promise.url = "github:kevinhwang91/promise-async";
-    nvim-promise.flake = false;
-
-    nvim-plenary.url = "github:nvim-lua/plenary.nvim";
-    nvim-plenary.flake = false;
-
     nvim-sentiment.url = "github:utilyre/sentiment.nvim";
     nvim-sentiment.flake = false;
 
-    nvim-cmp.url = "github:hrsh7th/nvim-cmp";
-    nvim-cmp.flake = false;
-
     nvim-recorder.url = "github:chrisgrieser/nvim-recorder";
     nvim-recorder.flake = false;
-
-    nvim-ufo.url = "github:kevinhwang91/nvim-ufo";
-    nvim-ufo.flake = false;
-
-    nvim-oil.url = "github:stevearc/oil.nvim";
-    nvim-oil.flake = false;
-
-    nvim-telescope.url = "github:nvim-telescope/telescope.nvim";
-    nvim-telescope.flake = false;
-
-    nvim-treesitter.url = "github:nvim-treesitter/nvim-treesitter";
-    nvim-treesitter.flake = false;
-
-    nvim-lspconfig.url = "github:neovim/nvim-lspconfig";
-    nvim-lspconfig.flake = false;
-
-    nvim-autopairs.url = "github:windwp/nvim-autopairs";
-    nvim-autopairs.flake = false;
-
-    nvim-autosave.url = "github:okuuva/auto-save.nvim";
-    nvim-autosave.flake = false;
 
     nvim-alternatetoggler.url = "github:rmagatti/alternate-toggler";
     nvim-alternatetoggler.flake = false;
 
     nvim-base16.url = "github:echasnovski/mini.base16";
     nvim-base16.flake = false;
-
-    nvim-gitsigns.url = "github:lewis6991/gitsigns.nvim";
-    nvim-gitsigns.flake = false;
-
-    nvim-conform.url = "github:stevearc/conform.nvim";
-    nvim-conform.flake = false;
-
-    nvim-colorizer.url = "github:nvchad/nvim-colorizer.lua";
-    nvim-colorizer.flake = false;
-
-    nvim-comment.url = "github:numToStr/Comment.nvim";
-    nvim-comment.flake = false;
-
-    nvim-lastplace.url = "github:farmergreg/vim-lastplace";
-    nvim-lastplace.flake = false;
 
     fish-transient.url = "github:zzhaolei/transient.fish";
     fish-transient.flake = false;

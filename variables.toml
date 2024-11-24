@@ -1,8 +1,4 @@
 
-[enable]
-
-go = false
-
 [settings]
 
 host = "nixos"

@@ -4,6 +4,15 @@ vim.wo.fillchars='eob: '
 require("lspconfig").gopls.setup({})
 require("lspconfig").nil_ls.setup({})
 
+require("ufo").setup({})
+require("recorder").setup({})
+require("gitsigns").setup({})
+require("autosave").setup({})
+require("colorizer").setup({})
+require("sentiment").setup({})
+require("nvim-lastplace").setup({})
+require("nvim-autopairs").setup({})
+
 require("oil").setup({
   skip_confirm_for_simple_edits = true,
   prompt_save_on_select_new_entry = false

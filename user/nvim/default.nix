@@ -1,5 +1,4 @@
 {
-  variables,
   settings,
   inputs,
   scheme,
@@ -7,73 +6,72 @@
   lib,
   ...
 }: let
-  plugins = map (name: inputs."nvim-${name}") [
-    "cmp-lsp"
-    "cmp-path"
-    "cmp-spell"
-    "cmp-treesitter"
-    "alternatetoggler"
-    "cmp"
-    "recorder"
-    "ufo"
-    "oil"
-    "sentiment"
-    "lspconfig"
-    "telescope"
-    "promise"
-    "plenary"
-    "treesitter"
-    "autopairs"
-    "lastplace"
-    "autosave"
-    "base16"
-    "gitsigns"
-    "colorizer"
-    "conform"
-    "comment"
-  ];
-  parsers = map (name: pkgs.vimPlugins.nvim-treesitter-parsers.${name}) [
-    "go"
-    "lua"
-    "vim"
-    "nix"
-    "rust"
-    "bash"
-    "query"
-    "vimdoc"
-    "markdown"
-    "markdown_inline"
+  plugins = with pkgs.vimPlugins;
+  with nvim-treesitter-parsers;
+  with inputs; [
+    # Plugins from flake.
+    nvim-base16
+    nvim-recorder
+    nvim-sentiment
+    nvim-alternatetoggler
+
+    # Dependencies.
+    plenary-nvim
+    promise-async
+
+    # Plugins from pkgs.
+    nvim-ufo
+    nvim-cmp
+    oil-nvim
+    conform-nvim
+    comment-nvim
+    autosave-nvim
+    gitsigns-nvim
+    nvim-lastplace
+    nvim-lspconfig
+    nvim-autopairs
+    telescope-nvim
+    nvim-treesitter
+    nvim-colorizer-lua
+
+    # Sources for nvim-cmp.
+    cmp-path
+    cmp-spell
+    cmp-nvim-lsp
+    cmp-treesitter
+
+    # Treesitter parsers.
+    go
+    lua
+    vim
+    nix
+    rust
+    bash
+    query
+    vimdoc
+    markdown
+    markdown_inline
   ];
 in {
-  environment.systemPackages = with pkgs;
-    [
-      gcc
-      nil
-      neovim
-      ripgrep
-      alejandra
-    ]
-    ++ (
-      if variables.enable.go
-      then [go gopls]
-      else []
-    );
+  environment.systemPackages = with pkgs; [
+    go
+    neovim
+    ripgrep
+
+    # Formatters.
+    alejandra
+
+    # Lsps.
+    nil # nix
+    gopls # go
+  ];
 
   files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
     + ''
       vim.cmd('source ${./extra.vim}')
       require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
-    ''
-    + lib.strings.concatStringsSep "\n" (map (name: ''require("${name}").setup({})'') [
-      "ufo"
-      "recorder"
-      "gitsigns"
-      "colorizer"
-      "sentiment"
-      "auto-save"
-      "nvim-autopairs"
-    ]);
+    '';
 
   systemd.services."nvim-plug" = {
     wantedBy = lib.singleton "multi-user.target";
@@ -85,9 +83,6 @@ in {
         rm -r $HOME/.config/nvim/pack/vendor/start/*
         for plugin in ${lib.strings.concatStringsSep " " plugins}; do
           ln -sf $plugin $HOME/.config/nvim/pack/vendor/start
-        done
-        for parser in ${lib.strings.concatStringsSep " " parsers}; do
-          ln -sf $parser $HOME/.config/nvim/pack/vendor/start
         done
       '';
     };
