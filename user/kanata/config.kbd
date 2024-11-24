@@ -3,31 +3,29 @@
   esc 
   tab 
   caps
-  h j k l 
-  n g
-  e d
-)
-
-(defalias
-  tab-th (tap-hold 75 150 tab (layer-while-held nav))
-  esc-th (tap-hold 75 150 esc lctl) 
+  1    2    3    4    5    6    7    8    9    0    -    =
+  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  a    s    d    f    g    h    j    k    l    ;    '
+  z    x    c    v    b    n    m    ,    .    /
 )
 
 (deflayer base
   caps 
-  @tab-th
-  @esc-th
-  _ _ _ _ 
-  g n
-  d e
+  (tap-hold 75 150 tab (layer-while-held nav))
+  (tap-hold 75 150 esc lctl)
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    d    _    _    _    _    _    _    _    _    _    _
+  _    _    e    _    n    _    _    _    _    _    _
+  _    _    _    _    _    g    _    _    _    _
 )
 
 (deflayer nav
   _
   _
   _
-  left down up right
-  _ _
-  _ _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    left down up   rght _    _
+  _    _    _    _    _    _    _    _    _    _
 )
 
