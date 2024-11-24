@@ -46,20 +46,15 @@ in {
       else []
     );
 
-  files.".config/nvim/extra.vim".source = ./config.vim;
-
-  files.".config/nvim/init.lua".text = let
-    mkTomlShort = prefix: attr:
-      lib.generators.toLua {asBindings = true;} (lib.attrsets.concatMapAttrs (name: value: {
-          "${prefix}.${name}" = value;
-        })
-        vimSettings.${attr});
-  in
+  files.".config/nvim/extra.vim".text =
+    builtins.readFile ./config/autocommands.vim
+    + builtins.readFile ./config/options.vim
+    + builtins.readFile ./config/keys.vim;
+  files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
     + ''
       require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
     ''
-    + mkTomlShort "vim.opt" "opts"
     + lib.strings.concatStringsSep "\n" (map (name: ''require("${name}").setup({})'') [
       "Comment"
       "recorder"
