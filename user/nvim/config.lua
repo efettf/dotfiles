@@ -31,6 +31,22 @@ require("conform").setup({
   }
 })
 
+require("nvim-treesitter.configs").setup({
+  parser_install_dir= "~/.config/nvim/parsers",
+  ensure_installed = { 
+    "go",
+    "lua", 
+    "vim", 
+    "nix",
+    "rust",
+    "bash",
+    "query", 
+    "vimdoc", 
+    "markdown", 
+    "markdown_inline" 
+  }
+})
+
 require("cmp").setup({
   sources = require("cmp").config.sources({
     { name = "path" },

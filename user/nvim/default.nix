@@ -36,6 +36,7 @@
 in {
   environment.systemPackages = with pkgs;
     [
+      gcc
       nil
       neovim
       ripgrep
@@ -65,7 +66,6 @@ in {
       "auto-save"
       "transparent"
       "nvim-autopairs"
-      "nvim-treesitter"
     ]);
 
   systemd.services."nvim-plug" = {
