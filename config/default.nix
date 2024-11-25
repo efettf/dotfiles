@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./neovim
+    ./hyprland
     ./qutebrowser
   ];
 
@@ -24,6 +25,10 @@
     neovim
     wlsunset
     qutebrowser
+    wl-clipboard
+
+    # Cursors.
+    banana-cursor
 
     # Fish plugins.
     fishPlugins.puffer

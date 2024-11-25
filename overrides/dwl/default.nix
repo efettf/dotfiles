@@ -50,16 +50,8 @@
          static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
         -static const char *cursor_theme            = NULL;
         -static const char cursor_size[]            = "24"; /* Make sure it's a valid integer, otherwise things will break */
-        +static const char *cursor_theme            = "${
-          if cursor == "Banana"
-          then "Banana"
-          else "Bibata-Modern-Classic"
-        }";
-        +static const char cursor_size[]            = "${
-          if cursor == "Banana"
-          then "32"
-          else "19"
-        }"; /* Make sure it's a valid integer, otherwise things will break */
+        +static const char *cursor_theme            = "Banana";
+        +static const char cursor_size[]            = "32"; /* Make sure it's a valid integer, otherwise things will break */
 
          /* tagging - TAGCOUNT must be no greater than 31 */
          #define TAGCOUNT (9)
@@ -70,17 +62,8 @@
   });
 in {
   config = {
-    environment.systemPackages = with pkgs;
-      [
-        dwl
-        wl-clipboard
-      ]
-      ++ (
-        if cursor == "Banana"
-        then [banana-cursor]
-        else [bibata-cursors]
-      );
+    environment.systemPackages = [dwl];
 
-    services.displayManager.sessionPackages = lib.singleton dwl;
+    services.displayManager.sessionPackages = [dwl];
   };
 }
