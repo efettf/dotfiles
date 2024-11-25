@@ -1,9 +1,4 @@
-{
-  scheme,
-  pkgs,
-  lib,
-  ...
-}: {
+{scheme, ...}: {
   files.".config/qutebrowser/config.py".text =
     builtins.readFile ./config.py
     + (with scheme; ''
@@ -231,6 +226,4 @@
       # }}}
 
     '');
-
-  environment.systemPackages = lib.singleton pkgs.qutebrowser;
 }

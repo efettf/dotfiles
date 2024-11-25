@@ -1,22 +1,26 @@
 {pkgs, ...}: let
-  genConfig = package: path: {
+  impConfig = package: {
+    imports = [./${package}];
+    environment.systemPackages = [pkgs.${package}];
+  };
+  genConfig = package: suffix: {
     config = {
-      files.".config/${package}/${path}".source = ./${path};
+      files.".config/${package}/${package}.${suffix}".source = ./${package}.${suffix};
       environment.systemPackages = [pkgs.${package}];
     };
   };
 in {
   imports = [
-    ./dwl
-    ./fish
-    ./git
-    ./kanata
-    ./nvim
-    ./qutebrowser
     ./st
-    ./tmux
+    ./dwl
     ./tty
-    (genConfig "gitu" "gitu.toml")
+    ./kanata
+    (impConfig "git")
+    (impConfig "fish")
+    (impConfig "tmux")
+    (impConfig "neovim")
+    (impConfig "qutebrowser")
+    (genConfig "gitu" "toml")
   ];
   config = {
     environment.systemPackages = [

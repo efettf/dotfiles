@@ -10,8 +10,6 @@
     "sensible"
   ];
 in {
-  environment.systemPackages = [pkgs.tmux];
-
   files.".config/tmux/tmux.conf".text =
     builtins.readFile ./config.conf
     + lib.strings.concatStringsSep "\n" (map (name: "run '~/.config/tmux/plugins/*/${name}.tmux'") plugins);
