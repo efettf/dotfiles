@@ -4,8 +4,7 @@
     ./qutebrowser
   ];
 
-  environment.systemPackages = with pkgs;
-  with fishPlugins; [
+  environment.systemPackages = with pkgs; [
     # Git tools.
     gh
     git
@@ -27,10 +26,10 @@
     qutebrowser
 
     # Fish plugins.
-    puffer
-    sponge
-    pisces
-    transient-fish
+    fishPlugins.puffer
+    fishPlugins.sponge
+    fishPlugins.pisces
+    fishPlugins.transient-fish
   ];
 
   # Fish tweaks.
