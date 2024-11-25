@@ -15,7 +15,9 @@
 
     networking.hostName = settings.host;
 
-    config.environment.systemPackages = [pkgs.doas-sudo-shim];
+    environment.systemPackages = [pkgs.doas-sudo-shim];
+
+    time.timeZone = "Europe/Warsaw";
 
     users.users.${settings.user} = {
       isNormalUser = true;

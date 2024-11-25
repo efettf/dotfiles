@@ -1,23 +1,16 @@
 
-# Set your time zone.
-time.timeZone = "Europe/Warsaw"
-
-# Service settings.
 [services]
 
-# Enable SSH.
 openssh.enable = true
 
 # Enable touchpad support.
 libinput.enable = true
 
-# Nixos system settings for ly display manager.
 [services.displayManager.ly]
 
 enable = true
 settings.vi_mode = true
 
-# Nixos system settings for systemd services targets.
 [systemd.targets]
 
 # Disable sleep.
