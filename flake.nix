@@ -8,9 +8,13 @@
           inherit inputs variables;
           inherit (variables) settings scheme;
         };
-        modules =
-          inputs.nixpkgs.lib.fileset.toList
-          (inputs.nixpkgs.lib.fileset.fileFilter (file: file.name == "default.nix") ./.);
+        modules = [
+          ./bin
+          ./user
+          ./system
+          ./modules
+          ./secrets
+        ];
       };
   };
 
