@@ -4,24 +4,27 @@
   lib,
   ...
 }: {
-  imports = [
-    (lib.importTOML ./config.toml)
-    ./hardware.nix
-  ];
+  imports =
+    [./hardware.nix]
+    ++ map (file: lib.importTOML file)
+    (lib.fileset.toList
+      (lib.fileset.fileFilter (file: file.hasExt "toml") ./.));
 
-  fonts.packages = lib.singleton (pkgs.nerdfonts.override {fonts = lib.singleton "JetBrainsMono";});
+  config = {
+    fonts.packages = [(pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];})];
 
-  networking.hostName = settings.host;
+    networking.hostName = settings.host;
 
-  users.users.${settings.user} = {
-    isNormalUser = true;
-    initialPassword = "nixos";
-    extraGroups = lib.singleton "wheel";
+    config.environment.systemPackages = [pkgs.doas-sudo-shim];
+
+    users.users.${settings.user} = {
+      isNormalUser = true;
+      initialPassword = "nixos";
+      extraGroups = ["wheel"];
+    };
+
+    nix.settings.experimental-features = ["nix-command" "flakes"];
+
+    system.stateVersion = "24.05";
   };
-
-  # Enable flakes and nix command.
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  # System backup version, to update system see 'flake.nix' instead.
-  system.stateVersion = "24.05";
 }
