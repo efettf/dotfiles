@@ -2,11 +2,15 @@
   outputs = inputs: {
     nixosConfigurations.nixos = let
       variables = inputs.nixpkgs.lib.importTOML ./variables.toml;
-      inherit (variables) settings scheme;
     in
       inputs.nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs settings scheme variables;};
-        modules = inputs.nixpkgs.lib.fileset.toList (inputs.nixpkgs.lib.fileset.fileFilter (file: file.name == "default.nix") ./.);
+        specialArgs = {
+          inherit inputs variables;
+          inherit (variables) settings scheme;
+        };
+        modules =
+          inputs.nixpkgs.lib.fileset.toList
+          (inputs.nixpkgs.lib.fileset.fileFilter (file: file.name == "default.nix") ./.);
       };
   };
 

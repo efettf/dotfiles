@@ -7,10 +7,6 @@
   imports = [
     (lib.importTOML ./config.toml)
     ./hardware.nix
-    ./boot-loader
-    ./bluetooth
-    ./security
-    ./network
   ];
 
   fonts.packages = lib.singleton (pkgs.nerdfonts.override {fonts = lib.singleton "JetBrainsMono";});

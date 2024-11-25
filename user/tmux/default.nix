@@ -10,14 +10,14 @@
     "sensible"
   ];
 in {
-  environment.systemPackages = lib.singleton pkgs.tmux;
+  environment.systemPackages = [pkgs.tmux];
 
   files.".config/tmux/tmux.conf".text =
     builtins.readFile ./config.conf
     + lib.strings.concatStringsSep "\n" (map (name: "run '~/.config/tmux/plugins/*/${name}.tmux'") plugins);
 
   systemd.services."tmux-plug" = {
-    wantedBy = lib.singleton "multi-user.target";
+    wantedBy = ["multi-user.target"];
     serviceConfig = {
       Type = "oneshot";
       User = settings.user;
