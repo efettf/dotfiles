@@ -52,8 +52,8 @@ set laststatus=0
 set noshowmode
 set noruler
 set shm+=I
-"set number
-"set cursorline
+set number
+set cursorline
 
 au BufRead,BufNewFile * lua vim.wo.fillchars='eob: '
 au BufRead * hi LineNr guibg=none
