@@ -1,35 +1,8 @@
 {pkgs, ...}: let
-  generateConfig = {
-    name,
-    import ? false,
-    importPath ? ./${name},
-    package ? true,
-    packageName ? pkgs.${name},
-    path ? "${name}/${name}.${format}",
-    pathText ? false,
-    pathSource ? true,
-    pathTextValue ? "",
-    pathSourceValue ? ./${name}.${format},
-    format,
-  }: {
-    imports =
-      if import == true
-      then [importPath]
-      else [];
+  genConfig = package: path: {
     config = {
-      files.".config/${path}" =
-        if pathSource == true
-        then {source = pathSourceValue;}
-        else
-          (
-            if pathText == true
-            then {text = pathSourceValue;}
-            else ""
-          );
-      environment.systemPackages =
-        if package == true
-        then [packageName]
-        else [];
+      files.".config/${package}/${path}".source = ./${path};
+      environment.systemPackages = [pkgs.${package}];
     };
   };
 in {
@@ -43,12 +16,7 @@ in {
     ./st
     ./tmux
     ./tty
-    (
-      generateConfig {
-        name = "gitu";
-        format = "toml";
-      }
-    )
+    (genConfig "gitu" "gitu.toml")
   ];
   config = {
     environment.systemPackages = [
