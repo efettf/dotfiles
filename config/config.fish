@@ -22,3 +22,5 @@ set fish_cursor_default 'underscore'
 set fish_cursor_insert  'underscore'
 set fish_cursor_visual  'underscore'
 
+zoxide init fish | source
+

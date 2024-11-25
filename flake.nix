@@ -10,10 +10,11 @@
         };
         modules = [
           ./bin
-          ./user
+          ./config
           ./system
           ./modules
           ./secrets
+          ./overrides
         ];
       };
   };

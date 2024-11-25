@@ -5,7 +5,11 @@
   ...
 }: {
   imports =
-    [./hardware.nix]
+    [
+      ./hardware.nix
+      ./kanata
+      ./tty
+    ]
     ++ map (file: lib.importTOML file)
     (lib.fileset.toList
       (lib.fileset.fileFilter (file: file.hasExt "toml") ./.));
