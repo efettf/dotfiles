@@ -70,29 +70,7 @@ in {
     builtins.readFile ./config.lua
     + ''
       vim.cmd('source ${./extra.vim}')
-      require("mini.base16").setup(${lib.generators.toLua {} {
-        palette = {
-          base00 = scheme.base01;
-          inherit
-            (scheme)
-            base01
-            base02
-            base03
-            base04
-            base05
-            base06
-            base07
-            base08
-            base09
-            base0A
-            base0B
-            base0C
-            base0D
-            base0E
-            base0F
-            ;
-        };
-      }})
+      require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
     '';
 
   systemd.services."nvim-plug" = {

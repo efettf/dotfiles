@@ -7,7 +7,7 @@ user = "lynx"
 [scheme]
 
 # Catppuccin Mocha
-base00 = "#1e1e2e"
+base00 = "#11111b"
 base01 = "#181825"
 base02 = "#313244"
 base03 = "#45475a"

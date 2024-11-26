@@ -63,7 +63,7 @@
             +	"${base05}",
             +
             +   [256] = "${base05}", /* default foreground colour */
-            +   [257] = "${base01}", /* default background colour */
+            +   [257] = "${base00}", /* default background colour */
             +   [258] = "${base06}", /*575268*/
 
             -	[255] = 0,

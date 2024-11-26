@@ -222,7 +222,7 @@
       # }}}
 
       # background color for webpages {{{
-      c.colors.webpage.bg = "${base01}"
+      c.colors.webpage.bg = "${base00}"
       # }}}
 
     '');
