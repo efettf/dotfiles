@@ -31,6 +31,7 @@
     nvim-autopairs
     telescope-nvim
     nvim-treesitter
+    transparent-nvim
     nvim-colorizer-lua
 
     # Sources for nvim-cmp.
