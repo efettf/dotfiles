@@ -21,6 +21,7 @@
     # Others.
     tmux
     swww
+    just
     comma
     neovim
     wlsunset

@@ -1,6 +1,7 @@
 
 set EDITOR 'nvim'
 
+abbr j 'just'
 abbr v 'nvim'
 abbr n 'git'
 abbr g 'git'

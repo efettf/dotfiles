@@ -7,7 +7,6 @@
   ...
 }: let
   plugins = with pkgs.vimPlugins;
-  with nvim-treesitter-parsers;
   with inputs; [
     # Plugins from flake.
     nvim-base16
@@ -41,16 +40,18 @@
     cmp-treesitter
 
     # Treesitter parsers.
-    go
-    lua
-    vim
-    nix
-    rust
-    bash
-    query
-    vimdoc
-    markdown
-    markdown_inline
+    nvim-treesitter-parsers.go
+    nvim-treesitter-parsers.lua
+    nvim-treesitter-parsers.vim
+    nvim-treesitter-parsers.nix
+    nvim-treesitter-parsers.just
+    nvim-treesitter-parsers.rust
+    nvim-treesitter-parsers.bash
+    nvim-treesitter-parsers.query
+    nvim-treesitter-parsers.vimdoc
+    nvim-treesitter-parsers.hyprlang
+    nvim-treesitter-parsers.markdown
+    nvim-treesitter-parsers.markdown_inline
   ];
 in {
   environment.systemPackages = with pkgs; [
