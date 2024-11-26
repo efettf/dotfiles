@@ -3,10 +3,9 @@
 {
   inputs,
   pkgs,
-  lib,
   ...
 }: {
-  imports = lib.singleton inputs.sops.nixosModules.sops;
+  imports = [inputs.sops.nixosModules.sops];
 
   environment.systemPackages = [
     pkgs.age
