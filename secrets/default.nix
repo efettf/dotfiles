@@ -20,6 +20,7 @@
     secrets = {
       "github" = {};
       "proton" = {};
+      "reddit" = {};
     };
   };
 }
