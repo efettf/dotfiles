@@ -5,6 +5,7 @@
   inputs,
   ...
 }: let
+  sxiv = pkgs.sxiv.overrideAttrs (old: {preBuild = "cp ${./sxiv.h} config.def.h";});
   st = pkgs.st.overrideAttrs (old: {
     src = inputs.st;
     patches = [
@@ -113,6 +114,14 @@
     buildInputs = old.buildInputs ++ [pkgs.libdrm pkgs.fcft];
   });
 in {
-  environment.systemPackages = [st dwl];
+  environment.systemPackages = [st sxiv dwl];
   services.displayManager.sessionPackages = [dwl];
+
+  files.".Xresources".text = with scheme; ''
+    Sxiv.background: ${base00}
+    Sxiv.foreground: ${base02}
+    Sxiv.font: JetBrainsMono Nerd Font
+    Xcursor.theme: "Banana"
+    Xcursor.size: 32
+  '';
 }
