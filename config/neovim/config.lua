@@ -60,6 +60,13 @@ require("Comment").setup({
   }
 })
 
+require("conform").setup({
+  formatters_by_ft = {
+    go = {"gofmt"},
+    nix = {"alejandra"}
+  }
+})
+
 require("cmp").setup({
   sources = require("cmp").config.sources({
     { name = "path" },

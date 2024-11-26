@@ -23,6 +23,7 @@
     nvim-cmp
     oil-nvim
     fidget-nvim
+    conform-nvim
     comment-nvim
     autosave-nvim
     nvim-surround
@@ -73,7 +74,7 @@ in {
     builtins.readFile ./config.lua
     + ''require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})'';
 
-  files.".config/nvim/extra.vim".text = 
+  files.".config/nvim/extra.vim".text =
     builtins.readFile ./extra.vim
     + ''au VimEnter,BufNewFile * hi TelescopeBorder guifg=${scheme.base02}'';
 

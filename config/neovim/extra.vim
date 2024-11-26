@@ -14,6 +14,8 @@ nno ; :
 
 vno K :Norm<space>
 
+nno <leader>w <cmd>lua require("conform").format({})<cr>
+
 nno <leader>f <cmd>Telescope find_files<cr>
 nno <leader>n <cmd>Telescope live_grep<cr>
 
