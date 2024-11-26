@@ -1,6 +1,8 @@
 
 vim.wo.fillchars='eob: '
 
+vim.cmd('source $HOME/.config/nvim/extra.vim')
+
 require("lspconfig").gopls.setup({})
 require("lspconfig").nil_ls.setup({})
 

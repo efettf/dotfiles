@@ -71,10 +71,11 @@ in {
 
   files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
-    + ''
-      vim.cmd('source ${./extra.vim}')
-      require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
-    '';
+    + ''require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})'';
+
+  files.".config/nvim/extra.vim".text = 
+    builtins.readFile ./extra.vim
+    + ''au VimEnter,BufNewFile * hi TelescopeBorder guifg=${scheme.base02}'';
 
   systemd.services."nvim-plug" = {
     wantedBy = lib.singleton "multi-user.target";

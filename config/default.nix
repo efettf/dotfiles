@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  scheme, 
+  ...
+}: {
   imports = [
     ./neovim
     ./hyprland
@@ -46,9 +50,15 @@
   files = {
     ".config/fish/config.fish".source = ./config.fish;
     ".config/gitu/config.toml".source = ./gitu.toml;
-    ".config/tmux/tmux.conf".source = ./tmux.conf;
     ".gitconfig".source = ./git.ini;
   };
+
+  files.".config/tmux/tmux.conf".text = 
+  ''
+    set -g pane-active-border-style bg=default,fg="${scheme.base02}"
+    set -g pane-border-style fg="${scheme.base02}"
+  '' 
+  + builtins.readFile ./tmux.conf;
 
   programs.nano.enable = false;
 }
