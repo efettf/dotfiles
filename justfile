@@ -2,13 +2,14 @@
 default:
   just rebuild
 
+rebuild:
+  nixos-rebuild switch --flake . --use-remote-sudo
+
 alias u := update
 
 update target:
   nix flake update {{target}}
-
-rebuild:
-  nixos-rebuild switch --flake . --use-remote-sudo
+  just rebuild
 
 alias r := rollback
 
