@@ -28,6 +28,9 @@
     dwl.url = "github:efettf/dwl";
     dwl.flake = false;
 
+    st.url = "github:efettf/st";
+    st.flake = false;
+
     nvim-sentiment.url = "github:utilyre/sentiment.nvim";
     nvim-sentiment.flake = false;
 

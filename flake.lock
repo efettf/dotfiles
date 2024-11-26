@@ -190,6 +190,7 @@
         "nvim-recorder": "nvim-recorder",
         "nvim-sentiment": "nvim-sentiment",
         "sops": "sops",
+        "st": "st",
         "tmux-sensible": "tmux-sensible",
         "tmux-yank": "tmux-yank"
       }
@@ -211,6 +212,22 @@
       "original": {
         "owner": "mic92",
         "repo": "sops-nix",
+        "type": "github"
+      }
+    },
+    "st": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732629097,
+        "narHash": "sha256-tqzJ5XOGS9+CzidsJ1ohLgi+gf5XIM5bSquUR9Kl/zo=",
+        "owner": "efettf",
+        "repo": "st",
+        "rev": "266024a36fe6189025cd97fb0c4721898534805b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "st",
         "type": "github"
       }
     },
