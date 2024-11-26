@@ -33,6 +33,7 @@
     telescope-nvim
     nvim-treesitter
     transparent-nvim
+    live-command-nvim
     nvim-colorizer-lua
 
     # Sources for nvim-cmp.

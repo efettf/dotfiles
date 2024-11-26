@@ -13,6 +13,14 @@ require("sentiment").setup({})
 require("nvim-lastplace").setup({})
 require("nvim-autopairs").setup({})
 
+require("live-command").setup({
+  commands = {
+    Norm = { cmd = "norm" }
+  },
+  enable_highlighting = false,
+  inline_highlighting = false
+})
+
 require("fidget").setup({
   notification = {
     window = {
