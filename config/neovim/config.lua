@@ -51,17 +51,6 @@ require("Comment").setup({
   }
 })
 
-require("conform").setup({
-  format_on_save = {
-    timeout_ms = 500,
-    lsp_format = "fallback"
-  },
-  formatters_by_ft = {
-    go = {"gofmt"},
-    nix = {"alejandra"}
-  }
-})
-
 require("cmp").setup({
   sources = require("cmp").config.sources({
     { name = "path" },
