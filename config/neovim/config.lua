@@ -14,6 +14,13 @@ require("nvim-surround").setup({})
 require("nvim-lastplace").setup({})
 require("nvim-autopairs").setup({})
 
+require("telescope").setup({
+  defaults = {
+    prompt_prefix = " ❯ ",
+    borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+  }
+})
+
 require("live-command").setup({
   commands = {
     Norm = { cmd = "norm" }
