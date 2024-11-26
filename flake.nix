@@ -25,6 +25,9 @@
     sops.url = "github:mic92/sops-nix";
     sops.inputs.nixpkgs.follows = "nixpkgs";
 
+    dwl.url = "github:efettf/dwl";
+    dwl.flake = false;
+
     nvim-sentiment.url = "github:utilyre/sentiment.nvim";
     nvim-sentiment.flake = false;
 
