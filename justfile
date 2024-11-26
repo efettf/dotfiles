@@ -7,14 +7,13 @@ alias u := update
 update target:
   nix flake update {{target}}
 
-stage-nix:
-  git add *.nix
-
-alias r := rebuild
-
 rebuild:
-  just stage-nix
   nixos-rebuild switch --flake . --use-remote-sudo
+
+alias r := rollback
+
+rollback:
+  nixos-rebuild switch --flake . --use-remote-sudo --rollback
 
 alias gc := clean
 alias c  := clean
