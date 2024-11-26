@@ -5,15 +5,17 @@
   lib,
   ...
 }: {
-  imports = [
-    ./hardware.nix
-    ./kanata
-  ];
+  imports = [./hardware.nix];
 
   services = {
     blueman.enable = true;
     openssh.enable = true;
     libinput.enable = true; # Enable touchpad support.
+
+    kanata = {
+      enable = true;
+      keyboards.main.config = builtins.readFile ./config.kbd;
+    };
 
     displayManager.ly = {
       enable = true;
