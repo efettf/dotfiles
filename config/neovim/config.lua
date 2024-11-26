@@ -10,6 +10,7 @@ require("gitsigns").setup({})
 require("autosave").setup({})
 require("colorizer").setup({})
 require("sentiment").setup({})
+require("nvim-surround").setup({})
 require("nvim-lastplace").setup({})
 require("nvim-autopairs").setup({})
 

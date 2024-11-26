@@ -26,6 +26,7 @@
     conform-nvim
     comment-nvim
     autosave-nvim
+    nvim-surround
     gitsigns-nvim
     nvim-lastplace
     nvim-lspconfig
