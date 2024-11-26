@@ -13,6 +13,15 @@ require("sentiment").setup({})
 require("nvim-lastplace").setup({})
 require("nvim-autopairs").setup({})
 
+require("fidget").setup({
+  notification = {
+    window = {
+      winblend = 0
+    },
+    override_vim_notify = true
+  }
+})
+
 require("oil").setup({
   skip_confirm_for_simple_edits = true,
   prompt_save_on_select_new_entry = false

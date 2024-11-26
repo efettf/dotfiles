@@ -22,6 +22,7 @@
     nvim-ufo
     nvim-cmp
     oil-nvim
+    fidget-nvim
     conform-nvim
     comment-nvim
     autosave-nvim
