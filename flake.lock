@@ -3,11 +3,11 @@
     "dmenu": {
       "flake": false,
       "locked": {
-        "lastModified": 1732739028,
-        "narHash": "sha256-/tvdYhV8VAKXR/9zInUiKcH5gz5PCsFexgpZSjYvUbg=",
+        "lastModified": 1732743952,
+        "narHash": "sha256-Zq3h0YFu/irWSwGGfJZeU+5kF7IVShJ6YCVgT0hsjdM=",
         "owner": "efettf",
         "repo": "dmenu",
-        "rev": "6e5b20b760510cf9df827e74fc9d0ff5aa2dc58b",
+        "rev": "53dea32c69a6915483a3d71bcdcf3d4b60337519",
         "type": "github"
       },
       "original": {
