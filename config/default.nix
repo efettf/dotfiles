@@ -5,7 +5,6 @@
 }: {
   imports = [
     ./neovim
-    ./hyprland
     ./qutebrowser
   ];
 
