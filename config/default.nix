@@ -71,19 +71,16 @@
     layer=overlay
     background-color=${scheme.base00}
     text-color=${scheme.base05}
-    width=250
+    width=225
     height=100
     border-size=2
-    border-color=${scheme.base04}
-    border-radius=1
-    icons=0
-    max-icon-size=64
+    border-radius=2
     ignore-timeout=1
     font=JetBrainsMono Nerd Font 10
 
     [urgency=low]
-    border-color=${scheme.base06}
-    default-timeout=2000
+    border-color=${scheme.base0A}
+    default-timeout=2500
 
     [urgency=normal]
     border-color=${scheme.base09}
@@ -91,7 +88,7 @@
 
     [urgency=high]
     border-color=${scheme.base08}
-    default-timeout=20000
+    default-timeout=15000
   '';
 
   programs.nano.enable = false;
