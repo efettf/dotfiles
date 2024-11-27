@@ -23,7 +23,6 @@
     just
     mako
     acpi
-    comma
     zoxide
     yt-dlp
     neovim

@@ -1,11 +1,17 @@
 {
   settings,
+  inputs,
   scheme,
   pkgs,
   lib,
   ...
 }: {
-  imports = [./hardware.nix];
+  imports = [
+    ./hardware.nix
+    inputs.nix-index.nixosModules.nix-index
+  ];
+
+  programs.nix-index-database.comma.enable = true;
 
   services = {
     blueman.enable = true;

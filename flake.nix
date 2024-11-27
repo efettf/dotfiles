@@ -25,6 +25,9 @@
     sops.url = "github:mic92/sops-nix";
     sops.inputs.nixpkgs.follows = "nixpkgs";
 
+    nix-index.url = "github:nix-community/nix-index-database";
+    nix-index.inputs.nixpkgs.follows = "nixpkgs";
+
     dmenu.url = "github:efettf/dmenu";
     dmenu.flake = false;
 
