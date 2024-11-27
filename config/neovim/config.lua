@@ -65,12 +65,19 @@ require("lspconfig").nil_ls.setup({})
 require("ufo").setup({})
 require("recorder").setup({})
 require("gitsigns").setup({})
-require("autosave").setup({})
 require("colorizer").setup({})
 require("sentiment").setup({})
 require("nvim-surround").setup({})
 require("nvim-lastplace").setup({})
 require("nvim-autopairs").setup({})
+
+require("auto-save").setup({
+	execution_message = {
+		message = function() return "" end,
+		dim = 0.18,
+		cleaning_interval = 1250
+	}
+})
 
 require("telescope").setup({
   defaults = {

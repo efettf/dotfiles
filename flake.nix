@@ -37,6 +37,9 @@
     st.url = "github:efettf/st";
     st.flake = false;
 
+    nvim-autosave.url = "github:pocco81/auto-save.nvim";
+    nvim-autosave.flake = false;
+
     nvim-sentiment.url = "github:utilyre/sentiment.nvim";
     nvim-sentiment.flake = false;
 

@@ -10,6 +10,7 @@
   with inputs; [
     # Plugins from flake.
     nvim-base16
+    nvim-autosave
     nvim-recorder
     nvim-sentiment
     nvim-alternatetoggler
@@ -25,7 +26,6 @@
     fidget-nvim
     conform-nvim
     comment-nvim
-    autosave-nvim
     nvim-surround
     gitsigns-nvim
     nvim-lastplace
