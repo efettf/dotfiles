@@ -14,20 +14,22 @@
     git
     gitu
 
-    # Interactive tools.
     fd
     fzf
+    mpd
     eza
-    zoxide
-    tealdeer
-
-    # Others.
     tmux
     swww
     just
     mako
+    acpi
     comma
+    zoxide
+    yt-dlp
     neovim
+    mpc-cli
+    ncmpcpp
+    tealdeer
     wlsunset
     libnotify
     qutebrowser
@@ -49,8 +51,10 @@
   documentation.man.generateCaches = false; # Fixes a slowdown on rebuild.
 
   files = {
+    ".config/ncmpcpp/bindings".source = ./ncmpcpp.binds;
     ".config/fish/config.fish".source = ./config.fish;
     ".config/gitu/config.toml".source = ./gitu.toml;
+    ".config/mpd/mpd.conf".source = ./mpd.conf;
     ".gitconfig".source = ./git.ini;
   };
 
