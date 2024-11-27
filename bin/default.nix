@@ -3,5 +3,6 @@
     "mpdmenu"
     "doasedit"
     "wallpaper"
+    "musicsearch"
   ];
 }
