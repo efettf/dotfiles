@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dmenu": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732722624,
+        "narHash": "sha256-djpfv7hB93pXT/0so5KW8pAzVScD8JB9thIql5EpJhk=",
+        "owner": "efettf",
+        "repo": "dmenu",
+        "rev": "008c3bb75d62d4be44f650cf94f9a8af62601f56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "dmenu",
+        "type": "github"
+      }
+    },
     "dwl": {
       "flake": false,
       "locked": {
@@ -178,6 +194,7 @@
     },
     "root": {
       "inputs": {
+        "dmenu": "dmenu",
         "dwl": "dwl",
         "fish-pisces": "fish-pisces",
         "fish-puffer": "fish-puffer",

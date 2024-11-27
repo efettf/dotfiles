@@ -25,6 +25,9 @@
     sops.url = "github:mic92/sops-nix";
     sops.inputs.nixpkgs.follows = "nixpkgs";
 
+    dmenu.url = "github:efettf/dmenu";
+    dmenu.flake = false;
+
     dwl.url = "github:efettf/dwl";
     dwl.flake = false;
 

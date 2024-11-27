@@ -5,6 +5,41 @@
   inputs,
   ...
 }: let
+  dmenu = pkgs.dmenu.overrideAttrs {
+    src = inputs.dmenu;
+    dmenuConfig = with scheme; pkgs.writeText "config.def.h" ''
+      static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
+      static int draw_input = 1;                  /* -noi option; if 0, the input will not be drawn by default */
+      static int centered = 0;                    /* -c option; centers dmenu on screen */
+      static int min_width = 500;                    /* minimum width when centered */
+      /* -fn option overrides fonts[0]; default X11 font or font set */
+      static const char *fonts[] = {
+      	"JetBrainsMono Nerd Font:size=10"
+      };
+      static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+      static const char *colors[SchemeLast][2] = {
+      	/*     fg         bg       */
+      	[SchemeNorm] = { "${base04}", "${base01}" },
+      	[SchemeSel] = { "${base05}", "${base03}" },
+      	[SchemeSelHighlight] = { "${base0A}", "${base03}" },
+      	[SchemeNormHighlight] = { "${base05}", "${base01}" },
+      	[SchemeOut] = { "${base00}", "${base05}" },
+      };
+      /* -l and -g options; controls number of lines and columns in grid if > 0 */
+      static unsigned int lines      = 0;
+      static unsigned int columns    = 0;
+
+      /*
+       * Characters not considered part of a word while deleting words
+       * for example: " /?\"&[]"
+       */
+      static const char worddelimiters[] = " ";
+
+      /* Size of the window border */
+      static unsigned int border_width = 2;
+    '';
+    preBuild = "cp $dmenuConfig config.def.h";
+  };
   nsxiv = pkgs.nsxiv.overrideAttrs (old: {preBuild = "cp ${./nsxiv.h} config.def.h";});
   st = pkgs.st.overrideAttrs (old: {
     src = inputs.st;
@@ -114,7 +149,7 @@
     buildInputs = old.buildInputs ++ [pkgs.libdrm pkgs.fcft];
   });
 in {
-  environment.systemPackages = [st nsxiv dwl];
+  environment.systemPackages = [st nsxiv dwl dmenu];
   services.displayManager.sessionPackages = [dwl];
 
   files.".Xresources".text = with scheme; ''
