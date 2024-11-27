@@ -19,7 +19,7 @@ delete() {
 }
 
 menu() {
-  echo -e "take\nview\ndelete" | dmenu -c -l 10 -noi | xargs screenshot
+  echo -e "take\nview\ndelete" | dmenu -c -l 10 -vi -noi | xargs screenshot
   exit
 }
 

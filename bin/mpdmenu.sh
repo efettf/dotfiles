@@ -10,5 +10,5 @@ count=$(ls -1 | wc -l)
   && export flagNum="-l 10" \
   || export flagNum="-noi"
 
-ls | dmenu -b $flagNum | mpc add
+ls | dmenu -b -vi $flagNum | mpc add
 
