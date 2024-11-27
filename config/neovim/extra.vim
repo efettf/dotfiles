@@ -60,7 +60,7 @@ set noruler
 set shm+=I
 set number
 
-au BufRead,BufNewFile * lua vim.wo.fillchars='eob: '
-au BufRead * hi MsgArea guibg=none
-au BufRead * hi LineNr guibg=none
+au VimEnter,BufRead,BufNewFile * lua vim.wo.fillchars='eob: '
+au VimEnter,BufRead,BufNewFile * hi MsgArea guibg=none
+au VimEnter,BufRead,BufNewFile * hi LineNr guibg=none
 
