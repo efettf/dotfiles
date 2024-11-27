@@ -72,11 +72,13 @@ in {
 
   files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
-    + ''require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})'';
-
-  files.".config/nvim/extra.vim".text =
-    builtins.readFile ./extra.vim
-    + ''au VimEnter,BufNewFile * hi TelescopeBorder guifg=${scheme.base02}'';
+    + ''
+      require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
+      vim.api.nvim_create_autocmd({"VimEnter", "BufRead", "BufNewFile" }, {
+        pattern  = "*",
+        command  = 'hi TelescopeBorder guifg=${scheme.base02}'
+      })
+    '';
 
   systemd.services."nvim-plug" = {
     wantedBy = lib.singleton "multi-user.target";

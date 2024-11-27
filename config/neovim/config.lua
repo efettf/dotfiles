@@ -1,7 +1,63 @@
 
 vim.wo.fillchars='eob: '
 
-vim.cmd('source $HOME/.config/nvim/extra.vim')
+vim.g.mapleader = ' '
+
+vim.cmd("au VimEnter,BufRead,BufNewFile * lua vim.wo.fillchars='eob: '")
+vim.cmd("au VimEnter,BufRead,BufNewFile * hi MsgArea guibg=none")
+vim.cmd("au VimEnter,BufRead,BufNewFile * hi LineNr guibg=none")
+
+vim.cmd("nno <expr> j v:count ? 'j' : 'gj'")
+vim.cmd("nno <expr> k v:count ? 'k' : 'gk'")
+
+vim.keymap.set("n", ";",         ":",                                          {silent = true})
+vim.keymap.set("n", "Z",         "ZZ",                                         {silent = true})
+vim.keymap.set("v", "K",         ":Norm<space>",                               {silent = true})
+vim.keymap.set("n", "-",         "<cmd>Oil<cr>",                               {silent = true})
+vim.keymap.set("n", "=",         "<cmd>ToggleAlternate<cr>",                   {silent = true})
+vim.keymap.set("n", "<leader>n", "<cmd>Telescope live_grep<cr>",               {silent = true})
+vim.keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>",              {silent = true})
+vim.keymap.set("n", "<leader>w", "<cmd>lua require('conform').format({})<cr>", {silent = true})
+
+vim.api.nvim_create_autocmd('TextYankPost', {
+  pattern  = '*',
+  callback = function() vim.highlight.on_yank{timeout=200} end 
+})
+
+vim.o.magic=true
+vim.o.wrap=true
+vim.o.scrolloff=8
+vim.o.hlsearch=false
+vim.o.shiftwidth=2
+vim.o.smartcase=true
+vim.o.smarttab=true
+vim.o.splitbelow=true
+vim.o.splitright=true
+vim.o.swapfile=false
+vim.o.tabstop=2
+vim.o.termguicolors=true
+vim.o.writebackup=false
+vim.o.autoread=true
+vim.o.backup=false
+vim.o.clipboard="unnamed,unnamedplus"
+vim.o.expandtab=true
+vim.o.foldlevel=6
+vim.o.formatoptions="cr"
+vim.o.guicursor="a:hor20"
+vim.o.ignorecase=true
+vim.o.incsearch=true
+vim.o.linespace=2
+vim.o.foldlevel=99
+vim.o.foldlevelstart=99
+vim.o.foldenable=true
+vim.o.laststatus=0
+vim.o.cmdheight=0
+vim.o.showmode=false
+vim.o.cursorline=true
+vim.o.ruler=false
+vim.o.shortmess="ltToOCFI"
+vim.o.number=true
+
 
 require("lspconfig").gopls.setup({})
 require("lspconfig").nil_ls.setup({})
