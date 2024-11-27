@@ -23,6 +23,8 @@
     just
     mako
     acpi
+    grim
+    slurp
     zoxide
     yt-dlp
     neovim

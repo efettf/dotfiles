@@ -4,6 +4,7 @@
     "doasedit"
     "passmenu"
     "wallpaper"
+    "screenshot"
     "musicsearch"
   ];
 }
