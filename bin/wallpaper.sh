@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
 
-cd $HOME/wallpapers
-
-ls -I "*.md" -I "*.sh" | fzf | xargs swww img
+nsxiv -btoq $HOME/wallpapers/* | head -n 1 | xargs swww img
 
