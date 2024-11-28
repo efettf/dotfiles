@@ -30,7 +30,6 @@ This repository uses advanced nixos modules system provided by flakes to split t
 
 <details open><summary>🐚 Required</summary>
 
-- [secrets](https://github.com/efettf/secrets)
 - [system](https://github.com/efettf/system)
 - [colors](https://github.com/efettf/colors)
 - [files](https://github.com/efettf/files)
@@ -40,6 +39,7 @@ This repository uses advanced nixos modules system provided by flakes to split t
 <details open><summary>🧭 Optional</summary>
 
 - [qutebrowser](https://github.com/efettf/qutebrowser)
+- [secrets](https://github.com/efettf/secrets)
 - [ncmpcpp](https://github.com/efettf/ncmpcpp)
 - [nsxiv](https://github.com/efettf/nsxiv)
 - [dmenu](https://github.com/efettf/dmenu)
