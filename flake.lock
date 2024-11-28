@@ -48,6 +48,26 @@
         "type": "github"
       }
     },
+    "bin": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732805867,
+        "narHash": "sha256-fl+vghYzhCHr+iLGn7f43YhguGd7+5i7Du5ItzBy9dk=",
+        "owner": "efettf",
+        "repo": "bin",
+        "rev": "25bc6b66c7b432c09181b2c14d134fe0c6f1c355",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "bin",
+        "type": "github"
+      }
+    },
     "colors": {
       "inputs": {
         "nixpkgs": [
@@ -428,6 +448,7 @@
     },
     "root": {
       "inputs": {
+        "bin": "bin",
         "colors": "colors",
         "dmenu": "dmenu",
         "dwl": "dwl",

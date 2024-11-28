@@ -5,7 +5,7 @@
         inputs.nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules =
-            [./bin ./hosts/${name}.nix]
+            [./hosts/${name}.nix]
             ++ map (name: inputs.${name}.nixosModules.default) [
               "qutebrowser"
               "secrets"
@@ -22,6 +22,7 @@
               "fish"
               "git"
               "dwl"
+              "bin"
               "st"
             ];
         };
@@ -44,6 +45,9 @@
 
     tmux.url = "github:efettf/tmux";
     tmux.inputs.nixpkgs.follows = "nixpkgs";
+
+    bin.url = "github:efettf/bin";
+    bin.inputs.nixpkgs.follows = "nixpkgs";
 
     mako.url = "github:efettf/mako";
     mako.inputs.nixpkgs.follows = "nixpkgs";
