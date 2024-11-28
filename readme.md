@@ -2,7 +2,7 @@
 
 <p align="center">
 
-Highly modular nixos configuration based on [suckless](https://suckless.org/ software, easily extensible by adding your own repositories in flake inputs and to include list (array) above. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
+Highly modular nixos configuration based on [suckless](https://suckless.org) software, easily extensible by adding your own repositories in flake inputs and to include list (array) above. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
 
 </p>
 
