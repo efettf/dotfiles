@@ -1,4 +1,4 @@
-mod nixos
+mod os
 mod hosts
 
 default:
