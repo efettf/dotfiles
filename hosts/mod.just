@@ -10,7 +10,7 @@ list:
 alias c := count
 
 count:
-  @ls *.nix -1 | wc -l
+  @expr $(ls *.nix -1 | wc -l) - 1
 
 alias g := generate
 
