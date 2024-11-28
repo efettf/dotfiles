@@ -14,7 +14,7 @@ Highly modular nixos configuration using suckless software, easily extensible by
 
 ### 💨 Features
 
-- **Secret management by [sops-nix](https://github.com/mic92/sops-nix):** simple to manage secrets with easy interface and atomic rollbacks (even in a public repo).
+- **Secrets management by [sops-nix](https://github.com/mic92/sops-nix):** simple to manage secrets with easy interface and atomic rollbacks (even in a public repo).
 - **Everything is done via modules:** this makes it easy to both manage and organize all your settings without having huge repositories, while still having all of values shared around.
 - **Without [home manager](https://github.com/nix-community/home-manager):** most of the stuff you want to do on nixos could by done by wrappers or by symlinking files, home manager tries to do everything in nix syntax which is overboard in most cases.
 - **Automatic theming:** everything has the same colors and is uniform by default using base16 framework, the color values are exposed by the [colors module](https://github.com/efettf/colors) (which doesn't use [nix-colors](https://github.com/Misterio77/nix-colors)).
@@ -69,6 +69,7 @@ This repository uses advanced nixos modules system provided by flakes to split t
 - Add description for all modules.
 - Automation using just.
 - Expose more options.
+- Setup EditorConfig.
 - Add screenshots.
 
 
