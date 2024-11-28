@@ -9,12 +9,12 @@
               ./bin
               ./config
               ./modules
-              ./overrides
             ]
             ++ map (name: inputs.${name}.nixosModules.default) [
               "secrets"
               "system"
               "colors"
+              "nsxiv"
               "dmenu"
               "dwl"
               "st"
@@ -36,6 +36,9 @@
 
     colors.url = "github:efettf/colors";
     colors.inputs.nixpkgs.follows = "nixpkgs";
+
+    nsxiv.url = "github:efettf/nsxiv";
+    nsxiv.inputs.nixpkgs.follows = "nixpkgs";
 
     dmenu.url = "github:efettf/dmenu";
     dmenu.inputs.nixpkgs.follows = "nixpkgs";

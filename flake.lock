@@ -177,6 +177,26 @@
         "type": "github"
       }
     },
+    "nsxiv": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732797980,
+        "narHash": "sha256-+5W1VVDPJl1/ItLVfGd6TyIdC9iV2DeMrXgh+RTT9XQ=",
+        "owner": "efettf",
+        "repo": "nsxiv",
+        "rev": "32337076734c4293513e1c2909fc43d629602fa7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "nsxiv",
+        "type": "github"
+      }
+    },
     "nvim-alternatetoggler": {
       "flake": false,
       "locked": {
@@ -268,6 +288,7 @@
         "fish-transient": "fish-transient",
         "fish-zoxide": "fish-zoxide",
         "nixpkgs": "nixpkgs",
+        "nsxiv": "nsxiv",
         "nvim-alternatetoggler": "nvim-alternatetoggler",
         "nvim-autosave": "nvim-autosave",
         "nvim-base16": "nvim-base16",
