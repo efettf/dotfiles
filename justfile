@@ -1,7 +1,7 @@
 mod hosts
 
 default:
-  @./util/nixos.sh
+  @./util/install.sh
 
 alias u := update
 
