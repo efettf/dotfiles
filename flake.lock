@@ -180,6 +180,26 @@
         "type": "github"
       }
     },
+    "git": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732801493,
+        "narHash": "sha256-sHNxPmg8mtFboKum7IEcPSEC34DDbYnjhqntjEHpg/4=",
+        "owner": "efettf",
+        "repo": "git",
+        "rev": "7fdb30bfc1796e2e8ae16e4e2cbd368ccd891049",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "git",
+        "type": "github"
+      }
+    },
     "gitu": {
       "inputs": {
         "nixpkgs": [
@@ -349,6 +369,7 @@
         "fish-sponge": "fish-sponge",
         "fish-transient": "fish-transient",
         "fish-zoxide": "fish-zoxide",
+        "git": "git",
         "gitu": "gitu",
         "nixpkgs": "nixpkgs",
         "nsxiv": "nsxiv",

@@ -18,6 +18,7 @@
               "files"
               "gitu"
               "fish"
+              "git"
               "dwl"
               "st"
             ];
@@ -35,6 +36,9 @@
 
     secrets.url = "github:efettf/secrets";
     secrets.inputs.nixpkgs.follows = "nixpkgs";
+
+    git.url = "github:efettf/git";
+    git.inputs.nixpkgs.follows = "nixpkgs";
 
     gitu.url = "github:efettf/gitu";
     gitu.inputs.nixpkgs.follows = "nixpkgs";

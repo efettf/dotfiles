@@ -9,9 +9,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    # Git tools.
     gh
-    git
 
     fd
     fzf
@@ -42,7 +40,6 @@
   files = {
     ".config/ncmpcpp/bindings".source = ./ncmpcpp.binds;
     ".config/mpd/mpd.conf".source = ./mpd.conf;
-    ".gitconfig".source = ./git.ini;
   };
 
   files.".config/tmux/tmux.conf".text =
