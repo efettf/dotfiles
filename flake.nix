@@ -16,6 +16,7 @@
               "nsxiv"
               "dmenu"
               "files"
+              "gitu"
               "fish"
               "dwl"
               "st"
@@ -34,6 +35,9 @@
 
     secrets.url = "github:efettf/secrets";
     secrets.inputs.nixpkgs.follows = "nixpkgs";
+
+    gitu.url = "github:efettf/gitu";
+    gitu.inputs.nixpkgs.follows = "nixpkgs";
 
     fish.url = "github:efettf/fish";
     fish.inputs.nixpkgs.follows = "nixpkgs";

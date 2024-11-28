@@ -180,6 +180,26 @@
         "type": "github"
       }
     },
+    "gitu": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732801202,
+        "narHash": "sha256-Wpl74lYP81gDAz3w7sgjsccGa7cvQrsqsu/oyTpeipM=",
+        "owner": "efettf",
+        "repo": "gitu",
+        "rev": "a46ade3c07c52b29926f55ade63e10b3b5f3801e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "gitu",
+        "type": "github"
+      }
+    },
     "nix-index": {
       "inputs": {
         "nixpkgs": [
@@ -329,6 +349,7 @@
         "fish-sponge": "fish-sponge",
         "fish-transient": "fish-transient",
         "fish-zoxide": "fish-zoxide",
+        "gitu": "gitu",
         "nixpkgs": "nixpkgs",
         "nsxiv": "nsxiv",
         "nvim-alternatetoggler": "nvim-alternatetoggler",

@@ -12,7 +12,6 @@
     # Git tools.
     gh
     git
-    gitu
 
     fd
     fzf
@@ -42,7 +41,6 @@
 
   files = {
     ".config/ncmpcpp/bindings".source = ./ncmpcpp.binds;
-    ".config/gitu/config.toml".source = ./gitu.toml;
     ".config/mpd/mpd.conf".source = ./mpd.conf;
     ".gitconfig".source = ./git.ini;
   };
