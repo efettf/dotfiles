@@ -1,4 +1,7 @@
 
+<p align="center">
+    <img width="200" src="https://raw.githubusercontent.com/efettf/main/refs/heads/main/assets/nixos-catppuccin.png" alt="Nixos Logo">
+</p>
 
 <p align="center">
 Highly modular nixos configuration based on [suckless](https://suckless.org) software, easily extensible by adding your own repositories in flake inputs and to include list (array) above. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
@@ -11,10 +14,10 @@ Highly modular nixos configuration based on [suckless](https://suckless.org) sof
 
 ### 💨 Features
 
-- **Secret management by [sops-nix](https://github.com/mic92/sops-nix):** simple to manage secrets with easy interface and atomic rollbacks.
+- **Secret management by [sops-nix](https://github.com/mic92/sops-nix):** simple to manage secrets with easy interface and atomic rollbacks (even in a public repo).
+- **Everything is done via modules:** this makes it easy to both manage and organize all your settings without having huge repositories, while still having all of values shared around.
 - **Without [home manager](https://github.com/nix-community/home-manager):** most of the stuff you want to do on nixos could by done by wrappers or by symlinking files, home manager tries to do everything in nix syntax which is overboard in most cases.
-- **Everything is done via modules:** this makes it easy to both manage and organize all your settings without having huge repositories.
-- **Automatic theming:** everything has the same colors and is uniform by default, uses base16 framework.
+- **Automatic theming:** everything has the same colors and is uniform by default using base16 framework, the color values are exposed by the [colors module](https://github.com/efettf/colors) (which doesn't use [nix-colors](https://github.com/Misterio77/nix-colors)).
 
 
 ### 🚧 Status
@@ -57,8 +60,9 @@ This repository uses advanced nixos modules system provided by flakes to split t
 
 ### 🌟 Acknowledgements
 
-- **[Sioodmy's dotfiles](https://github.com/sioodmy/dotfiles)**: low level flake setup and [homix](https://github.com/sioodmy/homix).
 - **[Junnunkarim's dotfiles](https://github.com/junnunkarim/dotfiles_home)**: beautiful suckless dotfiles with pixelart.
+- **[Sioodmy's dotfiles](https://github.com/sioodmy/dotfiles)**: low level flake setup and [homix](https://github.com/sioodmy/homix).
+- **[Catppuccin](https://github.com/catppuccin/catppuccin)**: Eye-candy colorscheme for coding and more.
 
 ### 📌 Todo
 
