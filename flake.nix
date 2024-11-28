@@ -9,10 +9,10 @@
               ./bin
               ./config
               ./modules
-              ./secrets
               ./overrides
             ]
             ++ map (name: inputs.${name}.nixosModules.default) [
+              "secrets"
               "system"
               "colors"
               "dmenu"
@@ -28,11 +28,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
 
-    sops.url = "github:mic92/sops-nix";
-    sops.inputs.nixpkgs.follows = "nixpkgs";
-
     system.url = "github:efettf/system";
     system.inputs.nixpkgs.follows = "nixpkgs";
+
+    secrets.url = "github:efettf/secrets";
+    secrets.inputs.nixpkgs.follows = "nixpkgs";
 
     colors.url = "github:efettf/colors";
     colors.inputs.nixpkgs.follows = "nixpkgs";

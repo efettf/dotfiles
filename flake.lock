@@ -273,16 +273,38 @@
         "nvim-base16": "nvim-base16",
         "nvim-recorder": "nvim-recorder",
         "nvim-sentiment": "nvim-sentiment",
-        "sops": "sops",
+        "secrets": "secrets",
         "st": "st",
         "system": "system",
         "tmux-sensible": "tmux-sensible",
         "tmux-yank": "tmux-yank"
       }
     },
+    "secrets": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "sops": "sops"
+      },
+      "locked": {
+        "lastModified": 1732796935,
+        "narHash": "sha256-vRzgPumt4IDN0VqGKa64UJPVNGNXJMC6b0orDEsXrtE=",
+        "owner": "efettf",
+        "repo": "secrets",
+        "rev": "6336cc5f4509ebe81eeefbc740a76f4ebed75c74",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "secrets",
+        "type": "github"
+      }
+    },
     "sops": {
       "inputs": {
         "nixpkgs": [
+          "secrets",
           "nixpkgs"
         ]
       },
