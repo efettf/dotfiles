@@ -1,9 +1,8 @@
-inputs: {lib, ...}: {
-  options.scheme = lib.mkOption {
-    type = lib.types.attrsOf lib.types.str;
-    default = {};
-  };
-  config.scheme = {
+let
+  fontname = "JetBrainsMono Nerd Font";
+  fontsize = "10";
+  font = fontname;
+  scheme = {
     base00 = "#11111b";
     base01 = "#181825";
     base02 = "#313244";
@@ -20,5 +19,10 @@ inputs: {lib, ...}: {
     base0D = "#89b4fa";
     base0E = "#cba6f7";
     base0F = "#f2cdcd";
+  };
+in {
+  config = {
+    st =    {inherit font              scheme;};
+    dmenu = {inherit fontname fontsize scheme;};
   };
 }

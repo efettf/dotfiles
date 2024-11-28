@@ -1,6 +1,5 @@
 {
   outputs = inputs: {
-    nixosModules.colors = import ./modules/colors.nix inputs;
     nixosConfigurations.nixos = let
       variables = inputs.nixpkgs.lib.importTOML ./variables.toml;
     in
@@ -10,6 +9,9 @@
           inherit (variables) settings scheme;
         };
         modules = [
+          inputs.dmenu.nixosModules.default
+          inputs.st.nixosModules.default
+          ./.
           ./bin
           ./config
           ./system
@@ -36,7 +38,7 @@
     dwl.flake = false;
 
     st.url = "github:efettf/st";
-    st.flake = false;
+    st.inputs.nixpkgs.follows = "nixpkgs";
 
     nvim-autosave.url = "github:pocco81/auto-save.nvim";
     nvim-autosave.flake = false;
