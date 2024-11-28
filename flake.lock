@@ -75,11 +75,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732790272,
-        "narHash": "sha256-Ak+gxB+cEwiHtrAxKYjaQrCMd7Zz3cXuq/U6eqBrq+w=",
+        "lastModified": 1732819686,
+        "narHash": "sha256-Ie2TbA2aHGNPJqTUWvtgD1nk26/VKJzRzRn6fOXWW9I=",
         "owner": "efettf",
         "repo": "colors",
-        "rev": "2ac7efaf10bbe39800aecccc0ca04b4f23635534",
+        "rev": "ee4c39fe0f0f5a91927a44178d3daf0f2dfe4920",
         "type": "github"
       },
       "original": {
@@ -175,11 +175,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732801493,
-        "narHash": "sha256-sHNxPmg8mtFboKum7IEcPSEC34DDbYnjhqntjEHpg/4=",
+        "lastModified": 1732809432,
+        "narHash": "sha256-bimK2PGyj2JKLS/qbW9UUOTlSmXJXS+KbUgljp29BKg=",
         "owner": "efettf",
         "repo": "git",
-        "rev": "7fdb30bfc1796e2e8ae16e4e2cbd368ccd891049",
+        "rev": "f54bdb102ced85b68f901811f273ee5ba61cf1cc",
         "type": "github"
       },
       "original": {
@@ -337,11 +337,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732803238,
-        "narHash": "sha256-1+5ICGqFmcSqKwxilAYS/jMI4yiGibk9tnqUvm2JQOo=",
+        "lastModified": 1732819485,
+        "narHash": "sha256-UjXLUTl3CplGMmFqb6HtXKvyxlJu+PWPQb2/wrKT4bU=",
         "owner": "efettf",
         "repo": "qutebrowser",
-        "rev": "e96b270bf1a79de384b7de5c8396df33429899f1",
+        "rev": "088b7d030aaad17156f06356e369b9b59858f472",
         "type": "github"
       },
       "original": {
@@ -453,11 +453,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732795978,
-        "narHash": "sha256-R5AiXmkFtd+2IbhqxTX7yk5QSEGbBW2xr5B8uq1X2bo=",
+        "lastModified": 1732818607,
+        "narHash": "sha256-y2AjKBpRs55zeItbJZEFdvQ609CRL0plk02n3WDTXeE=",
         "owner": "efettf",
         "repo": "st",
-        "rev": "593ea23e75cfd6fe3e83a5e34f2b775e7ecef8eb",
+        "rev": "e49e6af8c227d97f77d03d0a67b420f019d42d6c",
         "type": "github"
       },
       "original": {
@@ -474,11 +474,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732803884,
-        "narHash": "sha256-uKoEEpr8SZ84GKhrYptZQoZr3LBRBVxOiSiE/3Xu04E=",
+        "lastModified": 1732809419,
+        "narHash": "sha256-sylIG4+B+Kpc4vseKUezrQhp63b9rkqqIKUCyoda02I=",
         "owner": "efettf",
         "repo": "system",
-        "rev": "9cc74c08198bc9ed49cf350b37972797e303a034",
+        "rev": "0796395965ea7c4a3b18118f8567be3677f58921",
         "type": "github"
       },
       "original": {
