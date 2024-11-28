@@ -168,86 +168,6 @@
         "type": "github"
       }
     },
-    "fish-pisces": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1606703175,
-        "narHash": "sha256-Oou2IeNNAqR00ZT3bss/DbhrJjGeMsn9dBBYhgdafBw=",
-        "owner": "laughedelic",
-        "repo": "pisces",
-        "rev": "e45e0869855d089ba1e628b6248434b2dfa709c4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "laughedelic",
-        "repo": "pisces",
-        "type": "github"
-      }
-    },
-    "fish-puffer": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1709511829,
-        "narHash": "sha256-2niYj0NLfmVIQguuGTA7RrPIcorJEPkxhH6Dhcy+6Bk=",
-        "owner": "nickeb96",
-        "repo": "puffer-fish",
-        "rev": "12d062eae0ad24f4ec20593be845ac30cd4b5923",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nickeb96",
-        "repo": "puffer-fish",
-        "type": "github"
-      }
-    },
-    "fish-sponge": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1664918422,
-        "narHash": "sha256-MdcZUDRtNJdiyo2l9o5ma7nAX84xEJbGFhAVhK+Zm1w=",
-        "owner": "meaningful-ooo",
-        "repo": "sponge",
-        "rev": "384299545104d5256648cee9d8b117aaa9a6d7be",
-        "type": "github"
-      },
-      "original": {
-        "owner": "meaningful-ooo",
-        "repo": "sponge",
-        "type": "github"
-      }
-    },
-    "fish-transient": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1727072926,
-        "narHash": "sha256-jukfIiJ2+ppgys9pof/eBs4GGb7t413+okk1DwpRXcg=",
-        "owner": "zzhaolei",
-        "repo": "transient.fish",
-        "rev": "fdb94391cd5a1a22e44ad6919527dec28b00ca0b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zzhaolei",
-        "repo": "transient.fish",
-        "type": "github"
-      }
-    },
-    "fish-zoxide": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1660831028,
-        "narHash": "sha256-Hq9UXB99kmbWKUVFDeJL790P8ek+xZR5LDvS+Qih+N4=",
-        "owner": "kidonng",
-        "repo": "zoxide.fish",
-        "rev": "bfd5947bcc7cd01beb23c6a40ca9807c174bba0e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kidonng",
-        "repo": "zoxide.fish",
-        "type": "github"
-      }
-    },
     "git": {
       "inputs": {
         "nixpkgs": [
@@ -454,11 +374,6 @@
         "dwl": "dwl",
         "files": "files",
         "fish": "fish",
-        "fish-pisces": "fish-pisces",
-        "fish-puffer": "fish-puffer",
-        "fish-sponge": "fish-sponge",
-        "fish-transient": "fish-transient",
-        "fish-zoxide": "fish-zoxide",
         "git": "git",
         "gitu": "gitu",
         "mako": "mako",
@@ -470,9 +385,7 @@
         "secrets": "secrets",
         "st": "st",
         "system": "system",
-        "tmux": "tmux",
-        "tmux-sensible": "tmux-sensible",
-        "tmux-yank": "tmux-yank"
+        "tmux": "tmux"
       }
     },
     "secrets": {
@@ -591,38 +504,6 @@
       "original": {
         "owner": "efettf",
         "repo": "tmux",
-        "type": "github"
-      }
-    },
-    "tmux-sensible": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1660507698,
-        "narHash": "sha256-sw9g1Yzmv2fdZFLJSGhx1tatQ+TtjDYNZI5uny0+5Hg=",
-        "owner": "tmux-plugins",
-        "repo": "tmux-sensible",
-        "rev": "25cb91f42d020f675bb0a2ce3fbd3a5d96119efa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tmux-plugins",
-        "repo": "tmux-sensible",
-        "type": "github"
-      }
-    },
-    "tmux-yank": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1689770565,
-        "narHash": "sha256-/5HPaoOx2U2d8lZZJo5dKmemu6hKgHJYq23hxkddXpA=",
-        "owner": "tmux-plugins",
-        "repo": "tmux-yank",
-        "rev": "acfd36e4fcba99f8310a7dfb432111c242fe7392",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tmux-plugins",
-        "repo": "tmux-yank",
         "type": "github"
       }
     }

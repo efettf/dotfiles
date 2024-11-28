@@ -84,26 +84,5 @@
 
     st.url = "github:efettf/st";
     st.inputs.nixpkgs.follows = "nixpkgs";
-
-    fish-transient.url = "github:zzhaolei/transient.fish";
-    fish-transient.flake = false;
-
-    fish-sponge.url = "github:meaningful-ooo/sponge";
-    fish-sponge.flake = false;
-
-    fish-puffer.url = "github:nickeb96/puffer-fish";
-    fish-puffer.flake = false;
-
-    fish-zoxide.url = "github:kidonng/zoxide.fish";
-    fish-zoxide.flake = false;
-
-    fish-pisces.url = "github:laughedelic/pisces";
-    fish-pisces.flake = false;
-
-    tmux-yank.url = "github:tmux-plugins/tmux-yank";
-    tmux-yank.flake = false;
-
-    tmux-sensible.url = "github:tmux-plugins/tmux-sensible";
-    tmux-sensible.flake = false;
   };
 }
