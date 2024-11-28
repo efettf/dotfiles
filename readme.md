@@ -62,5 +62,12 @@ This repository uses advanced nixos modules system provided by flakes to split t
 - **[Sioodmy's dotfiles](https://github.com/sioodmy/dotfiles)**: low level flake setup and [homix](https://github.com/sioodmy/homix).
 - **[Junnunkarim's dotfiles](https://github.com/junnunkarim/dotfiles_home)**: beautiful suckless dotfiles with pixelart.
 
+### 📌 Todo
+
+- Add description for all modules.
+- Automation using just.
+- Expose more options.
+- Add screenshots.
+
 
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/c9d3d7de6ab8cb2609b37c4b79b026a2c7784b6f/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
