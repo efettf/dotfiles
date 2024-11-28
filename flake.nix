@@ -8,7 +8,6 @@
             [
               ./bin
               ./config
-              ./modules
             ]
             ++ map (name: inputs.${name}.nixosModules.default) [
               "secrets"
@@ -16,6 +15,7 @@
               "colors"
               "nsxiv"
               "dmenu"
+              "files"
               "dwl"
               "st"
             ];
@@ -33,6 +33,9 @@
 
     secrets.url = "github:efettf/secrets";
     secrets.inputs.nixpkgs.follows = "nixpkgs";
+
+    files.url = "github:efettf/files";
+    files.inputs.nixpkgs.follows = "nixpkgs";
 
     colors.url = "github:efettf/colors";
     colors.inputs.nixpkgs.follows = "nixpkgs";
