@@ -1,7 +1,6 @@
 {
-  settings,
+  config,
   inputs,
-  scheme,
   pkgs,
   lib,
   ...
@@ -73,10 +72,10 @@ in {
   files.".config/nvim/init.lua".text =
     builtins.readFile ./config.lua
     + ''
-      require("mini.base16").setup(${lib.generators.toLua {} {palette = scheme;}})
+      require("mini.base16").setup(${lib.generators.toLua {} {palette = config.scheme;}})
       vim.api.nvim_create_autocmd({"VimEnter", "BufRead", "BufNewFile" }, {
         pattern  = "*",
-        command  = 'hi TelescopeBorder guifg=${scheme.base02}'
+        command  = 'hi TelescopeBorder guifg=${config.scheme.base02}'
       })
     '';
 
@@ -84,7 +83,7 @@ in {
     wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
-      User = settings.user;
+      User = config.user;
       ExecStart = pkgs.writeShellScript "nvim-plug" ''
         mkdir -p $HOME/.config/nvim/pack/vendor/start
         rm -r $HOME/.config/nvim/pack/vendor/start/*

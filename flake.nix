@@ -1,26 +1,28 @@
 {
   outputs = inputs: {
-    nixosConfigurations.nixos = let
-      variables = inputs.nixpkgs.lib.importTOML ./variables.toml;
-    in
-      inputs.nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit inputs variables;
-          inherit (variables) settings scheme;
+    nixosConfigurations = let
+      mkHost = name:
+        inputs.nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules =
+            [
+              ./bin
+              ./config
+              ./modules
+              ./secrets
+              ./overrides
+            ]
+            ++ map (name: inputs.${name}.nixosModules.default) [
+              "system"
+              "colors"
+              "dmenu"
+              "dwl"
+              "st"
+            ];
         };
-        modules = [
-          ./bin
-          ./config
-          ./modules
-          ./secrets
-          ./overrides
-        ] ++ map (name: inputs.${name}.nixosModules.default) [
-          "system"
-          "colors"
-          "dmenu"
-          "st"
-        ];
-      };
+    in {
+      nixos = mkHost "nixos";
+    };
   };
 
   inputs = {
@@ -39,7 +41,7 @@
     dmenu.inputs.nixpkgs.follows = "nixpkgs";
 
     dwl.url = "github:efettf/dwl";
-    dwl.flake = false;
+    dwl.inputs.nixpkgs.follows = "nixpkgs";
 
     st.url = "github:efettf/st";
     st.inputs.nixpkgs.follows = "nixpkgs";

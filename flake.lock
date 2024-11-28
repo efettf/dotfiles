@@ -41,13 +41,17 @@
       }
     },
     "dwl": {
-      "flake": false,
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
       "locked": {
-        "lastModified": 1732621265,
-        "narHash": "sha256-MP3vPKOx0YBZqMVYBQ6kaNhdXlRmAWj3JcutPH3nA34=",
+        "lastModified": 1732796325,
+        "narHash": "sha256-YRNpeo59OFE6wNBy10hNzy3phDnKlb8kusYUcj3AGsk=",
         "owner": "efettf",
         "repo": "dwl",
-        "rev": "43bf66f7dc70f58225cb77bedac5cbcf9f2f5bbb",
+        "rev": "78711826b91d22b937da8c4ba16348a3444a3833",
         "type": "github"
       },
       "original": {
@@ -303,11 +307,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732790714,
-        "narHash": "sha256-F4cEU4S8evsefYPS+XA4woeNDbWrlqzD5TfsFQBWnpY=",
+        "lastModified": 1732795978,
+        "narHash": "sha256-R5AiXmkFtd+2IbhqxTX7yk5QSEGbBW2xr5B8uq1X2bo=",
         "owner": "efettf",
         "repo": "st",
-        "rev": "40fd5192e1713663e539798b5da96062ee7b46cd",
+        "rev": "593ea23e75cfd6fe3e83a5e34f2b775e7ecef8eb",
         "type": "github"
       },
       "original": {

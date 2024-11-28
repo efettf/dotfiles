@@ -1,6 +1,6 @@
 {
   pkgs,
-  scheme,
+  config,
   ...
 }: {
   imports = [
@@ -61,16 +61,16 @@
 
   files.".config/tmux/tmux.conf".text =
     ''
-      set -g pane-active-border-style bg=default,fg="${scheme.base02}"
-      set -g pane-border-style fg="${scheme.base02}"
+      set -g pane-active-border-style bg=default,fg="${config.scheme.base02}"
+      set -g pane-border-style fg="${config.scheme.base02}"
     ''
     + builtins.readFile ./tmux.conf;
 
   files.".config/mako/config".text = ''
     sort=-time
     layer=overlay
-    background-color=${scheme.base00}
-    text-color=${scheme.base05}
+    background-color=${config.scheme.base00}
+    text-color=${config.scheme.base05}
     width=225
     height=100
     border-size=2
@@ -79,15 +79,15 @@
     font=JetBrainsMono Nerd Font 10
 
     [urgency=low]
-    border-color=${scheme.base0A}
+    border-color=${config.scheme.base0A}
     default-timeout=2500
 
     [urgency=normal]
-    border-color=${scheme.base09}
+    border-color=${config.scheme.base09}
     default-timeout=5000
 
     [urgency=high]
-    border-color=${scheme.base08}
+    border-color=${config.scheme.base08}
     default-timeout=15000
   '';
 

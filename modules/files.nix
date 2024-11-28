@@ -1,8 +1,7 @@
 {
-  settings,
-  config,
   lib,
   pkgs,
+  config,
   ...
 }:
 with builtins;
@@ -48,7 +47,7 @@ with types; {
     wantedBy = lib.singleton "multi-user.target";
     serviceConfig = {
       Type = "oneshot";
-      User = settings.user;
+      User = config.user;
       ExecStart = writeShellScript "files-link" ''
         ${concatStringsSep "\n" (map (f: ''
           FILE=$HOME/${f.path}
