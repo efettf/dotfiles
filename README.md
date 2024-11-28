@@ -18,6 +18,7 @@ Highly modular nixos configuration using suckless software, easily extensible by
 - **Everything is done via modules:** this makes it easy to both manage and organize all your settings without having huge repositories, while still having all of values shared around.
 - **Without [home manager](https://github.com/nix-community/home-manager):** most of the stuff you want to do on nixos could by done by wrappers or by symlinking files, home manager tries to do everything in nix syntax which is overboard in most cases.
 - **Automatic theming:** everything has the same colors and is uniform by default using base16 framework, the color values are exposed by the [colors module](https://github.com/efettf/colors) (which doesn't use [nix-colors](https://github.com/Misterio77/nix-colors)).
+- **Minimal:** most of the user programs are provided by [suckless](https://suckless.org) if possible or similiar minimal software that is configurable mainly by patching its source code, making the install lightweight and fast.
 
 
 ### 🚧 Status
