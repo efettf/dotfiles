@@ -15,5 +15,5 @@ count:
 alias g := generate
 
 generate name:
-  nixos-generate-config --show-hardware-config > {{name}}.nix
+  @./generate.sh {{name}}
 
