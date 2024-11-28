@@ -4,12 +4,15 @@
 </p>
 
 <p align="center">
-Highly modular nixos configuration using suckless software, easily extensible by adding your own repositories in flake inputs and loading them in the hosts directory. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
+My personal highly modular nixos configuration using suckless software, easily extensible by adding your own repositories in flake inputs and loading them in the hosts directory. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
 </p>
 
 ##
 
 <!-- ### 🖼️ Screenshots -->
+
+> [!WARNING] 
+> This isn't a distribution or a preconfigured setup for nixos and you shouldn't use it like one, this is my personal configuration which I try to make as pretty and functional as I can. Please verify everything before applying it as it was only tested on my hosts and could not work on yours.
 
 
 ### 💨 Features
