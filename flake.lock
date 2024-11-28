@@ -80,6 +80,26 @@
         "type": "github"
       }
     },
+    "fish": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732800690,
+        "narHash": "sha256-p3Sn4Bcy8Tdle15QXW+1cBZ2lUqsbofUsqH4487QUTw=",
+        "owner": "efettf",
+        "repo": "fish",
+        "rev": "4012953349c6d377a1cb795a30b8b33432590025",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "fish",
+        "type": "github"
+      }
+    },
     "fish-pisces": {
       "flake": false,
       "locked": {
@@ -303,6 +323,7 @@
         "dmenu": "dmenu",
         "dwl": "dwl",
         "files": "files",
+        "fish": "fish",
         "fish-pisces": "fish-pisces",
         "fish-puffer": "fish-puffer",
         "fish-sponge": "fish-sponge",

@@ -38,22 +38,10 @@
 
     # Cursors.
     banana-cursor
-
-    # Fish plugins.
-    fishPlugins.puffer
-    fishPlugins.sponge
-    fishPlugins.pisces
-    fishPlugins.transient-fish
   ];
-
-  # Fish tweaks.
-  programs.fish.enable = true;
-  users.defaultUserShell = pkgs.fish;
-  documentation.man.generateCaches = false; # Fixes a slowdown on rebuild.
 
   files = {
     ".config/ncmpcpp/bindings".source = ./ncmpcpp.binds;
-    ".config/fish/config.fish".source = ./config.fish;
     ".config/gitu/config.toml".source = ./gitu.toml;
     ".config/mpd/mpd.conf".source = ./mpd.conf;
     ".gitconfig".source = ./git.ini;
