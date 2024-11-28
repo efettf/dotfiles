@@ -1,10 +1,10 @@
 inputs: let
-  mkHost = name:
+  mkHost = host:
     inputs.nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules =
-        [./${name}.nix]
-        ++ map (name: inputs.${name}.nixosModules.default) [
+        [./${host}.nix]
+        ++ map (value: inputs.${value}.nixosModules.default) [
           "qutebrowser"
           "secrets"
           "ncmpcpp"
