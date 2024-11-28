@@ -1,31 +1,26 @@
 
 default:
-  just rebuild
-
-rebuild:
   nixos-rebuild switch --flake . --use-remote-sudo
 
 alias u := update
 
 update target:
   nix flake update {{target}}
-  just rebuild
+  just
 
 alias r := rollback
 
 rollback:
   nixos-rebuild switch --flake . --use-remote-sudo --rollback
 
-alias gc := clean
-alias c  := clean
+alias c := clean
 
 clean:
   nix-collect-garbage -d
   doas nix-collect-garbage -d
 
-alias ls := list
-alias l  := list
+alias l := list
 
 list:
-  doas nix-env --list-generations --profile /nix/var/nix/profiles/system
+  @doas nix-env --list-generations --profile /nix/var/nix/profiles/system
 
