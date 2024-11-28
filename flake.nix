@@ -5,18 +5,20 @@
         inputs.nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules =
-            [
-              ./bin
-              ./config
-            ]
+            [./bin ./hosts/${name}.nix]
             ++ map (name: inputs.${name}.nixosModules.default) [
+              "qutebrowser"
               "secrets"
+              "ncmpcpp"
               "system"
               "colors"
               "nsxiv"
               "dmenu"
               "files"
               "gitu"
+              "mako"
+              "tmux"
+              "nvim"
               "fish"
               "git"
               "dwl"
@@ -36,6 +38,21 @@
 
     secrets.url = "github:efettf/secrets";
     secrets.inputs.nixpkgs.follows = "nixpkgs";
+
+    qutebrowser.url = "github:efettf/qutebrowser";
+    qutebrowser.inputs.nixpkgs.follows = "nixpkgs";
+
+    tmux.url = "github:efettf/tmux";
+    tmux.inputs.nixpkgs.follows = "nixpkgs";
+
+    mako.url = "github:efettf/mako";
+    mako.inputs.nixpkgs.follows = "nixpkgs";
+
+    nvim.url = "github:efettf/nvim";
+    nvim.inputs.nixpkgs.follows = "nixpkgs";
+
+    ncmpcpp.url = "github:efettf/ncmpcpp";
+    ncmpcpp.inputs.nixpkgs.follows = "nixpkgs";
 
     git.url = "github:efettf/git";
     git.inputs.nixpkgs.follows = "nixpkgs";
@@ -63,21 +80,6 @@
 
     st.url = "github:efettf/st";
     st.inputs.nixpkgs.follows = "nixpkgs";
-
-    nvim-autosave.url = "github:pocco81/auto-save.nvim";
-    nvim-autosave.flake = false;
-
-    nvim-sentiment.url = "github:utilyre/sentiment.nvim";
-    nvim-sentiment.flake = false;
-
-    nvim-recorder.url = "github:chrisgrieser/nvim-recorder";
-    nvim-recorder.flake = false;
-
-    nvim-alternatetoggler.url = "github:rmagatti/alternate-toggler";
-    nvim-alternatetoggler.flake = false;
-
-    nvim-base16.url = "github:echasnovski/mini.base16";
-    nvim-base16.flake = false;
 
     fish-transient.url = "github:zzhaolei/transient.fish";
     fish-transient.flake = false;
