@@ -9,4 +9,3 @@ nixos-generate-config --show-hardware-config \
   | sed -e "1 i\# $message" \
   > "$1.nix"
 
-

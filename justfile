@@ -1,10 +1,7 @@
 mod hosts
 
 default:
-  just rebuild
-
-rebuild:
-  nixos-rebuild switch --flake . --use-remote-sudo
+  @./util/nixos.sh
 
 alias u := update
 
