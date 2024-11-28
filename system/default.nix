@@ -9,6 +9,7 @@
   imports = [
     ./hardware.nix
     inputs.nix-index.nixosModules.nix-index
+    inputs.dmenu.nixosModules.default
   ];
 
   programs.nix-index-database.comma.enable = true;

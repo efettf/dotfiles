@@ -1,5 +1,6 @@
 {
   outputs = inputs: {
+    nixosModules.colors = import ./modules/colors.nix inputs;
     nixosConfigurations.nixos = let
       variables = inputs.nixpkgs.lib.importTOML ./variables.toml;
     in
@@ -29,7 +30,7 @@
     nix-index.inputs.nixpkgs.follows = "nixpkgs";
 
     dmenu.url = "github:efettf/dmenu";
-    dmenu.flake = false;
+    dmenu.inputs.nixpkgs.follows = "nixpkgs";
 
     dwl.url = "github:efettf/dwl";
     dwl.flake = false;
