@@ -65,7 +65,7 @@ This repository uses advanced Nixos modules system provided by flakes to split t
 ### 🌟 Acknowledgements
 
 - **[Junnunkarim's dotfiles](https://github.com/junnunkarim/dotfiles_home)**: beautiful dotfiles with pixel-art using suckless tools.
-- **[Sioodmy's dotfiles](https://github.com/sioodmy/dotfiles)**: low level flake setup and [homix](https://github.com/sioodmy/homix).
+- **[Sioodmy's dotfiles](https://github.com/sioodmy/dotfiles)**: advanced flake setups and [homix](https://github.com/sioodmy/homix).
 - **[Catppuccin](https://github.com/catppuccin/catppuccin)**: Eye-candy color scheme for coding.
 
 
