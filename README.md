@@ -26,12 +26,12 @@ My personal highly modular Nixos configuration using suckless software, easily e
 
 ### 🚧 Status
 
-This repository is **under construction** and is very prone to breaking, luckily due to the nature on Nixos its mainly due to user error, so if you fork this repository and update it only when needed, it will last as long as you wish. Nixpkgs input is pinned at **24.11 beta** and will most likely be like that till the next release.
+This repository is **under construction** and is very prone to breaking, luckily thanks to the nature on Nixos its mainly due to user error, so if you fork this repository and update it only when needed, it will last as long as you wish. Nixpkgs input is pinned at **24.11 beta** and will most likely be like that till the next release.
 
 
 ### 🚀 Modules
 
-This repository uses advanced Nixos modules system provided by flakes to split the configuration to multiple repositories all sharing the same Nixos settings and inputs. Here's a list of all of the required and optional modules (might create more in future):
+This repository heavily uses Nixos modules system provided by flakes to split the configuration to multiple repositories all sharing the same Nixos settings and inputs. Here's a list of all of the required and optional modules (might create more in future):
 
 <details open><summary>🐚 Required</summary>
 
