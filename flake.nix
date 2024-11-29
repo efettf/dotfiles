@@ -21,6 +21,9 @@
   inputs."system".url = "github:efettf/system";
   inputs."system".inputs."nixpkgs".follows = "nixpkgs";
 
+  inputs."kanata".url = "github:efettf/kanata";
+  inputs."kanata".inputs."nixpkgs".follows = "nixpkgs";
+
   inputs."colors".url = "github:efettf/colors";
   inputs."colors".inputs."nixpkgs".follows = "nixpkgs";
 

@@ -208,6 +208,26 @@
         "type": "github"
       }
     },
+    "kanata": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732875249,
+        "narHash": "sha256-zzU4cleUA/E4oZwkJoAoTpij5EfTYvWAcjWsm4+mE5I=",
+        "owner": "efettf",
+        "repo": "kanata",
+        "rev": "2e0eb4141266b883b19e4f1efc9f126694b6dcf4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efettf",
+        "repo": "kanata",
+        "type": "github"
+      }
+    },
     "mako": {
       "inputs": {
         "nixpkgs": [
@@ -376,6 +396,7 @@
         "fish": "fish",
         "git": "git",
         "gitu": "gitu",
+        "kanata": "kanata",
         "mako": "mako",
         "ncmpcpp": "ncmpcpp",
         "nixpkgs": "nixpkgs",
@@ -474,11 +495,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732809419,
-        "narHash": "sha256-sylIG4+B+Kpc4vseKUezrQhp63b9rkqqIKUCyoda02I=",
+        "lastModified": 1732875130,
+        "narHash": "sha256-NDVo5vxFyulFs7ngGI5Z220d0oNUUWr4gh5sY2vx+3A=",
         "owner": "efettf",
         "repo": "system",
-        "rev": "0796395965ea7c4a3b18118f8567be3677f58921",
+        "rev": "61233d88ac9f73a2538eacf3a32898e437c82b8e",
         "type": "github"
       },
       "original": {

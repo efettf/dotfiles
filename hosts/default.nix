@@ -8,6 +8,7 @@ inputs: let
           "qutebrowser"
           "secrets"
           "ncmpcpp"
+          "kanata"
           "system"
           "colors"
           "nsxiv"
