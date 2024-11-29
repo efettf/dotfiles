@@ -13,6 +13,7 @@ inputs: let
           "colors"
           "nsxiv"
           "dmenu"
+          "xmenu"
           "files"
           "gitu"
           "mako"
