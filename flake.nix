@@ -6,7 +6,7 @@
   # WARNING: Nixos version declared here, don't use version below 24.11!
   inputs."nixpkgs".url = "github:nixos/nixpkgs/nixos-24.11";
 
-  # NOTE: Unfortunetely nix in flakes doesn't allow for expressions,
+  # NOTE: Unfortunetely inputs in flakes doesn't allow for expressions,
   # might write a generator for this in the future, but for now it's manual.
 
   inputs."qutebrowser".url = "github:efettf/qutebrowser";
