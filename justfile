@@ -7,7 +7,7 @@ alias u := update
 
 update target:
   nix flake update {{target}}
-  just nixos rebuild
+  @just
 
 alias r := rollback
 
