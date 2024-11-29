@@ -235,11 +235,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732803700,
-        "narHash": "sha256-CRjsgXfQHYW3PXEWcLwrLylB9XYt1lHEkZY9FHwLxc0=",
+        "lastModified": 1732881075,
+        "narHash": "sha256-VU4K34LAcC8IKOK8sEvrRyg8eYbcO7R+VOf+ffJdHsE=",
         "owner": "efettf",
         "repo": "mako",
-        "rev": "bc06246405fa58463cb7331da86ca9dfce50449f",
+        "rev": "0ea42257279fc0b8b7972d5f7bc34c578534e110",
         "type": "github"
       },
       "original": {
