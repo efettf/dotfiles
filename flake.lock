@@ -55,11 +55,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732805867,
-        "narHash": "sha256-fl+vghYzhCHr+iLGn7f43YhguGd7+5i7Du5ItzBy9dk=",
+        "lastModified": 1732880814,
+        "narHash": "sha256-oj23Eg3FVBPij3SqF9t0gUseS4JuBs9Sc/p9Q9l355I=",
         "owner": "efettf",
         "repo": "bin",
-        "rev": "25bc6b66c7b432c09181b2c14d134fe0c6f1c355",
+        "rev": "7b5da9dc6cc186f05fecb22a58fe038cbab79d61",
         "type": "github"
       },
       "original": {
