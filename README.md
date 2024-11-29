@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img width="200" src="https://raw.githubusercontent.com/efettf/main/refs/heads/main/assets/nixos-catppuccin.png" alt="Nixos Logo">
+    <img width="200" src="https://raw.githubusercontent.com/efnnix/main/refs/heads/main/assets/nixos-catppuccin.png" alt="Nixos Logo">
 </p>
 
 <p align="center">
@@ -35,29 +35,29 @@ This repository heavily uses Nixos modules system provided by flakes to split th
 
 <details open><summary>🐚 Required</summary>
 
-- [system](https://github.com/efettf/system)
-- [colors](https://github.com/efettf/colors)
-- [files](https://github.com/efettf/files)
+- [system](https://github.com/efnnix/system)
+- [colors](https://github.com/efnnix/colors)
+- [files](https://github.com/efnnix/files)
 
 </details>
 
 <details open><summary>🧭 Optional</summary>
 
-- [qutebrowser](https://github.com/efettf/qutebrowser)
-- [secrets](https://github.com/efettf/secrets)
-- [ncmpcpp](https://github.com/efettf/ncmpcpp)
-- [kanata](https://github.com/efettf/kanata)
-- [nsxiv](https://github.com/efettf/nsxiv)
-- [dmenu](https://github.com/efettf/dmenu)
-- [gitu](https://github.com/efettf/gitu)
-- [mako](https://github.com/efettf/mako)
-- [tmux](https://github.com/efettf/tmux)
-- [nvim](https://github.com/efettf/nvim)
-- [fish](https://github.com/efettf/fish)
-- [git](https://github.com/efettf/git)
-- [dwl](https://github.com/efettf/dwl)
-- [bin](https://github.com/efettf/bin)
-- [st](https://github.com/efettf/st)
+- [qutebrowser](https://github.com/efnnix/qutebrowser)
+- [secrets](https://github.com/efnnix/secrets)
+- [ncmpcpp](https://github.com/efnnix/ncmpcpp)
+- [kanata](https://github.com/efnnix/kanata)
+- [nsxiv](https://github.com/efnnix/nsxiv)
+- [dmenu](https://github.com/efnnix/dmenu)
+- [gitu](https://github.com/efnnix/gitu)
+- [mako](https://github.com/efnnix/mako)
+- [tmux](https://github.com/efnnix/tmux)
+- [nvim](https://github.com/efnnix/nvim)
+- [fish](https://github.com/efnnix/fish)
+- [git](https://github.com/efnnix/git)
+- [dwl](https://github.com/efnnix/dwl)
+- [bin](https://github.com/efnnix/bin)
+- [st](https://github.com/efnnix/st)
 
 </details>
 

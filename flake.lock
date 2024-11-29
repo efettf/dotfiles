@@ -57,13 +57,13 @@
       "locked": {
         "lastModified": 1732880814,
         "narHash": "sha256-oj23Eg3FVBPij3SqF9t0gUseS4JuBs9Sc/p9Q9l355I=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "bin",
         "rev": "7b5da9dc6cc186f05fecb22a58fe038cbab79d61",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "bin",
         "type": "github"
       }
@@ -77,13 +77,13 @@
       "locked": {
         "lastModified": 1732819686,
         "narHash": "sha256-Ie2TbA2aHGNPJqTUWvtgD1nk26/VKJzRzRn6fOXWW9I=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "colors",
         "rev": "ee4c39fe0f0f5a91927a44178d3daf0f2dfe4920",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "colors",
         "type": "github"
       }
@@ -97,13 +97,13 @@
       "locked": {
         "lastModified": 1732876220,
         "narHash": "sha256-VDAqBnBg8L0Up/58Lh5Llj3V00o8IQIz8oOndKknHp0=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "dmenu",
         "rev": "61af6c90cc0008a0e0f298008c591dbbd6e08877",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "dmenu",
         "type": "github"
       }
@@ -115,15 +115,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1732796325,
-        "narHash": "sha256-YRNpeo59OFE6wNBy10hNzy3phDnKlb8kusYUcj3AGsk=",
-        "owner": "efettf",
+        "lastModified": 1732886013,
+        "narHash": "sha256-UduU1eqsyalBTIM6oWDLYPNzp6VW8C++kd1f0txli6A=",
+        "owner": "efnnix",
         "repo": "dwl",
-        "rev": "78711826b91d22b937da8c4ba16348a3444a3833",
+        "rev": "959c1d8e816bec378ebc1cba71400d20f7673c89",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "dwl",
         "type": "github"
       }
@@ -137,13 +137,13 @@
       "locked": {
         "lastModified": 1732798427,
         "narHash": "sha256-TAAyCIGUB22R1+ioy9fsERmEQTp6REGqNgGw5xEoifs=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "files",
         "rev": "afcb72849bf5cf97429465dccb7dc601e8406c07",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "files",
         "type": "github"
       }
@@ -157,13 +157,13 @@
       "locked": {
         "lastModified": 1732800690,
         "narHash": "sha256-p3Sn4Bcy8Tdle15QXW+1cBZ2lUqsbofUsqH4487QUTw=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "fish",
         "rev": "4012953349c6d377a1cb795a30b8b33432590025",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "fish",
         "type": "github"
       }
@@ -177,13 +177,13 @@
       "locked": {
         "lastModified": 1732809432,
         "narHash": "sha256-bimK2PGyj2JKLS/qbW9UUOTlSmXJXS+KbUgljp29BKg=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "git",
         "rev": "f54bdb102ced85b68f901811f273ee5ba61cf1cc",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "git",
         "type": "github"
       }
@@ -197,13 +197,13 @@
       "locked": {
         "lastModified": 1732801202,
         "narHash": "sha256-Wpl74lYP81gDAz3w7sgjsccGa7cvQrsqsu/oyTpeipM=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "gitu",
         "rev": "a46ade3c07c52b29926f55ade63e10b3b5f3801e",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "gitu",
         "type": "github"
       }
@@ -217,13 +217,13 @@
       "locked": {
         "lastModified": 1732875249,
         "narHash": "sha256-zzU4cleUA/E4oZwkJoAoTpij5EfTYvWAcjWsm4+mE5I=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "kanata",
         "rev": "2e0eb4141266b883b19e4f1efc9f126694b6dcf4",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "kanata",
         "type": "github"
       }
@@ -237,13 +237,13 @@
       "locked": {
         "lastModified": 1732881075,
         "narHash": "sha256-VU4K34LAcC8IKOK8sEvrRyg8eYbcO7R+VOf+ffJdHsE=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "mako",
         "rev": "0ea42257279fc0b8b7972d5f7bc34c578534e110",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "mako",
         "type": "github"
       }
@@ -257,13 +257,13 @@
       "locked": {
         "lastModified": 1732801955,
         "narHash": "sha256-GoDoblxjAHqnrJkNwpKbxMeUTtSYD6EvFIBFa5lM46c=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "ncmpcpp",
         "rev": "ef70b2fc30310ff2cb8d79b36282c403045dc644",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "ncmpcpp",
         "type": "github"
       }
@@ -314,13 +314,13 @@
       "locked": {
         "lastModified": 1732797980,
         "narHash": "sha256-+5W1VVDPJl1/ItLVfGd6TyIdC9iV2DeMrXgh+RTT9XQ=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "nsxiv",
         "rev": "32337076734c4293513e1c2909fc43d629602fa7",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "nsxiv",
         "type": "github"
       }
@@ -339,13 +339,13 @@
       "locked": {
         "lastModified": 1732802853,
         "narHash": "sha256-XiWu6ZTfcebb/rsEGtt4NnagVyyV7+V801zUfq0T+m4=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "nvim",
         "rev": "24e998c073a220c67dd803efbbcdcb1c5cd99a88",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "nvim",
         "type": "github"
       }
@@ -359,13 +359,13 @@
       "locked": {
         "lastModified": 1732881760,
         "narHash": "sha256-w+gAPytPgwOU4Yjzo2s5lXV/9yRxM5fb95CxBSNyQ8I=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "qutebrowser",
         "rev": "3853935a90e6cc5c7fd376f88729fc3f8915e8fd",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "qutebrowser",
         "type": "github"
       }
@@ -419,13 +419,13 @@
       "locked": {
         "lastModified": 1732796935,
         "narHash": "sha256-vRzgPumt4IDN0VqGKa64UJPVNGNXJMC6b0orDEsXrtE=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "secrets",
         "rev": "6336cc5f4509ebe81eeefbc740a76f4ebed75c74",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "secrets",
         "type": "github"
       }
@@ -476,13 +476,13 @@
       "locked": {
         "lastModified": 1732879276,
         "narHash": "sha256-UdZ7m6cV9SGFVrLeas2ayUgRAe/iYEQWPPZkAria4dY=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "st",
         "rev": "d474fdf51973431377dd5e8a91f7a46d58c6e294",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "st",
         "type": "github"
       }
@@ -497,13 +497,13 @@
       "locked": {
         "lastModified": 1732875130,
         "narHash": "sha256-NDVo5vxFyulFs7ngGI5Z220d0oNUUWr4gh5sY2vx+3A=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "system",
         "rev": "61233d88ac9f73a2538eacf3a32898e437c82b8e",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "system",
         "type": "github"
       }
@@ -517,13 +517,13 @@
       "locked": {
         "lastModified": 1732803467,
         "narHash": "sha256-scrJ/x0NKnBt04pHQ/mQinp52Nz12+3IegurpTd7Y5g=",
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "tmux",
         "rev": "951a17c9c28e152158310867cbb7d1ed300720ac",
         "type": "github"
       },
       "original": {
-        "owner": "efettf",
+        "owner": "efnnix",
         "repo": "tmux",
         "type": "github"
       }
