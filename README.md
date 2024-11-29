@@ -49,7 +49,6 @@ This repository heavily uses Nixos modules system provided by flakes to split th
 - [kanata](https://github.com/efettf/kanata)
 - [nsxiv](https://github.com/efettf/nsxiv)
 - [dmenu](https://github.com/efettf/dmenu)
-- [files](https://github.com/efettf/files)
 - [gitu](https://github.com/efettf/gitu)
 - [mako](https://github.com/efettf/mako)
 - [tmux](https://github.com/efettf/tmux)
