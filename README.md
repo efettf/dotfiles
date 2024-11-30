@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-My personal highly modular Nixos configuration using suckless software, easily extensible by adding your own repositories in flake inputs and loading them in the hosts directory. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
+My personal highly modular Nixos configuration using suckless software, easily extensible by adding your own repositories in flake inputs. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
 </p>
 
 ##
@@ -31,7 +31,7 @@ This repository is **under construction** and is very prone to breaking, luckily
 
 ### 🚀 Modules
 
-This repository heavily uses Nixos modules system provided by flakes to split the configuration to multiple repositories all sharing the same Nixos settings and inputs. Here's a list of all of the required and optional modules (might create more in future):
+This repository heavily uses Nixos modules system provided by flakes to split the configuration to multiple repositories all sharing the same Nixos settings and inputs. Here's a list of all of the required and optional modules (might add more in future):
 
 <details open><summary>🐚 Required</summary>
 

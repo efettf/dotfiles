@@ -4,28 +4,9 @@ inputs: let
       specialArgs = {inherit inputs;};
       modules =
         [./${host}.nix]
-        ++ map (value: inputs.${value}.nixosModules.default) [
-          "qutebrowser"
-          "secrets"
-          "ncmpcpp"
-          "console"
-          "kanata"
-          "system"
-          "colors"
-          "nsxiv"
-          "dmenu"
-          "xmenu"
-          "files"
-          "gitu"
-          "mako"
-          "tmux"
-          "nvim"
-          "fish"
-          "git"
-          "dwl"
-          "bin"
-          "st"
-        ];
+        ++ map (value: inputs.${value}.nixosModules.default)
+        (inputs.nixpkgs.lib.lists.remove "nixpkgs"
+          (builtins.attrNames ((import ../flake.nix).inputs)));
     };
 in {
   nixos = mkHost "nixos";
