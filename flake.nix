@@ -1,5 +1,7 @@
 {
 
+  description = "Modular nixos configuration";
+
   outputs = inputs: {nixosConfigurations = import ./hosts inputs;};
 
   # WARNING: Nixos version declared here, don't use version below 24.11!
@@ -64,4 +66,5 @@
 
   inputs."st".url = "github:efnnix/st";
   inputs."st".inputs."nixpkgs".follows = "nixpkgs";
+
 }
