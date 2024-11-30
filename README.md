@@ -32,7 +32,7 @@ This repository heavily uses Nixos modules system provided by flakes to split th
 <details open><summary>🐚 Required</summary>
 
 - [system](https://github.com/efnnix/system)
-- [colors](https://github.com/efnnix/colors)
+- [theme](https://github.com/efnnix/theme)
 - [files](https://github.com/efnnix/files)
 
 </details>

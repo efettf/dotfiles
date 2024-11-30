@@ -25,11 +25,11 @@
   inputs."kanata".url = "github:efnnix/kanata";
   inputs."kanata".inputs."nixpkgs".follows = "nixpkgs";
 
-  inputs."colors".url = "github:efnnix/colors";
-  inputs."colors".inputs."nixpkgs".follows = "nixpkgs";
-
   inputs."nsxiv".url = "github:efnnix/nsxiv";
   inputs."nsxiv".inputs."nixpkgs".follows = "nixpkgs";
+
+  inputs."theme".url = "github:efnnix/theme";
+  inputs."theme".inputs."nixpkgs".follows = "nixpkgs";
 
   inputs."dmenu".url = "github:efnnix/dmenu";
   inputs."dmenu".inputs."nixpkgs".follows = "nixpkgs";

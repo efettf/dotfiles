@@ -68,26 +68,6 @@
         "type": "github"
       }
     },
-    "colors": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1732902239,
-        "narHash": "sha256-VVIr8J9HbPN3nYAdHdRIVAzzYlkOagvKN/tddFtbzMc=",
-        "owner": "efnnix",
-        "repo": "colors",
-        "rev": "f518b536cd878d549dfcfb2851968bf575d424da",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efnnix",
-        "repo": "colors",
-        "type": "github"
-      }
-    },
     "console": {
       "inputs": {
         "nixpkgs": [
@@ -409,7 +389,6 @@
     "root": {
       "inputs": {
         "bin": "bin",
-        "colors": "colors",
         "console": "console",
         "dmenu": "dmenu",
         "dwl": "dwl",
@@ -427,6 +406,7 @@
         "secrets": "secrets",
         "st": "st",
         "system": "system",
+        "theme": "theme",
         "tmux": "tmux",
         "xmenu": "xmenu"
       }
@@ -527,6 +507,26 @@
       "original": {
         "owner": "efnnix",
         "repo": "system",
+        "type": "github"
+      }
+    },
+    "theme": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732902239,
+        "narHash": "sha256-VVIr8J9HbPN3nYAdHdRIVAzzYlkOagvKN/tddFtbzMc=",
+        "owner": "efnnix",
+        "repo": "theme",
+        "rev": "f518b536cd878d549dfcfb2851968bf575d424da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efnnix",
+        "repo": "theme",
         "type": "github"
       }
     },
