@@ -18,6 +18,9 @@
   inputs."ncmpcpp".url = "github:efnnix/ncmpcpp";
   inputs."ncmpcpp".inputs."nixpkgs".follows = "nixpkgs";
 
+  inputs."console".url = "github:efnnix/console";
+  inputs."console".inputs."nixpkgs".follows = "nixpkgs";
+
   inputs."system".url = "github:efnnix/system";
   inputs."system".inputs."nixpkgs".follows = "nixpkgs";
 

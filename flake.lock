@@ -88,6 +88,26 @@
         "type": "github"
       }
     },
+    "console": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732955589,
+        "narHash": "sha256-+9s6h/Oiefpa2fR784GMLT8yMI9EoQi5X+2V1hbNeyc=",
+        "owner": "efnnix",
+        "repo": "console",
+        "rev": "bd53b864c8875445e88adb8d6d6eed69723cd720",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efnnix",
+        "repo": "console",
+        "type": "github"
+      }
+    },
     "dmenu": {
       "inputs": {
         "nixpkgs": [
@@ -390,6 +410,7 @@
       "inputs": {
         "bin": "bin",
         "colors": "colors",
+        "console": "console",
         "dmenu": "dmenu",
         "dwl": "dwl",
         "files": "files",
@@ -496,11 +517,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732900713,
-        "narHash": "sha256-3KYc9m+/ocNOyoCl6tUtFsO8aAr1JUqL+ReKt7wtPws=",
+        "lastModified": 1732955135,
+        "narHash": "sha256-8ZS87L912NcMZMenm7VyWGSNY28WOFqN8qx1DbuoEzU=",
         "owner": "efnnix",
         "repo": "system",
-        "rev": "b116084e3a382d14a4ba2d47e4fa10808798a83c",
+        "rev": "0f946d498c0b8827264b48256c2e1718ca71fe84",
         "type": "github"
       },
       "original": {
