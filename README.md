@@ -1,9 +1,5 @@
 
 <p align="center">
-    <img width="200" src="https://raw.githubusercontent.com/efnnix/main/refs/heads/main/assets/nixos-catppuccin.png" alt="Nixos Logo">
-</p>
-
-<p align="center">
 My personal highly modular Nixos configuration using suckless software, easily extensible by adding your own repositories in flake inputs. Most of the stuff is done behind the scenes on modules repositories and here you can set up high-level settings exported by modules.
 </p>
 
