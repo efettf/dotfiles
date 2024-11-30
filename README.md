@@ -40,6 +40,7 @@ This repository heavily uses Nixos modules system provided by flakes to split th
 <details open><summary>🧭 Optional</summary>
 
 - [qutebrowser](https://github.com/efnnix/qutebrowser)
+- [ueberzugpp](https://github.com/efnnix/ueberzugpp)
 - [secrets](https://github.com/efnnix/secrets)
 - [ncmpcpp](https://github.com/efnnix/ncmpcpp)
 - [console](https://github.com/efnnix/console)

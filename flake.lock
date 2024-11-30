@@ -408,6 +408,7 @@
         "system": "system",
         "theme": "theme",
         "tmux": "tmux",
+        "ueberzugpp": "ueberzugpp",
         "xmenu": "xmenu"
       }
     },
@@ -547,6 +548,26 @@
       "original": {
         "owner": "efnnix",
         "repo": "tmux",
+        "type": "github"
+      }
+    },
+    "ueberzugpp": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732977572,
+        "narHash": "sha256-qw8S30DYN9lmc/MDI2mOyRvQ6YZ6TfVlr8Zhb/Px1Ik=",
+        "owner": "efnnix",
+        "repo": "ueberzugpp",
+        "rev": "f8ddd9fe12958bed59ef608b9c4f2a1869d947cb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "efnnix",
+        "repo": "ueberzugpp",
         "type": "github"
       }
     },

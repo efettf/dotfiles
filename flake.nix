@@ -10,6 +10,9 @@
   inputs."qutebrowser".url = "github:efnnix/qutebrowser";
   inputs."qutebrowser".inputs."nixpkgs".follows = "nixpkgs";
 
+  inputs."ueberzugpp".url = "github:efnnix/ueberzugpp";
+  inputs."ueberzugpp".inputs."nixpkgs".follows = "nixpkgs";
+
   inputs."secrets".url = "github:efnnix/secrets";
   inputs."secrets".inputs."nixpkgs".follows = "nixpkgs";
 
