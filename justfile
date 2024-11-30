@@ -1,7 +1,7 @@
 mod hosts
 
 default:
-  @./util/install.sh
+  @./util/rebuild.sh
 
 alias u := update
 
