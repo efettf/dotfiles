@@ -155,11 +155,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732907100,
-        "narHash": "sha256-vUHscLOAg3JwZzoXoLAP1bnh5i4QVg5WU1YZt+Uw4Io=",
+        "lastModified": 1732988237,
+        "narHash": "sha256-RASXXjpZPZ+qrETsRZPND71CwuuBkgf46gfP4r1DLUM=",
         "owner": "efnnix",
         "repo": "fish",
-        "rev": "ae3c1313d765a2e5bdbc5d5beffe5d76f34a1f01",
+        "rev": "9053273ff3c519f8a87511617fc00d5c7e024c87",
         "type": "github"
       },
       "original": {
@@ -420,11 +420,11 @@
         "sops": "sops"
       },
       "locked": {
-        "lastModified": 1732889481,
-        "narHash": "sha256-YTR5uE7vlXfLR5YRWffYenq01C/MYAcPGm7c0yWwKaM=",
+        "lastModified": 1733051178,
+        "narHash": "sha256-5ooQQ1h9MzkDsO1Ru1HXTOUAHVHc23irHYKpLISVms0=",
         "owner": "efnnix",
         "repo": "secrets",
-        "rev": "b94360fb7278a599759ec508168a46897006c98e",
+        "rev": "c6ade686eaff823f90dfc9912e27ef77c9ef823f",
         "type": "github"
       },
       "original": {
