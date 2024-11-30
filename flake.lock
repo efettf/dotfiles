@@ -377,11 +377,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732881760,
-        "narHash": "sha256-w+gAPytPgwOU4Yjzo2s5lXV/9yRxM5fb95CxBSNyQ8I=",
+        "lastModified": 1732973030,
+        "narHash": "sha256-zhoA/J4v9gudrFJsInnzDpCwa4YKKN4CoTkMRWPwAOA=",
         "owner": "efnnix",
         "repo": "qutebrowser",
-        "rev": "3853935a90e6cc5c7fd376f88729fc3f8915e8fd",
+        "rev": "cbf449fc4cedf8adabf698c026963a46ff4f94fb",
         "type": "github"
       },
       "original": {
