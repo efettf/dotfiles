@@ -8,7 +8,11 @@ My personal highly modular Nixos configuration using suckless software, easily e
 <!-- ### 🖼️ Screenshots -->
 
 > [!WARNING] 
-> This isn't a distribution or a preconfigured setup for Nixos and you shouldn't use it like one, this is my personal configuration which I try to make as pretty and functional as I can. Please verify everything before applying it as it was only tested on my hosts and could not work on yours.
+> This isn't a distribution or a preconfigured setup for Nixos. 
+> This is my personal configuration which I try to make as 
+> pretty and functional as I can for my use case. 
+> Please verify everything before applying it as it was 
+> only tested on my hosts and could not work on yours.
 
 
 ### 💨 Features
