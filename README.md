@@ -22,7 +22,7 @@ My personal highly modular Nixos configuration using suckless software, easily e
 
 ### 🚧 Status
 
-This repository is **under construction** and is very prone to breaking, luckily thanks to the nature on Nixos its mainly due to user error, so if you fork this repository and update it only when needed, it will last as long as you wish. Nixpkgs input is pinned at **24.11 beta** and will most likely be like that till the next release.
+This repository is **under construction** and is very prone to breaking, luckily thanks to the nature on Nixos its mainly due to user error, so if you fork this repository and update it only when needed, it will last as long as you wish. Nixpkgs input is pinned at **24.11** and will most likely be like that till the next release.
 
 
 ### 🚀 Modules
