@@ -46,12 +46,19 @@ echo "};" >> flake.nix
 
 echo "inputs.\"nixpkgs\".url = \"github:nixos/nixpkgs/nixos-$NIXOS_VERSION\";" >> flake.nix
 
-for module in $(ls modules); do
+modularize() {
 
-  echo "inputs.\"${module}\".url = \"./modules/${module}\";" >> flake.nix
-  echo "inputs.\"${module}\".inputs.nixpkgs.follows = \"nixpkgs\";" >> flake.nix
+  for module in $(ls $1); do
 
-done
+    echo "inputs.\"${module}\".url = \"./$1/${module}\";" >> flake.nix
+    echo "inputs.\"${module}\".inputs.nixpkgs.follows = \"nixpkgs\";" >> flake.nix
+
+  done
+
+}
+
+modularize general
+modularize programs
 
 echo "}" >> flake.nix
 

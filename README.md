@@ -39,26 +39,31 @@ This repository is **under construction** and is very prone to breaking, luckily
 
 </details>
 
-<details open><summary>🧭 Optional</summary>
+<details open><summary>⚽ Programs</summary>
 
-- [qutebrowser](modules/qutebrowser)
-- [ueberzugpp](modules/ueberzugpp)
-- [secrets](modules/secrets)
-- [ncmpcpp](modules/ncmpcpp)
-- [console](modules/console)
-- [kanata](modules/kanata)
-- [nsxiv](modules/nsxiv)
-- [dmenu](modules/dmenu)
-- [gitu](modules/gitu)
-- [mako](modules/mako)
-- [tmux](modules/tmux)
-- [nvim](modules/nvim)
-- [fish](modules/fish)
-- [git](modules/git)
-- [dwl](modules/dwl)
-- [ssh](modules/ssh)
-- [bin](modules/bin)
-- [st](modules/st)
+- [dmenu](programs/dmenu)
+- [dwl](programs/dwl)
+- [fish](programs/fish)
+- [git](programs/git)
+- [gitu](programs/gitu)
+- [kanata](programs/kanata)
+- [mako](programs/mako)
+- [ncmpcpp](programs/ncmpcpp)
+- [nsxiv](programs/nsxiv)
+- [nvim](programs/nvim)
+- [qutebrowser](programs/qutebrowser)
+- [ssh](programs/ssh)
+- [st](programs/st)
+- [tmux](programs/tmux)
+- [ueberzugpp](programs/ueberzugpp)
+
+</details>
+
+<details open><summary>🧭 General</summary>
+
+- [bin](general/bin)
+- [console](general/console)
+- [secrets](general/secrets)
 
 </details>
 
