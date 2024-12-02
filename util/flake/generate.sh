@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-touch flake.nix
-
 echo "{" > flake.nix
+
+git add flake.nix
 
 cat << EOF >> flake.nix
   outputs = inputs: {nixosConfigurations = import ./hosts inputs;};
