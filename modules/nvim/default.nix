@@ -5,56 +5,57 @@ inputs: {
   ...
 }: let
   plugins = with pkgs.vimPlugins;
-  with inputs; [
-    # Plugins from flake.
-    base16
-    autosave
-    recorder
-    sentiment
-    alternatetoggler
+  with inputs;
+    [
+      # Plugins from flake.
+      base16
+      autosave
+      recorder
+      sentiment
+      alternatetoggler
 
-    # Dependencies.
-    plenary-nvim
-    promise-async
+      # Dependencies.
+      plenary-nvim
+      promise-async
 
-    # Plugins from pkgs.
-    nvim-ufo
-    nvim-cmp
-    oil-nvim
-    fidget-nvim
-    conform-nvim
-    comment-nvim
-    nvim-surround
-    gitsigns-nvim
-    nvim-lastplace
-    nvim-lspconfig
-    nvim-autopairs
-    telescope-nvim
-    nvim-treesitter
-    transparent-nvim
-    live-command-nvim
-    nvim-colorizer-lua
+      # Plugins from pkgs.
+      nvim-ufo
+      nvim-cmp
+      oil-nvim
+      fidget-nvim
+      conform-nvim
+      comment-nvim
+      nvim-surround
+      gitsigns-nvim
+      nvim-lastplace
+      nvim-lspconfig
+      nvim-autopairs
+      telescope-nvim
+      nvim-treesitter
+      transparent-nvim
+      live-command-nvim
+      nvim-colorizer-lua
 
-    # Sources for nvim-cmp.
-    cmp-path
-    cmp-spell
-    cmp-nvim-lsp
-    cmp-treesitter
-
-    # Treesitter parsers.
-    nvim-treesitter-parsers.go
-    nvim-treesitter-parsers.lua
-    nvim-treesitter-parsers.vim
-    nvim-treesitter-parsers.nix
-    nvim-treesitter-parsers.just
-    nvim-treesitter-parsers.rust
-    nvim-treesitter-parsers.bash
-    nvim-treesitter-parsers.query
-    nvim-treesitter-parsers.vimdoc
-    nvim-treesitter-parsers.hyprlang
-    nvim-treesitter-parsers.markdown
-    nvim-treesitter-parsers.markdown_inline
-  ];
+      # Sources for nvim-cmp.
+      cmp-path
+      cmp-spell
+      cmp-nvim-lsp
+      cmp-treesitter
+    ]
+    ++ (with pkgs.vimPlugins.nvim-treesitter-parsers; [
+      go
+      lua
+      vim
+      nix
+      just
+      rust
+      bash
+      query
+      vimdoc
+      hyprlang
+      markdown
+      markdown_inline
+    ]);
 in {
   environment.systemPackages = with pkgs; [
     neovim
