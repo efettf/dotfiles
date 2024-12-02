@@ -409,8 +409,7 @@
         "system": "system",
         "theme": "theme",
         "tmux": "tmux",
-        "ueberzugpp": "ueberzugpp",
-        "xmenu": "xmenu"
+        "ueberzugpp": "ueberzugpp"
       }
     },
     "secrets": {
@@ -589,26 +588,6 @@
       "original": {
         "owner": "efnnix",
         "repo": "ueberzugpp",
-        "type": "github"
-      }
-    },
-    "xmenu": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1732899500,
-        "narHash": "sha256-2vWEDm9y6EgWnkk6ABoXUvXVPddl1e6IzUJDd8wHegA=",
-        "owner": "efnnix",
-        "repo": "xmenu",
-        "rev": "1e4f40e99760e877858c390b77885700db36da73",
-        "type": "github"
-      },
-      "original": {
-        "owner": "efnnix",
-        "repo": "xmenu",
         "type": "github"
       }
     }

@@ -37,9 +37,6 @@
   inputs."dmenu".url = "github:efnnix/dmenu";
   inputs."dmenu".inputs."nixpkgs".follows = "nixpkgs";
 
-  inputs."xmenu".url = "github:efnnix/xmenu";
-  inputs."xmenu".inputs."nixpkgs".follows = "nixpkgs";
-
   inputs."files".url = "github:efnnix/files";
   inputs."files".inputs."nixpkgs".follows = "nixpkgs";
 
