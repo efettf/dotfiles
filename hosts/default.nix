@@ -4,7 +4,7 @@ inputs: let
       modules =
         [./${host}.nix]
         ++ map (value: inputs.${value}.nixosModules.default)
-        (inputs.nixpkgs.lib.lists.remove "nixpkgs"
+        (builtins.filter (x: x != "nixpkgs")
           (builtins.attrNames ((import ../flake.nix).inputs)));
     };
 in {
