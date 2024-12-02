@@ -30,15 +30,15 @@ echo 'outputs = inputs: {' >> flake.nix
 
 for host in $(ls hosts | xargs basename -s .nix); do
 
-echo "
-  nixosConfigurations.$host = inputs.nixpkgs.lib.nixosSystem { modules =
-    [./hosts/$host.nix]
-    ++ [{config.networking.hostName = \"$host\";}]
-    ++ map (value: inputs.\${value}.nixosModules.default)
-    (builtins.filter (x: x != \"nixpkgs\")
-      (builtins.attrNames ((import ./flake.nix).inputs)));
-  };
-" >> flake.nix
+  echo "
+    nixosConfigurations.$host = inputs.nixpkgs.lib.nixosSystem { modules =
+      [./hosts/$host.nix]
+      ++ [{config.networking.hostName = \"$host\";}]
+      ++ map (value: inputs.\${value}.nixosModules.default)
+      (builtins.filter (x: x != \"nixpkgs\")
+        (builtins.attrNames ((import ./flake.nix).inputs)));
+    };
+  " >> flake.nix
 
 done
 
