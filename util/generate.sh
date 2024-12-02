@@ -13,7 +13,9 @@ export NIXOS_VERSION="24.11"
 nixos-generate-config --show-hardware-config \
   | sed -e '1,3d' \
   | sed -e "1 i\# $MESSAGE" \
-  > "$(hostname).nix"
+  > "hosts/$(hostname).nix"
+
+git add "hosts/$(hostname).nix"
 
 
 ## Generate flake
