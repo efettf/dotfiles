@@ -1,7 +1,6 @@
 inputs: let
   mkHost = host:
     inputs.nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
       modules =
         [./${host}.nix]
         ++ map (value: inputs.${value}.nixosModules.default)
