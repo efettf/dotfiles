@@ -55,17 +55,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1733146185,
+        "lastModified": 1,
         "narHash": "sha256-9wRBKwtZJBjYOwdmesZcpeAQBcVp6VF71bHipMm9ptY=",
-        "owner": "efnnix",
-        "repo": "bin",
-        "rev": "3fd7893ad8d444082a8dabaf48b10a5b68bd399b",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/bin",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "bin",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/bin",
+        "type": "path"
       }
     },
     "console": {
@@ -75,17 +72,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732955589,
+        "lastModified": 1,
         "narHash": "sha256-+9s6h/Oiefpa2fR784GMLT8yMI9EoQi5X+2V1hbNeyc=",
-        "owner": "efnnix",
-        "repo": "console",
-        "rev": "bd53b864c8875445e88adb8d6d6eed69723cd720",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/console",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "console",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/console",
+        "type": "path"
       }
     },
     "dmenu": {
@@ -95,17 +89,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732876220,
+        "lastModified": 1,
         "narHash": "sha256-VDAqBnBg8L0Up/58Lh5Llj3V00o8IQIz8oOndKknHp0=",
-        "owner": "efnnix",
-        "repo": "dmenu",
-        "rev": "61af6c90cc0008a0e0f298008c591dbbd6e08877",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/dmenu",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "dmenu",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/dmenu",
+        "type": "path"
       }
     },
     "dwl": {
@@ -115,17 +106,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732909384,
+        "lastModified": 1,
         "narHash": "sha256-jSTZqHbgeXoNLgoHsMZmE37Fy4Fz3zS6efkenkBl3O4=",
-        "owner": "efnnix",
-        "repo": "dwl",
-        "rev": "50198cdaddfe5007be2e8b3a196d84c2319cd201",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/dwl",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "dwl",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/dwl",
+        "type": "path"
       }
     },
     "files": {
@@ -135,17 +123,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732798427,
+        "lastModified": 1,
         "narHash": "sha256-TAAyCIGUB22R1+ioy9fsERmEQTp6REGqNgGw5xEoifs=",
-        "owner": "efnnix",
-        "repo": "files",
-        "rev": "afcb72849bf5cf97429465dccb7dc601e8406c07",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/files",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "files",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/files",
+        "type": "path"
       }
     },
     "fish": {
@@ -155,17 +140,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732988237,
+        "lastModified": 1,
         "narHash": "sha256-RASXXjpZPZ+qrETsRZPND71CwuuBkgf46gfP4r1DLUM=",
-        "owner": "efnnix",
-        "repo": "fish",
-        "rev": "9053273ff3c519f8a87511617fc00d5c7e024c87",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/fish",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "fish",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/fish",
+        "type": "path"
       }
     },
     "git": {
@@ -175,17 +157,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732809432,
+        "lastModified": 1,
         "narHash": "sha256-bimK2PGyj2JKLS/qbW9UUOTlSmXJXS+KbUgljp29BKg=",
-        "owner": "efnnix",
-        "repo": "git",
-        "rev": "f54bdb102ced85b68f901811f273ee5ba61cf1cc",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/git",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "git",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/git",
+        "type": "path"
       }
     },
     "gitu": {
@@ -195,17 +174,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732801202,
+        "lastModified": 1,
         "narHash": "sha256-Wpl74lYP81gDAz3w7sgjsccGa7cvQrsqsu/oyTpeipM=",
-        "owner": "efnnix",
-        "repo": "gitu",
-        "rev": "a46ade3c07c52b29926f55ade63e10b3b5f3801e",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/gitu",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "gitu",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/gitu",
+        "type": "path"
       }
     },
     "kanata": {
@@ -215,17 +191,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732875249,
+        "lastModified": 1,
         "narHash": "sha256-zzU4cleUA/E4oZwkJoAoTpij5EfTYvWAcjWsm4+mE5I=",
-        "owner": "efnnix",
-        "repo": "kanata",
-        "rev": "2e0eb4141266b883b19e4f1efc9f126694b6dcf4",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/kanata",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "kanata",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/kanata",
+        "type": "path"
       }
     },
     "mako": {
@@ -235,17 +208,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732881075,
+        "lastModified": 1,
         "narHash": "sha256-VU4K34LAcC8IKOK8sEvrRyg8eYbcO7R+VOf+ffJdHsE=",
-        "owner": "efnnix",
-        "repo": "mako",
-        "rev": "0ea42257279fc0b8b7972d5f7bc34c578534e110",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/mako",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "mako",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/mako",
+        "type": "path"
       }
     },
     "ncmpcpp": {
@@ -255,17 +225,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732801955,
+        "lastModified": 1,
         "narHash": "sha256-GoDoblxjAHqnrJkNwpKbxMeUTtSYD6EvFIBFa5lM46c=",
-        "owner": "efnnix",
-        "repo": "ncmpcpp",
-        "rev": "ef70b2fc30310ff2cb8d79b36282c403045dc644",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/ncmpcpp",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "ncmpcpp",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/ncmpcpp",
+        "type": "path"
       }
     },
     "nix-index": {
@@ -312,17 +279,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732797980,
+        "lastModified": 1,
         "narHash": "sha256-+5W1VVDPJl1/ItLVfGd6TyIdC9iV2DeMrXgh+RTT9XQ=",
-        "owner": "efnnix",
-        "repo": "nsxiv",
-        "rev": "32337076734c4293513e1c2909fc43d629602fa7",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/nsxiv",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "nsxiv",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/nsxiv",
+        "type": "path"
       }
     },
     "nvim": {
@@ -337,17 +301,14 @@
         "sentiment": "sentiment"
       },
       "locked": {
-        "lastModified": 1732901475,
+        "lastModified": 1,
         "narHash": "sha256-bEsGCO5KSUp5gODtOG/vw6D6tc7yEaHYn4bdl3YdFLQ=",
-        "owner": "efnnix",
-        "repo": "nvim",
-        "rev": "3253a3e3248525e7daea9b2c4232b20a10869b8e",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/nvim",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "nvim",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/nvim",
+        "type": "path"
       }
     },
     "qutebrowser": {
@@ -357,17 +318,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1733091397,
+        "lastModified": 1,
         "narHash": "sha256-SnTxsgUbsdS4X927uH2MQcsGpD2toZ6yLmoPWLy9E/8=",
-        "owner": "efnnix",
-        "repo": "qutebrowser",
-        "rev": "7bf4d634d637be3ff9c82ea408acf545e4d6f2a6",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/qutebrowser",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "qutebrowser",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/qutebrowser",
+        "type": "path"
       }
     },
     "recorder": {
@@ -420,17 +378,14 @@
         "sops": "sops"
       },
       "locked": {
-        "lastModified": 1733145426,
+        "lastModified": 1,
         "narHash": "sha256-0J0iC9yWBeR8u98Wr+/7eoUzpWKGKp0hcxHOQe9iKPc=",
-        "owner": "efnnix",
-        "repo": "secrets",
-        "rev": "735702d39fd92b871daf55c6fd4c6f507ebdb2e3",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/secrets",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "secrets",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/secrets",
+        "type": "path"
       }
     },
     "sentiment": {
@@ -477,17 +432,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1733087909,
+        "lastModified": 1,
         "narHash": "sha256-Ym2cHp/6GF/4ZA47Vhny7vM/YuDdNd51m3dCWPUAZuc=",
-        "owner": "efnnix",
-        "repo": "ssh",
-        "rev": "787991927a71fed409e1712adfd19cbc94ef9d1f",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/ssh",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "ssh",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/ssh",
+        "type": "path"
       }
     },
     "st": {
@@ -497,17 +449,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732902217,
+        "lastModified": 1,
         "narHash": "sha256-mcqcFCcFTKtd8VhHpIOS0Gh41r3+MZZuXide0QMSAbs=",
-        "owner": "efnnix",
-        "repo": "st",
-        "rev": "636aad9e2e5c3044cc930bf890051b1bda38e0a0",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/st",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "st",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/st",
+        "type": "path"
       }
     },
     "system": {
@@ -518,17 +467,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1733087528,
+        "lastModified": 1,
         "narHash": "sha256-NHI+XoPTTJa1AJBYvUkUeWu9XZFKlXvdr1l0dUSX+OY=",
-        "owner": "efnnix",
-        "repo": "system",
-        "rev": "7233e508d691176a616cd8215bf90a8febaa62ab",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/system",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "system",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/system",
+        "type": "path"
       }
     },
     "theme": {
@@ -538,17 +484,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732902239,
+        "lastModified": 1,
         "narHash": "sha256-VVIr8J9HbPN3nYAdHdRIVAzzYlkOagvKN/tddFtbzMc=",
-        "owner": "efnnix",
-        "repo": "theme",
-        "rev": "f518b536cd878d549dfcfb2851968bf575d424da",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/theme",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "theme",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/theme",
+        "type": "path"
       }
     },
     "tmux": {
@@ -558,17 +501,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732803467,
+        "lastModified": 1,
         "narHash": "sha256-scrJ/x0NKnBt04pHQ/mQinp52Nz12+3IegurpTd7Y5g=",
-        "owner": "efnnix",
-        "repo": "tmux",
-        "rev": "951a17c9c28e152158310867cbb7d1ed300720ac",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/tmux",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "tmux",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/tmux",
+        "type": "path"
       }
     },
     "ueberzugpp": {
@@ -578,17 +518,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1732977572,
+        "lastModified": 1,
         "narHash": "sha256-qw8S30DYN9lmc/MDI2mOyRvQ6YZ6TfVlr8Zhb/Px1Ik=",
-        "owner": "efnnix",
-        "repo": "ueberzugpp",
-        "rev": "f8ddd9fe12958bed59ef608b9c4f2a1869d947cb",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/ueberzugpp",
+        "type": "path"
       },
       "original": {
-        "owner": "efnnix",
-        "repo": "ueberzugpp",
-        "type": "github"
+        "path": "/nix/store/jh3yf7sfyiqxgf93qjcdi7df5i0zjq12-source/modules/ueberzugpp",
+        "type": "path"
       }
     }
   },

@@ -15,7 +15,7 @@ My personal highly modular Nixos configuration using suckless software, easily e
 > only tested on my hosts and could not work on yours.
 
 
-### 💨 Features
+### 🚀 Features
 
 - **Secrets management by [sops-nix](https://github.com/mic92/sops-nix):** simple to manage secrets with easy interface and atomic rollbacks (even in a public repo).
 - **Everything is done via modules:** this makes it easy to both manage and organize all your settings without having huge repositories, while still having all of values shared around.
@@ -29,38 +29,36 @@ My personal highly modular Nixos configuration using suckless software, easily e
 This repository is **under construction** and is very prone to breaking, luckily thanks to the nature on Nixos its mainly due to user error, so if you fork this repository and update it only when needed, it will last as long as you wish. Nixpkgs input is pinned at **24.11** and will most likely be like that till the next release.
 
 
-### 🚀 Modules
-
-This repository heavily uses Nixos modules system provided by flakes to split the configuration to multiple repositories all sharing the same Nixos settings and inputs. Here's a list of all of the required and optional modules (might add more in future):
+### 📦 Modules
 
 <details open><summary>🐚 Required</summary>
 
-- [system](https://github.com/efnnix/system)
-- [theme](https://github.com/efnnix/theme)
-- [files](https://github.com/efnnix/files)
+- [system](modules/system)
+- [theme](modules/theme)
+- [files](modules/files)
 
 </details>
 
 <details open><summary>🧭 Optional</summary>
 
-- [qutebrowser](https://github.com/efnnix/qutebrowser)
-- [ueberzugpp](https://github.com/efnnix/ueberzugpp)
-- [secrets](https://github.com/efnnix/secrets)
-- [ncmpcpp](https://github.com/efnnix/ncmpcpp)
-- [console](https://github.com/efnnix/console)
-- [kanata](https://github.com/efnnix/kanata)
-- [nsxiv](https://github.com/efnnix/nsxiv)
-- [dmenu](https://github.com/efnnix/dmenu)
-- [gitu](https://github.com/efnnix/gitu)
-- [mako](https://github.com/efnnix/mako)
-- [tmux](https://github.com/efnnix/tmux)
-- [nvim](https://github.com/efnnix/nvim)
-- [fish](https://github.com/efnnix/fish)
-- [git](https://github.com/efnnix/git)
-- [dwl](https://github.com/efnnix/dwl)
-- [ssh](https://github.com/efnnix/ssh)
-- [bin](https://github.com/efnnix/bin)
-- [st](https://github.com/efnnix/st)
+- [qutebrowser](modules/qutebrowser)
+- [ueberzugpp](modules/ueberzugpp)
+- [secrets](modules/secrets)
+- [ncmpcpp](modules/ncmpcpp)
+- [console](modules/console)
+- [kanata](modules/kanata)
+- [nsxiv](modules/nsxiv)
+- [dmenu](modules/dmenu)
+- [gitu](modules/gitu)
+- [mako](modules/mako)
+- [tmux](modules/tmux)
+- [nvim](modules/nvim)
+- [fish](modules/fish)
+- [git](modules/git)
+- [dwl](modules/dwl)
+- [ssh](modules/ssh)
+- [bin](modules/bin)
+- [st](modules/st)
 
 </details>
 
