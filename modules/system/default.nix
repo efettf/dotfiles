@@ -6,15 +6,11 @@ inputs: {
 }: {
   imports = [inputs.nix-index.nixosModules.nix-index];
 
-  options = {
-    host = lib.mkOption {type = lib.types.str;};
-    user = lib.mkOption {type = lib.types.str;};
-  };
+  options.user = lib.mkOption {type = lib.types.str;};
 
   config = {
     programs.nix-index-database.comma.enable = true;
 
-    host = "nixos";
     user = "lynx";
 
     services = {
@@ -80,8 +76,6 @@ inputs: {
         wheelNeedsPassword = false;
       };
     };
-
-    networking.hostName = config.host;
 
     time.timeZone = "Europe/Warsaw";
 
