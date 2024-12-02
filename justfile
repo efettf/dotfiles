@@ -1,13 +1,18 @@
 mod hosts
 
 default:
-  @./util/rebuild.sh
+  ./util/flake/generate.sh
+  ./util/flake/update-diff.sh
+  ./util/rebuild.sh
+  rm flake.nix
 
 alias u := update
 
 update target:
+  ./util/flake/generate.sh
   nix flake update {{target}}
-  @just
+  ./util/rebuild.sh
+  rm flake.nix
 
 alias r := rollback
 
