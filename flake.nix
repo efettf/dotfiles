@@ -64,6 +64,9 @@
   inputs."dwl".url = "github:efnnix/dwl";
   inputs."dwl".inputs."nixpkgs".follows = "nixpkgs";
 
+  inputs."ssh".url = "github:efnnix/ssh";
+  inputs."ssh".inputs."nixpkgs".follows = "nixpkgs";
+
   inputs."bin".url = "github:efnnix/bin";
   inputs."bin".inputs."nixpkgs".follows = "nixpkgs";
 

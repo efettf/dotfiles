@@ -59,6 +59,7 @@ This repository heavily uses Nixos modules system provided by flakes to split th
 - [fish](https://github.com/efnnix/fish)
 - [git](https://github.com/efnnix/git)
 - [dwl](https://github.com/efnnix/dwl)
+- [ssh](https://github.com/efnnix/ssh)
 - [bin](https://github.com/efnnix/bin)
 - [st](https://github.com/efnnix/st)
 
