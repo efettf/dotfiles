@@ -1,9 +1,9 @@
-mod hosts
 
 default:
   ./util/flake/generate.sh
   ./util/flake/update-diff.sh
-  ./util/rebuild.sh
+  ./util/generate.sh
+  nixos-rebuild switch --flake . --use-remote-sudo
   rm flake.nix
 
 alias u := update
@@ -11,6 +11,7 @@ alias u := update
 update target:
   ./util/flake/generate.sh
   nix flake update {{target}}
+  ./util/generate.sh
   ./util/rebuild.sh
   rm flake.nix
 
