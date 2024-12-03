@@ -57,11 +57,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-9wRBKwtZJBjYOwdmesZcpeAQBcVp6VF71bHipMm9ptY=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/bin",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/bin",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/bin",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/bin",
         "type": "path"
       }
     },
@@ -74,11 +74,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-+9s6h/Oiefpa2fR784GMLT8yMI9EoQi5X+2V1hbNeyc=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/console",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/console",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/console",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/console",
         "type": "path"
       }
     },
@@ -91,11 +91,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-VDAqBnBg8L0Up/58Lh5Llj3V00o8IQIz8oOndKknHp0=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/dmenu",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/dmenu",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/dmenu",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/dmenu",
         "type": "path"
       }
     },
@@ -108,11 +108,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-jSTZqHbgeXoNLgoHsMZmE37Fy4Fz3zS6efkenkBl3O4=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/dwl",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/dwl",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/dwl",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/dwl",
         "type": "path"
       }
     },
@@ -125,11 +125,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-TAAyCIGUB22R1+ioy9fsERmEQTp6REGqNgGw5xEoifs=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/files",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/files",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/files",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/files",
         "type": "path"
       }
     },
@@ -142,11 +142,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-RASXXjpZPZ+qrETsRZPND71CwuuBkgf46gfP4r1DLUM=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/fish",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/fish",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/fish",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/fish",
         "type": "path"
       }
     },
@@ -159,11 +159,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-bimK2PGyj2JKLS/qbW9UUOTlSmXJXS+KbUgljp29BKg=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/git",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/git",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/git",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/git",
         "type": "path"
       }
     },
@@ -176,11 +176,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-Wpl74lYP81gDAz3w7sgjsccGa7cvQrsqsu/oyTpeipM=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/gitu",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/gitu",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/gitu",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/gitu",
         "type": "path"
       }
     },
@@ -193,11 +193,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-zzU4cleUA/E4oZwkJoAoTpij5EfTYvWAcjWsm4+mE5I=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/kanata",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/kanata",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/kanata",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/kanata",
         "type": "path"
       }
     },
@@ -210,11 +210,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-VU4K34LAcC8IKOK8sEvrRyg8eYbcO7R+VOf+ffJdHsE=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/mako",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/mako",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/mako",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/mako",
         "type": "path"
       }
     },
@@ -227,11 +227,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-GoDoblxjAHqnrJkNwpKbxMeUTtSYD6EvFIBFa5lM46c=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/ncmpcpp",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/ncmpcpp",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/ncmpcpp",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/ncmpcpp",
         "type": "path"
       }
     },
@@ -281,11 +281,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-+5W1VVDPJl1/ItLVfGd6TyIdC9iV2DeMrXgh+RTT9XQ=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/nsxiv",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/nsxiv",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/nsxiv",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/nsxiv",
         "type": "path"
       }
     },
@@ -302,12 +302,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-GCToQFgCAxSeZvyBUxLE3nRqLEECJAEt5E8i0bjpPKs=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/nvim",
+        "narHash": "sha256-W0b6yXpWCRDtinFXwdBLPHrr6Kr7SzemIt8BsJFtNx4=",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/nvim",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/nvim",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/nvim",
         "type": "path"
       }
     },
@@ -320,11 +320,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-SnTxsgUbsdS4X927uH2MQcsGpD2toZ6yLmoPWLy9E/8=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/qutebrowser",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/qutebrowser",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/qutebrowser",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/qutebrowser",
         "type": "path"
       }
     },
@@ -380,11 +380,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-0J0iC9yWBeR8u98Wr+/7eoUzpWKGKp0hcxHOQe9iKPc=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/secrets",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/secrets",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/secrets",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/secrets",
         "type": "path"
       }
     },
@@ -434,11 +434,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-Ym2cHp/6GF/4ZA47Vhny7vM/YuDdNd51m3dCWPUAZuc=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/ssh",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/ssh",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/ssh",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/ssh",
         "type": "path"
       }
     },
@@ -451,11 +451,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-mcqcFCcFTKtd8VhHpIOS0Gh41r3+MZZuXide0QMSAbs=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/st",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/st",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/st",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/st",
         "type": "path"
       }
     },
@@ -469,11 +469,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-EZgDsQpss8y7DEsYnyMSnFx2WLxDL6mbqCac/tMl+Us=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/system",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/system",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/system",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/system",
         "type": "path"
       }
     },
@@ -486,11 +486,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-VVIr8J9HbPN3nYAdHdRIVAzzYlkOagvKN/tddFtbzMc=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/theme",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/theme",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/general/theme",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/general/theme",
         "type": "path"
       }
     },
@@ -503,11 +503,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-scrJ/x0NKnBt04pHQ/mQinp52Nz12+3IegurpTd7Y5g=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/tmux",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/tmux",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/tmux",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/tmux",
         "type": "path"
       }
     },
@@ -520,11 +520,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-qw8S30DYN9lmc/MDI2mOyRvQ6YZ6TfVlr8Zhb/Px1Ik=",
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/ueberzugpp",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/ueberzugpp",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/pka6g9k8qlj53a4rpn6ndxhlbfnajlpy-source/programs/ueberzugpp",
+        "path": "/nix/store/3nk4j3y1wxs2f30046bplfms6b7rj2cx-source/programs/ueberzugpp",
         "type": "path"
       }
     }

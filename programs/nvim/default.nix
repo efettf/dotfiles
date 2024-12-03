@@ -25,6 +25,7 @@ inputs: {
       fidget-nvim
       conform-nvim
       comment-nvim
+      hardtime-nvim
       nvim-surround
       gitsigns-nvim
       nvim-lastplace

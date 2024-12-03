@@ -63,6 +63,7 @@ require("lspconfig").gopls.setup({})
 require("lspconfig").nil_ls.setup({})
 
 require("ufo").setup({})
+require("hardtime").setup({})
 require("recorder").setup({})
 require("gitsigns").setup({})
 require("colorizer").setup({})
