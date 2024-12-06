@@ -25,7 +25,6 @@ inputs: {
       fidget-nvim
       conform-nvim
       comment-nvim
-      hardtime-nvim
       nvim-surround
       gitsigns-nvim
       nvim-lastplace
@@ -70,13 +69,12 @@ in {
   ];
 
   files.".config/nvim/init.lua".text =
-    builtins.readFile ./config/init.lua
-    + ''
-      require("mini.base16").setup(${lib.generators.toLua {} {palette = config.scheme;}})
-      vim.api.nvim_create_autocmd({"VimEnter", "BufRead", "BufNewFile" }, {
-        pattern  = "*",
-        command  = 'hi TelescopeBorder guifg=${config.scheme.base02}'
-      })
+    builtins.readFile ./config.lua
+    + ''      require("mini.base16").setup(${lib.generators.toLua {} {palette = config.scheme;}})
+          vim.api.nvim_create_autocmd({"VimEnter", "BufRead", "BufNewFile" }, {
+            pattern  = "*",
+            command  = 'hi TelescopeBorder guifg=${config.scheme.base02}'
+          })
     '';
 
   systemd.services."nvim-plug" = {
